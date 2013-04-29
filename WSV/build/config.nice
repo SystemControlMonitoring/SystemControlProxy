@@ -1,0 +1,11 @@
+#! /bin/sh
+#
+# Created by configure
+
+"./configure" \
+"--prefix=/kSCproxy/WSV" \
+"--exec-prefix=/kSCproxy/WSV" \
+"--enable-mods-shared=all" \
+"--enable-so" \
+"--with-included-apr" \
+"$@"

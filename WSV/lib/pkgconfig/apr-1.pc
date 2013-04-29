@@ -1,0 +1,11 @@
+prefix=/kSCproxy/WSV
+exec_prefix=/kSCproxy/WSV
+libdir=/kSCproxy/WSV/lib
+APR_MAJOR_VERSION=1
+includedir=/kSCproxy/WSV/include
+
+Name: APR
+Description: The Apache Portable Runtime library
+Version: 1.4.6
+Libs: -L${libdir} -lapr-${APR_MAJOR_VERSION} -lrt -lcrypt  -lpthread
+Cflags: -DLINUX=2 -D_REENTRANT -D_GNU_SOURCE -g -O2 -pthread -I${includedir}
