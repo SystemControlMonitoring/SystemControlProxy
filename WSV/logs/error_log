@@ -604,3 +604,8 @@ BEGIN failed--compilation aborted at /kSCproxy/WEB/liveticker/json/index.pl line
 [Mon Apr 29 18:15:35.428848 2013] [mpm_event:notice] [pid 16805:tid 140371618322176] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
 [Mon Apr 29 18:15:35.428871 2013] [core:notice] [pid 16805:tid 140371618322176] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
 [Mon Apr 29 19:30:11.352209 2013] [mpm_event:notice] [pid 16805:tid 140371618322176] AH00491: caught SIGTERM, shutting down
+[Mon Apr 29 19:34:45.837559 2013] [ssl:notice] [pid 19761:tid 140520524719872] AH01886: SSL FIPS mode disabled
+[Mon Apr 29 19:34:45.873901 2013] [ssl:notice] [pid 19762:tid 140520524719872] AH01886: SSL FIPS mode disabled
+[Mon Apr 29 19:34:45.975402 2013] [ssl:warn] [pid 19762:tid 140520524719872] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Mon Apr 29 19:34:45.977221 2013] [mpm_event:notice] [pid 19762:tid 140520524719872] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Mon Apr 29 19:34:45.977244 2013] [core:notice] [pid 19762:tid 140520524719872] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
