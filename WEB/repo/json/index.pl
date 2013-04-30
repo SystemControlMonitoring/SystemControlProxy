@@ -2,9 +2,9 @@
 #
 # Include Library Path
 use FCGI;
-use lib '/kSCcore/MOD/html';
-use lib '/kSCcore/MOD/basic';
-use lib '/kSCcore/MOD/postgre';
+use lib '/kSCproxy/MOD/html';
+use lib '/kSCproxy/MOD/basic';
+use lib '/kSCproxy/MOD/postgre';
 # Include Library
 use kSChtml;
 use kSCbasic;
@@ -55,6 +55,49 @@ sub DeleteDashboardAll {
     print "{\"DELETE\":\"COMPLETE\"}";
 }
 #
+sub DeleteRepoAll {
+    my $uid = shift;
+    # USER,MODUL,KEY
+    kSCpostgre::DeleteAllRepository($uid);
+    # Execution
+    print kSChtml::ContentType("json");
+    print "{\"DELETE\":\"COMPLETE\"}";
+}
+#
+sub InsertUpdateConfig {
+    my $uid = shift;
+    my $mdl = shift;
+    my $key = shift;
+    my $val1 = shift;
+    my $val2 = shift;
+    my $val3 = shift;
+    #
+    kSCpostgre::InsertUpdateConfig($uid,$mdl,$key,$val1,$val2,$val3);
+    # Execution
+    print kSChtml::ContentType("json");
+    print "{\"INSERT_UPDATE\":\"COMPLETE\"}";
+}
+#
+sub SelectConfig {
+    my $uid = shift;
+    my $mdl = shift;
+    my $base = kSCbasic::GetBasicConfig();
+    my $sth = kSCpostgre::SelectFromRepository($uid,$mdl);
+    my $out;
+    if ($sth->rows > 0) {
+	while ( (my $key,my $tv1,my $tv2, my $tv3) = $sth->fetchrow_array()) {
+	    $out.="{\"KEY\":\"". $key ."\",\"ACTION\":\"". $tv1 ."\",\"DESC\":\"". kSCbasic::EncodeHTML($tv2) ."\"},";
+	}
+    } else {
+	foreach my $key (keys %{$base}) {
+	    $out.="{\"KEY\":\"". $base->{$key}->{'name'} ."\",\"ACTION\":\"". $base->{$key}->{'stat'} ."\",\"DESC\":\"". $base->{$key}->{'desc'} ."\"},";
+	}
+    }
+    $out = substr($out, 0, -1);
+    print kSChtml::ContentType("json");
+    print "[". $out ."]";
+}
+#
 #
 #
 #
@@ -73,6 +116,12 @@ if (kSCbasic::CheckUrlKeyValue("e","1","n") == 0) {
 	InsertDashboardAll(kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("u")));
     } elsif (kSCbasic::CheckUrlKeyValue("m","DeleteDashboardAll","y") == 0) {
 	DeleteDashboardAll(kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("u")));
+    } elsif (kSCbasic::CheckUrlKeyValue("m","DeleteRepoAll","y") == 0) {
+	DeleteRepoAll(kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("u")));
+    } elsif (kSCbasic::CheckUrlKeyValue("m","InsertUpdateConfig","y") == 0) {
+	InsertUpdateConfig(kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("u")),kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("m2")),kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("k")),kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("v1")),kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("v2")),kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("v3")));
+    } elsif (kSCbasic::CheckUrlKeyValue("m","SelectConfig","y") == 0) {
+	SelectConfig(kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("u")),kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("m2")));
     } else {
 	my $out = kSChtml::ContentType("json");
 	$out.= kSCbasic::ErrorMessage("json","1");
@@ -85,6 +134,12 @@ if (kSCbasic::CheckUrlKeyValue("e","1","n") == 0) {
 	InsertDashboardAll(kSCbasic::GetUrlKeyValue("u"));
     } elsif (kSCbasic::CheckUrlKeyValue("m","DeleteDashboardAll","n") == 0) {
 	DeleteDashboardAll(kSCbasic::GetUrlKeyValue("u"));
+    } elsif (kSCbasic::CheckUrlKeyValue("m","DeleteRepoAll","n") == 0) {
+	DeleteRepoAll(kSCbasic::GetUrlKeyValue("u"));
+    } elsif (kSCbasic::CheckUrlKeyValue("m","InsertUpdateConfig","n") == 0) {
+	InsertUpdateConfig(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("m2"),kSCbasic::GetUrlKeyValue("k"),kSCbasic::GetUrlKeyValue("v1"),kSCbasic::GetUrlKeyValue("v2"),kSCbasic::GetUrlKeyValue("v3"));
+    } elsif (kSCbasic::CheckUrlKeyValue("m","SelectConfig","n") == 0) {
+	SelectConfig(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("m2"));
     } else {
 	my $out = kSChtml::ContentType("json");
 	$out.= kSCbasic::ErrorMessage("json","2");

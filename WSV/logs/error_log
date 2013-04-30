@@ -609,3 +609,377 @@ BEGIN failed--compilation aborted at /kSCproxy/WEB/liveticker/json/index.pl line
 [Mon Apr 29 19:34:45.975402 2013] [ssl:warn] [pid 19762:tid 140520524719872] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
 [Mon Apr 29 19:34:45.977221 2013] [mpm_event:notice] [pid 19762:tid 140520524719872] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
 [Mon Apr 29 19:34:45.977244 2013] [core:notice] [pid 19762:tid 140520524719872] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Tue Apr 30 10:25:02.690347 2013] [mpm_event:notice] [pid 19762:tid 140520524719872] AH00491: caught SIGTERM, shutting down
+[Tue Apr 30 10:25:04.318730 2013] [ssl:notice] [pid 11580:tid 140001221310208] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 10:25:04.372526 2013] [ssl:notice] [pid 11581:tid 140001221310208] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 10:25:04.435756 2013] [ssl:warn] [pid 11581:tid 140001221310208] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Tue Apr 30 10:25:04.437558 2013] [mpm_event:notice] [pid 11581:tid 140001221310208] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Tue Apr 30 10:25:04.437581 2013] [core:notice] [pid 11581:tid 140001221310208] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Tue Apr 30 10:25:11.280807 2013] [fcgid:warn] [pid 11587:tid 140001014699776] [client 172.23.3.177:53676] mod_fcgid: stderr: Undefined subroutine &kSCpostgre::SelectFromRepository called at /kSCproxy/WEB/repo/json/index.pl line 75., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 10:25:11.280852 2013] [core:error] [pid 11587:tid 140001014699776] [client 172.23.3.177:53676] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 10:25:17.285836 2013] [fcgid:warn] [pid 11583:tid 140001221310208] mod_fcgid: cleanup zombie process 11670
+[Tue Apr 30 10:25:20.917477 2013] [fcgid:warn] [pid 11676:tid 140001035679488] [client 172.23.3.177:53700] mod_fcgid: stderr: Undefined subroutine &kSCpostgre::SelectFromRepository called at /kSCproxy/WEB/repo/json/index.pl line 75., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 10:25:20.917518 2013] [core:error] [pid 11676:tid 140001035679488] [client 172.23.3.177:53700] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 10:25:27.444226 2013] [fcgid:warn] [pid 11583:tid 140001221310208] mod_fcgid: cleanup zombie process 11706
+[Tue Apr 30 10:25:44.612978 2013] [fcgid:warn] [pid 11585:tid 140001025189632] [client 172.23.3.177:53763] mod_fcgid: stderr: Undefined subroutine &kSCpostgre::SelectFromRepository called at /kSCproxy/WEB/repo/json/index.pl line 75., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 10:25:44.613031 2013] [core:error] [pid 11585:tid 140001025189632] [client 172.23.3.177:53763] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 10:25:52.469065 2013] [fcgid:warn] [pid 11585:tid 140000962250496] [client 172.23.3.177:53787] mod_fcgid: stderr: Undefined subroutine &kSCpostgre::SelectFromRepository called at /kSCproxy/WEB/repo/json/index.pl line 75., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 10:25:52.469108 2013] [core:error] [pid 11585:tid 140000962250496] [client 172.23.3.177:53787] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 10:25:57.368655 2013] [fcgid:warn] [pid 11583:tid 140001221310208] mod_fcgid: cleanup zombie process 11725
+[Tue Apr 30 10:27:43.694862 2013] [fcgid:warn] [pid 11585:tid 140000930780928] [client 172.23.3.158:55125] mod_fcgid: stderr: Undefined subroutine &kSCpostgre::SelectFromRepository called at /kSCproxy/WEB/repo/json/index.pl line 75., referer: http://172.23.10.249:6560/
+[Tue Apr 30 10:27:43.694923 2013] [core:error] [pid 11585:tid 140000930780928] [client 172.23.3.158:55125] End of script output before headers: index.pl, referer: http://172.23.10.249:6560/
+[Tue Apr 30 10:27:49.603972 2013] [fcgid:warn] [pid 11583:tid 140001221310208] mod_fcgid: cleanup zombie process 11790
+[Tue Apr 30 10:30:01.974200 2013] [mpm_event:notice] [pid 11581:tid 140001221310208] AH00491: caught SIGTERM, shutting down
+[Tue Apr 30 10:30:03.607071 2013] [ssl:notice] [pid 11842:tid 139935168685824] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 10:30:03.654123 2013] [ssl:notice] [pid 11843:tid 139935168685824] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 10:30:03.672849 2013] [ssl:warn] [pid 11843:tid 139935168685824] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Tue Apr 30 10:30:03.674638 2013] [mpm_event:notice] [pid 11843:tid 139935168685824] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Tue Apr 30 10:30:03.674666 2013] [core:notice] [pid 11843:tid 139935168685824] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Tue Apr 30 10:30:09.026833 2013] [fcgid:warn] [pid 11849:tid 139935086495488] [client 172.23.3.158:55217] mod_fcgid: stderr: DBD::Pg::st execute failed: FEHLER:  Spalte \xc2\xbbkey\xc2\xab existiert nicht at /kSCproxy/MOD/postgre/kSCpostgre.pm line 81., referer: http://172.23.10.249:6560/
+[Tue Apr 30 10:30:09.026884 2013] [fcgid:warn] [pid 11849:tid 139935086495488] [client 172.23.3.158:55217] mod_fcgid: stderr: DBD::Pg::st fetchrow_array failed: no statement executing at /kSCproxy/WEB/repo/json/index.pl line 77., referer: http://172.23.10.249:6560/
+[Tue Apr 30 10:30:34.229621 2013] [fcgid:warn] [pid 11849:tid 139934874679040] [client 172.23.3.177:54092] mod_fcgid: stderr: DBD::Pg::st execute failed: FEHLER:  Spalte \xc2\xbbkey\xc2\xab existiert nicht at /kSCproxy/MOD/postgre/kSCpostgre.pm line 81., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 10:30:34.229669 2013] [fcgid:warn] [pid 11849:tid 139934874679040] [client 172.23.3.177:54092] mod_fcgid: stderr: DBD::Pg::st fetchrow_array failed: no statement executing at /kSCproxy/WEB/repo/json/index.pl line 77., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 10:32:36.452146 2013] [mpm_event:notice] [pid 11843:tid 139935168685824] AH00491: caught SIGTERM, shutting down
+[Tue Apr 30 10:32:38.067106 2013] [ssl:notice] [pid 12103:tid 140358814238464] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 10:32:38.144014 2013] [ssl:notice] [pid 12104:tid 140358814238464] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 10:32:38.171596 2013] [ssl:warn] [pid 12104:tid 140358814238464] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Tue Apr 30 10:32:38.173410 2013] [mpm_event:notice] [pid 12104:tid 140358814238464] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Tue Apr 30 10:32:38.173438 2013] [core:notice] [pid 12104:tid 140358814238464] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Tue Apr 30 10:32:46.672327 2013] [fcgid:warn] [pid 12110:tid 140358658815744] [client 172.23.3.158:55322] mod_fcgid: stderr: DBD::Pg::st execute failed: FEHLER:  Spalte \xc2\xbbkey\xc2\xab existiert nicht at /kSCproxy/MOD/postgre/kSCpostgre.pm line 81., referer: http://172.23.10.249:6560/
+[Tue Apr 30 10:35:03.146387 2013] [mpm_event:notice] [pid 12104:tid 140358814238464] AH00491: caught SIGTERM, shutting down
+[Tue Apr 30 10:35:04.617303 2013] [ssl:notice] [pid 12343:tid 140641232496384] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 10:35:04.644416 2013] [ssl:notice] [pid 12344:tid 140641232496384] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 10:35:04.712545 2013] [ssl:warn] [pid 12344:tid 140641232496384] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Tue Apr 30 10:35:04.714328 2013] [mpm_event:notice] [pid 12344:tid 140641232496384] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Tue Apr 30 10:35:04.714351 2013] [core:notice] [pid 12344:tid 140641232496384] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Tue Apr 30 10:39:12.890169 2013] [mpm_event:notice] [pid 12344:tid 140641232496384] AH00491: caught SIGTERM, shutting down
+[Tue Apr 30 10:39:14.327648 2013] [ssl:notice] [pid 12576:tid 139727265351424] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 10:39:14.366963 2013] [ssl:notice] [pid 12577:tid 139727265351424] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 10:39:14.403873 2013] [ssl:warn] [pid 12577:tid 139727265351424] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Tue Apr 30 10:39:14.405669 2013] [mpm_event:notice] [pid 12577:tid 139727265351424] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Tue Apr 30 10:39:14.405694 2013] [core:notice] [pid 12577:tid 139727265351424] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Tue Apr 30 11:18:11.495075 2013] [mpm_event:notice] [pid 12577:tid 139727265351424] AH00491: caught SIGTERM, shutting down
+[Tue Apr 30 11:18:12.456587 2013] [ssl:notice] [pid 14165:tid 140220037334784] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 11:18:12.504984 2013] [ssl:notice] [pid 14166:tid 140220037334784] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 11:18:12.550584 2013] [ssl:warn] [pid 14166:tid 140220037334784] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Tue Apr 30 11:18:12.552399 2013] [mpm_event:notice] [pid 14166:tid 140220037334784] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Tue Apr 30 11:18:12.552422 2013] [core:notice] [pid 14166:tid 140220037334784] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Tue Apr 30 11:19:11.253931 2013] [mpm_event:notice] [pid 14166:tid 140220037334784] AH00491: caught SIGTERM, shutting down
+[Tue Apr 30 11:19:12.068613 2013] [ssl:notice] [pid 14278:tid 140248606643968] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 11:19:12.124321 2013] [ssl:notice] [pid 14279:tid 140248606643968] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 11:19:12.167410 2013] [ssl:warn] [pid 14279:tid 140248606643968] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Tue Apr 30 11:19:12.169202 2013] [mpm_event:notice] [pid 14279:tid 140248606643968] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Tue Apr 30 11:19:12.169228 2013] [core:notice] [pid 14279:tid 140248606643968] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Tue Apr 30 11:22:04.562246 2013] [mpm_event:notice] [pid 14279:tid 140248606643968] AH00491: caught SIGTERM, shutting down
+[Tue Apr 30 11:22:05.359492 2013] [ssl:notice] [pid 14456:tid 140607903229696] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 11:22:05.430109 2013] [ssl:notice] [pid 14457:tid 140607903229696] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 11:22:05.451115 2013] [ssl:warn] [pid 14457:tid 140607903229696] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Tue Apr 30 11:22:05.452930 2013] [mpm_event:notice] [pid 14457:tid 140607903229696] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Tue Apr 30 11:22:05.452953 2013] [core:notice] [pid 14457:tid 140607903229696] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+Scalar found where operator expected at /kSCproxy/WEB/repo/json/index.pl line 87, near "$out"
+	(Missing semicolon on previous line?)
+Global symbol "$i" requires explicit package name at /kSCproxy/WEB/repo/json/index.pl line 83.
+Global symbol "$i" requires explicit package name at /kSCproxy/WEB/repo/json/index.pl line 83.
+syntax error at /kSCproxy/WEB/repo/json/index.pl line 83, near "++( "
+Global symbol "@i" requires explicit package name at /kSCproxy/WEB/repo/json/index.pl line 84.
+Missing right curly or square bracket at /kSCproxy/WEB/repo/json/index.pl line 145, at end of line
+syntax error at /kSCproxy/WEB/repo/json/index.pl line 145, at EOF
+Execution of /kSCproxy/WEB/repo/json/index.pl aborted due to compilation errors.
+[Tue Apr 30 11:22:07.972768 2013] [fcgid:warn] [pid 14463:tid 140607821039360] (104)Connection reset by peer: [client 172.23.3.158:57470] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.10.249:6560/
+[Tue Apr 30 11:22:07.972810 2013] [core:error] [pid 14463:tid 140607821039360] [client 172.23.3.158:57470] End of script output before headers: index.pl, referer: http://172.23.10.249:6560/
+Scalar found where operator expected at /kSCproxy/WEB/repo/json/index.pl line 87, near "$out"
+	(Missing semicolon on previous line?)
+Global symbol "$i" requires explicit package name at /kSCproxy/WEB/repo/json/index.pl line 83.
+Global symbol "$i" requires explicit package name at /kSCproxy/WEB/repo/json/index.pl line 83.
+syntax error at /kSCproxy/WEB/repo/json/index.pl line 83, near "++( "
+Global symbol "@i" requires explicit package name at /kSCproxy/WEB/repo/json/index.pl line 84.
+Missing right curly or square bracket at /kSCproxy/WEB/repo/json/index.pl line 145, at end of line
+syntax error at /kSCproxy/WEB/repo/json/index.pl line 145, at EOF
+Execution of /kSCproxy/WEB/repo/json/index.pl aborted due to compilation errors.
+[Tue Apr 30 11:22:22.771899 2013] [fcgid:warn] [pid 14463:tid 140607699810048] (104)Connection reset by peer: [client 172.23.3.158:57482] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.10.249:6560/
+[Tue Apr 30 11:22:22.771948 2013] [core:error] [pid 14463:tid 140607699810048] [client 172.23.3.158:57482] End of script output before headers: index.pl, referer: http://172.23.10.249:6560/
+[Tue Apr 30 11:22:52.863993 2013] [mpm_event:notice] [pid 14457:tid 140607903229696] AH00491: caught SIGTERM, shutting down
+[Tue Apr 30 11:22:54.225151 2013] [ssl:notice] [pid 14564:tid 139754956461824] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 11:22:54.260855 2013] [ssl:notice] [pid 14565:tid 139754956461824] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 11:22:54.307731 2013] [ssl:warn] [pid 14565:tid 139754956461824] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Tue Apr 30 11:22:54.309513 2013] [mpm_event:notice] [pid 14565:tid 139754956461824] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Tue Apr 30 11:22:54.309536 2013] [core:notice] [pid 14565:tid 139754956461824] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+Global symbol "$i" requires explicit package name at /kSCproxy/WEB/repo/json/index.pl line 83.
+Global symbol "$i" requires explicit package name at /kSCproxy/WEB/repo/json/index.pl line 83.
+Global symbol "@i" requires explicit package name at /kSCproxy/WEB/repo/json/index.pl line 84.
+syntax error at /kSCproxy/WEB/repo/json/index.pl line 84, near ""\"},";"
+Missing right curly or square bracket at /kSCproxy/WEB/repo/json/index.pl line 145, at end of line
+Execution of /kSCproxy/WEB/repo/json/index.pl aborted due to compilation errors.
+[Tue Apr 30 11:22:59.265984 2013] [fcgid:warn] [pid 14571:tid 139754874271488] (104)Connection reset by peer: [client 172.23.3.158:57504] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.10.249:6560/
+[Tue Apr 30 11:22:59.266058 2013] [core:error] [pid 14571:tid 139754874271488] [client 172.23.3.158:57504] End of script output before headers: index.pl, referer: http://172.23.10.249:6560/
+[Tue Apr 30 11:23:26.191510 2013] [mpm_event:notice] [pid 14565:tid 139754956461824] AH00491: caught SIGTERM, shutting down
+[Tue Apr 30 11:23:27.055727 2013] [ssl:notice] [pid 14669:tid 140579031844608] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 11:23:27.113402 2013] [ssl:notice] [pid 14670:tid 140579031844608] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 11:23:27.179574 2013] [ssl:warn] [pid 14670:tid 140579031844608] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Tue Apr 30 11:23:27.181352 2013] [mpm_event:notice] [pid 14670:tid 140579031844608] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Tue Apr 30 11:23:27.181378 2013] [core:notice] [pid 14670:tid 140579031844608] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+Global symbol "@i" requires explicit package name at /kSCproxy/WEB/repo/json/index.pl line 84.
+syntax error at /kSCproxy/WEB/repo/json/index.pl line 84, near ""\"},";"
+Missing right curly or square bracket at /kSCproxy/WEB/repo/json/index.pl line 145, at end of line
+Execution of /kSCproxy/WEB/repo/json/index.pl aborted due to compilation errors.
+[Tue Apr 30 11:23:31.522478 2013] [fcgid:warn] [pid 14673:tid 140578949654272] (104)Connection reset by peer: [client 172.23.3.158:57527] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.10.249:6560/
+[Tue Apr 30 11:23:31.522539 2013] [core:error] [pid 14673:tid 140578949654272] [client 172.23.3.158:57527] End of script output before headers: index.pl, referer: http://172.23.10.249:6560/
+Global symbol "@i" requires explicit package name at /kSCproxy/WEB/repo/json/index.pl line 84.
+syntax error at /kSCproxy/WEB/repo/json/index.pl line 84, near ""\"},";"
+Missing right curly or square bracket at /kSCproxy/WEB/repo/json/index.pl line 145, at end of line
+Execution of /kSCproxy/WEB/repo/json/index.pl aborted due to compilation errors.
+[Tue Apr 30 11:23:36.384358 2013] [fcgid:warn] [pid 14676:tid 140578928674560] (104)Connection reset by peer: [client 172.23.3.158:57534] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.10.249:6560/
+[Tue Apr 30 11:23:36.384413 2013] [core:error] [pid 14676:tid 140578928674560] [client 172.23.3.158:57534] End of script output before headers: index.pl, referer: http://172.23.10.249:6560/
+[Tue Apr 30 11:25:20.061203 2013] [mpm_event:notice] [pid 14670:tid 140579031844608] AH00491: caught SIGTERM, shutting down
+[Tue Apr 30 11:25:21.165420 2013] [ssl:notice] [pid 14950:tid 140021362304768] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 11:25:21.214668 2013] [ssl:notice] [pid 14951:tid 140021362304768] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 11:25:21.268301 2013] [ssl:warn] [pid 14951:tid 140021362304768] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Tue Apr 30 11:25:21.270086 2013] [mpm_event:notice] [pid 14951:tid 140021362304768] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Tue Apr 30 11:25:21.270110 2013] [core:notice] [pid 14951:tid 140021362304768] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Tue Apr 30 11:27:48.583331 2013] [mpm_event:notice] [pid 14951:tid 140021362304768] AH00491: caught SIGTERM, shutting down
+[Tue Apr 30 11:27:49.833851 2013] [ssl:notice] [pid 15108:tid 140269154293504] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 11:27:49.883512 2013] [ssl:notice] [pid 15109:tid 140269154293504] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 11:27:49.891962 2013] [ssl:warn] [pid 15109:tid 140269154293504] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Tue Apr 30 11:27:49.893776 2013] [mpm_event:notice] [pid 15109:tid 140269154293504] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Tue Apr 30 11:27:49.893806 2013] [core:notice] [pid 15109:tid 140269154293504] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Tue Apr 30 11:28:23.983876 2013] [fcgid:warn] [pid 15199:tid 140269001373440] [client 172.23.3.158:57784] mod_fcgid: error reading data, FastCGI server closed connection, referer: http://172.23.10.249:6560/
+[Tue Apr 30 11:28:23.983923 2013] [core:error] [pid 15199:tid 140269001373440] [client 172.23.3.158:57784] End of script output before headers: index.pl, referer: http://172.23.10.249:6560/
+[Tue Apr 30 11:28:24.060198 2013] [fcgid:warn] [pid 15115:tid 140269001373440] [client 172.23.3.158:57769] mod_fcgid: error reading data, FastCGI server closed connection, referer: http://172.23.10.249:6560/
+[Tue Apr 30 11:28:24.060254 2013] [core:error] [pid 15115:tid 140269001373440] [client 172.23.3.158:57769] End of script output before headers: index.pl, referer: http://172.23.10.249:6560/
+[Tue Apr 30 11:28:27.188279 2013] [core:warn] [pid 15109:tid 140269154293504] AH00045: child process 15113 still did not exit, sending a SIGTERM
+[Tue Apr 30 11:28:29.309436 2013] [core:warn] [pid 15109:tid 140269154293504] AH00045: child process 15113 still did not exit, sending a SIGTERM
+[Tue Apr 30 11:28:31.197642 2013] [core:warn] [pid 15109:tid 140269154293504] AH00045: child process 15113 still did not exit, sending a SIGTERM
+[Tue Apr 30 11:28:33.199866 2013] [core:error] [pid 15109:tid 140269154293504] AH00046: child process 15113 still did not exit, sending a SIGKILL
+[Tue Apr 30 11:28:34.201062 2013] [mpm_event:notice] [pid 15109:tid 140269154293504] AH00491: caught SIGTERM, shutting down
+[Tue Apr 30 11:28:45.557187 2013] [ssl:notice] [pid 15264:tid 140023468451584] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 11:28:45.618977 2013] [ssl:notice] [pid 15265:tid 140023468451584] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 11:28:45.647271 2013] [ssl:warn] [pid 15265:tid 140023468451584] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Tue Apr 30 11:28:45.649127 2013] [mpm_event:notice] [pid 15265:tid 140023468451584] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Tue Apr 30 11:28:45.649150 2013] [core:notice] [pid 15265:tid 140023468451584] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Tue Apr 30 14:17:01.115274 2013] [mpm_event:notice] [pid 15265:tid 140023468451584] AH00491: caught SIGTERM, shutting down
+[Tue Apr 30 14:17:02.009405 2013] [ssl:notice] [pid 19799:tid 139722722805504] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 14:17:02.046674 2013] [ssl:notice] [pid 19800:tid 139722722805504] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 14:17:02.087862 2013] [ssl:warn] [pid 19800:tid 139722722805504] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Tue Apr 30 14:17:02.089652 2013] [mpm_event:notice] [pid 19800:tid 139722722805504] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Tue Apr 30 14:17:02.089675 2013] [core:notice] [pid 19800:tid 139722722805504] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+Global symbol "@base" requires explicit package name at /kSCproxy/WEB/repo/json/index.pl line 89.
+Execution of /kSCproxy/WEB/repo/json/index.pl aborted due to compilation errors.
+[Tue Apr 30 14:17:10.382351 2013] [fcgid:warn] [pid 19806:tid 139722630125312] (104)Connection reset by peer: [client 172.23.3.158:64487] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.10.249:6560/
+[Tue Apr 30 14:17:10.382412 2013] [core:error] [pid 19806:tid 139722630125312] [client 172.23.3.158:64487] End of script output before headers: index.pl, referer: http://172.23.10.249:6560/
+[Tue Apr 30 14:17:47.673832 2013] [mpm_event:notice] [pid 19800:tid 139722722805504] AH00491: caught SIGTERM, shutting down
+[Tue Apr 30 14:17:49.403920 2013] [ssl:notice] [pid 19902:tid 140342166624000] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 14:17:49.434089 2013] [ssl:notice] [pid 19903:tid 140342166624000] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 14:17:49.447820 2013] [ssl:warn] [pid 19903:tid 140342166624000] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Tue Apr 30 14:17:49.449599 2013] [mpm_event:notice] [pid 19903:tid 140342166624000] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Tue Apr 30 14:17:49.449623 2013] [core:notice] [pid 19903:tid 140342166624000] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Tue Apr 30 14:24:37.840943 2013] [mpm_event:notice] [pid 19903:tid 140342166624000] AH00491: caught SIGTERM, shutting down
+[Tue Apr 30 14:24:39.758094 2013] [ssl:notice] [pid 20249:tid 140232105338624] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 14:24:39.780635 2013] [ssl:notice] [pid 20250:tid 140232105338624] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 14:24:39.833500 2013] [ssl:warn] [pid 20250:tid 140232105338624] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Tue Apr 30 14:24:39.835302 2013] [mpm_event:notice] [pid 20250:tid 140232105338624] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Tue Apr 30 14:24:39.835326 2013] [core:notice] [pid 20250:tid 140232105338624] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Tue Apr 30 14:25:39.742055 2013] [mpm_event:notice] [pid 20250:tid 140232105338624] AH00491: caught SIGTERM, shutting down
+[Tue Apr 30 14:25:41.739284 2013] [ssl:notice] [pid 20415:tid 140266275215104] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 14:25:41.766447 2013] [ssl:notice] [pid 20416:tid 140266275215104] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 14:25:41.812399 2013] [ssl:warn] [pid 20416:tid 140266275215104] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Tue Apr 30 14:25:41.814192 2013] [mpm_event:notice] [pid 20416:tid 140266275215104] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Tue Apr 30 14:25:41.814214 2013] [core:notice] [pid 20416:tid 140266275215104] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Tue Apr 30 14:27:27.260491 2013] [mpm_event:notice] [pid 20416:tid 140266275215104] AH00491: caught SIGTERM, shutting down
+[Tue Apr 30 14:27:28.346482 2013] [ssl:notice] [pid 20552:tid 140727485777664] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 14:27:28.393505 2013] [ssl:notice] [pid 20553:tid 140727485777664] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 14:27:28.423386 2013] [ssl:warn] [pid 20553:tid 140727485777664] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Tue Apr 30 14:27:28.425163 2013] [mpm_event:notice] [pid 20553:tid 140727485777664] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Tue Apr 30 14:27:28.425187 2013] [core:notice] [pid 20553:tid 140727485777664] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Tue Apr 30 14:27:57.221865 2013] [fcgid:warn] [pid 20559:tid 140727245846272] [client 172.23.3.177:53245] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 14:27:57.221920 2013] [core:error] [pid 20559:tid 140727245846272] [client 172.23.3.177:53245] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 14:28:05.971686 2013] [fcgid:warn] [pid 20555:tid 140727485777664] mod_fcgid: cleanup zombie process 20664
+[Tue Apr 30 14:29:30.184658 2013] [fcgid:warn] [pid 20559:tid 140727098988288] [client 172.23.3.177:53473] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 14:29:30.184720 2013] [core:error] [pid 20559:tid 140727098988288] [client 172.23.3.177:53473] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 14:29:35.936876 2013] [fcgid:warn] [pid 20555:tid 140727485777664] mod_fcgid: cleanup zombie process 20684
+[Tue Apr 30 14:30:35.362923 2013] [fcgid:warn] [pid 20559:tid 140727277315840] [client 172.23.3.177:53578] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 14:30:35.362981 2013] [core:error] [pid 20559:tid 140727277315840] [client 172.23.3.177:53578] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 14:30:41.114856 2013] [fcgid:warn] [pid 20555:tid 140727485777664] mod_fcgid: cleanup zombie process 20709
+[Tue Apr 30 14:31:57.559732 2013] [fcgid:warn] [pid 20559:tid 140727119968000] [client 172.23.3.177:53765] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 14:31:57.559780 2013] [core:error] [pid 20559:tid 140727119968000] [client 172.23.3.177:53765] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 14:32:03.308089 2013] [fcgid:warn] [pid 20555:tid 140727485777664] mod_fcgid: cleanup zombie process 20767
+[Tue Apr 30 14:33:20.472609 2013] [fcgid:warn] [pid 20559:tid 140727266825984] [client 172.23.3.177:53964] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 14:33:20.472664 2013] [core:error] [pid 20559:tid 140727266825984] [client 172.23.3.177:53964] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 14:33:26.220733 2013] [fcgid:warn] [pid 20555:tid 140727485777664] mod_fcgid: cleanup zombie process 20789
+[Tue Apr 30 14:33:50.992527 2013] [mpm_event:notice] [pid 20553:tid 140727485777664] AH00491: caught SIGTERM, shutting down
+[Tue Apr 30 14:33:52.479006 2013] [ssl:notice] [pid 20825:tid 140626198013696] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 14:33:52.522028 2013] [ssl:notice] [pid 20826:tid 140626198013696] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 14:33:52.577254 2013] [ssl:warn] [pid 20826:tid 140626198013696] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Tue Apr 30 14:33:52.579073 2013] [mpm_event:notice] [pid 20826:tid 140626198013696] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Tue Apr 30 14:33:52.579099 2013] [core:notice] [pid 20826:tid 140626198013696] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Tue Apr 30 14:34:00.937454 2013] [fcgid:warn] [pid 20832:tid 140625999550208] [client 172.23.3.177:54018] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 14:34:00.937507 2013] [core:error] [pid 20832:tid 140625999550208] [client 172.23.3.177:54018] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 14:34:09.684990 2013] [fcgid:warn] [pid 20828:tid 140626198013696] mod_fcgid: cleanup zombie process 20922
+[Tue Apr 30 14:35:08.255001 2013] [fcgid:warn] [pid 20832:tid 140625884161792] [client 172.23.3.177:54156] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 14:35:08.255058 2013] [core:error] [pid 20832:tid 140625884161792] [client 172.23.3.177:54156] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 14:35:11.003015 2013] [fcgid:warn] [pid 20828:tid 140626198013696] mod_fcgid: cleanup zombie process 21043
+[Tue Apr 30 14:35:30.329598 2013] [fcgid:warn] [pid 20832:tid 140625800242944] [client 172.23.3.177:54183] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 14:35:30.329704 2013] [core:error] [pid 20832:tid 140625800242944] [client 172.23.3.177:54183] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 14:35:39.085119 2013] [fcgid:warn] [pid 20828:tid 140626198013696] mod_fcgid: cleanup zombie process 21054
+[Tue Apr 30 14:36:02.371362 2013] [fcgid:warn] [pid 20832:tid 140625957590784] [client 172.23.3.177:54224] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 14:36:02.371415 2013] [core:error] [pid 20832:tid 140625957590784] [client 172.23.3.177:54224] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 14:36:08.119628 2013] [fcgid:warn] [pid 20828:tid 140626198013696] mod_fcgid: cleanup zombie process 21064
+[Tue Apr 30 14:40:32.783126 2013] [fcgid:warn] [pid 20832:tid 140625989060352] [client 172.23.3.177:54560] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 14:40:32.783180 2013] [core:error] [pid 20832:tid 140625989060352] [client 172.23.3.177:54560] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 14:40:38.532779 2013] [fcgid:warn] [pid 20828:tid 140626198013696] mod_fcgid: cleanup zombie process 21152
+[Tue Apr 30 14:41:13.294216 2013] [fcgid:warn] [pid 20830:tid 140625968080640] [client 172.23.3.177:54642] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 14:41:13.309088 2013] [core:error] [pid 20830:tid 140625968080640] [client 172.23.3.177:54642] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 14:41:19.047339 2013] [fcgid:warn] [pid 20828:tid 140626198013696] mod_fcgid: cleanup zombie process 21191
+[Tue Apr 30 14:41:21.529444 2013] [fcgid:warn] [pid 20832:tid 140625957590784] [client 172.23.3.177:54661] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 14:41:21.529497 2013] [core:error] [pid 20832:tid 140625957590784] [client 172.23.3.177:54661] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 14:41:30.286061 2013] [fcgid:warn] [pid 20828:tid 140626198013696] mod_fcgid: cleanup zombie process 21199
+[Tue Apr 30 14:41:49.755163 2013] [fcgid:warn] [pid 20829:tid 140625821222656] [client 172.23.3.177:54721] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 14:41:49.755217 2013] [core:error] [pid 20829:tid 140625821222656] [client 172.23.3.177:54721] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 14:41:58.504846 2013] [fcgid:warn] [pid 20828:tid 140626198013696] mod_fcgid: cleanup zombie process 21245
+[Tue Apr 30 14:42:02.611338 2013] [fcgid:warn] [pid 20829:tid 140626115823360] [client 172.23.3.177:54740] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 14:42:02.611395 2013] [core:error] [pid 20829:tid 140626115823360] [client 172.23.3.177:54740] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 14:42:08.361907 2013] [fcgid:warn] [pid 20828:tid 140626198013696] mod_fcgid: cleanup zombie process 21251
+[Tue Apr 30 14:43:58.974397 2013] [mpm_event:notice] [pid 20826:tid 140626198013696] AH00491: caught SIGTERM, shutting down
+[Tue Apr 30 14:44:00.335829 2013] [ssl:notice] [pid 21302:tid 140685227812608] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 14:44:00.416653 2013] [ssl:notice] [pid 21303:tid 140685227812608] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 14:44:00.513503 2013] [ssl:warn] [pid 21303:tid 140685227812608] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Tue Apr 30 14:44:00.515317 2013] [mpm_event:notice] [pid 21303:tid 140685227812608] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Tue Apr 30 14:44:00.515342 2013] [core:notice] [pid 21303:tid 140685227812608] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Tue Apr 30 14:44:17.120828 2013] [fcgid:warn] [pid 21309:tid 140684992411392] [client 172.23.3.177:54897] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 14:44:17.120882 2013] [core:error] [pid 21309:tid 140684992411392] [client 172.23.3.177:54897] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 14:44:25.871208 2013] [fcgid:warn] [pid 21305:tid 140685227812608] mod_fcgid: cleanup zombie process 21535
+[Tue Apr 30 15:02:57.864950 2013] [fcgid:warn] [pid 21500:tid 140685013391104] [client 172.23.3.177:56442] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:02:57.865006 2013] [core:error] [pid 21500:tid 140685013391104] [client 172.23.3.177:56442] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:03:03.610072 2013] [fcgid:warn] [pid 21305:tid 140685227812608] mod_fcgid: cleanup zombie process 22010
+[Tue Apr 30 15:05:18.542085 2013] [fcgid:warn] [pid 21309:tid 140684950451968] [client 172.23.3.177:56621] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:05:18.542140 2013] [core:error] [pid 21309:tid 140684950451968] [client 172.23.3.177:56621] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:05:27.292942 2013] [fcgid:warn] [pid 21305:tid 140685227812608] mod_fcgid: cleanup zombie process 22151
+[Tue Apr 30 15:05:29.053870 2013] [fcgid:warn] [pid 21500:tid 140685076330240] [client 172.23.3.177:56641] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:05:29.053921 2013] [core:error] [pid 21500:tid 140685076330240] [client 172.23.3.177:56641] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:05:37.807084 2013] [fcgid:warn] [pid 21305:tid 140685227812608] mod_fcgid: cleanup zombie process 22157
+[Tue Apr 30 15:06:05.132197 2013] [fcgid:warn] [pid 21309:tid 140685034370816] [client 172.23.3.177:56688] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:06:05.132252 2013] [core:error] [pid 21309:tid 140685034370816] [client 172.23.3.177:56688] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:06:13.884475 2013] [fcgid:warn] [pid 21305:tid 140685227812608] mod_fcgid: cleanup zombie process 22195
+[Tue Apr 30 15:12:30.210132 2013] [mpm_event:notice] [pid 21303:tid 140685227812608] AH00491: caught SIGTERM, shutting down
+[Tue Apr 30 15:12:31.025398 2013] [ssl:notice] [pid 22360:tid 140383000078080] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 15:12:31.056260 2013] [ssl:notice] [pid 22361:tid 140383000078080] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 15:12:31.082786 2013] [ssl:warn] [pid 22361:tid 140383000078080] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Tue Apr 30 15:12:31.084575 2013] [mpm_event:notice] [pid 22361:tid 140383000078080] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Tue Apr 30 15:12:31.084599 2013] [core:notice] [pid 22361:tid 140383000078080] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Tue Apr 30 15:12:42.126378 2013] [fcgid:warn] [pid 22367:tid 140382807516928] [client 172.23.3.177:57097] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:12:42.126435 2013] [core:error] [pid 22367:tid 140382807516928] [client 172.23.3.177:57097] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:12:50.873976 2013] [fcgid:warn] [pid 22363:tid 140383000078080] mod_fcgid: cleanup zombie process 22460
+[Tue Apr 30 15:13:55.928842 2013] [fcgid:warn] [pid 22462:tid 140382807516928] [client 172.23.3.177:57196] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:13:55.928902 2013] [core:error] [pid 22462:tid 140382807516928] [client 172.23.3.177:57196] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:14:01.676575 2013] [fcgid:warn] [pid 22363:tid 140383000078080] mod_fcgid: cleanup zombie process 22549
+[Tue Apr 30 15:14:02.394878 2013] [fcgid:warn] [pid 22367:tid 140382734087936] [client 172.23.3.177:57209] mod_fcgid: stderr: Undefined subroutine &main::InsertCustom called at /kSCproxy/WEB/repo/json/index.pl line 111., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:14:02.394926 2013] [core:error] [pid 22367:tid 140382734087936] [client 172.23.3.177:57209] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:14:07.682872 2013] [fcgid:warn] [pid 22363:tid 140383000078080] mod_fcgid: cleanup zombie process 22455
+[Tue Apr 30 15:14:34.313954 2013] [fcgid:warn] [pid 22462:tid 140382734087936] [client 172.23.3.177:57245] mod_fcgid: stderr: Undefined subroutine &main::InsertCustom called at /kSCproxy/WEB/repo/json/index.pl line 111., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:14:34.314027 2013] [core:error] [pid 22462:tid 140382734087936] [client 172.23.3.177:57245] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:14:43.227849 2013] [fcgid:warn] [pid 22363:tid 140383000078080] mod_fcgid: cleanup zombie process 22693
+[Tue Apr 30 15:21:28.193311 2013] [mpm_event:notice] [pid 22361:tid 140383000078080] AH00491: caught SIGTERM, shutting down
+[Tue Apr 30 15:21:29.794846 2013] [ssl:notice] [pid 22815:tid 139677969164032] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 15:21:29.870421 2013] [ssl:notice] [pid 22816:tid 139677969164032] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 15:21:29.903786 2013] [ssl:warn] [pid 22816:tid 139677969164032] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Tue Apr 30 15:21:29.905605 2013] [mpm_event:notice] [pid 22816:tid 139677969164032] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Tue Apr 30 15:21:29.905628 2013] [core:notice] [pid 22816:tid 139677969164032] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Tue Apr 30 15:21:46.188895 2013] [fcgid:warn] [pid 22822:tid 139677761791744] [client 172.23.3.177:57716] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:21:46.188966 2013] [core:error] [pid 22822:tid 139677761791744] [client 172.23.3.177:57716] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:21:54.931892 2013] [fcgid:warn] [pid 22818:tid 139677969164032] mod_fcgid: cleanup zombie process 22924
+[Tue Apr 30 15:22:27.955514 2013] [fcgid:warn] [pid 22820:tid 139677698852608] [client 172.23.3.177:57774] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:22:27.955561 2013] [core:error] [pid 22820:tid 139677698852608] [client 172.23.3.177:57774] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:22:36.703131 2013] [fcgid:warn] [pid 22818:tid 139677969164032] mod_fcgid: cleanup zombie process 22993
+[Tue Apr 30 15:23:53.126832 2013] [fcgid:warn] [pid 22925:tid 139677772281600] [client 172.23.3.177:57864] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:23:53.140279 2013] [core:error] [pid 22925:tid 139677772281600] [client 172.23.3.177:57864] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:23:58.872547 2013] [fcgid:warn] [pid 22818:tid 139677969164032] mod_fcgid: cleanup zombie process 23019
+[Tue Apr 30 15:27:16.846089 2013] [fcgid:warn] [pid 22925:tid 139677604443904] [client 172.23.3.177:58090] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:27:16.846151 2013] [core:error] [pid 22925:tid 139677604443904] [client 172.23.3.177:58090] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:27:22.591846 2013] [fcgid:warn] [pid 22818:tid 139677969164032] mod_fcgid: cleanup zombie process 23195
+[Tue Apr 30 15:27:46.872189 2013] [mpm_event:notice] [pid 22816:tid 139677969164032] AH00491: caught SIGTERM, shutting down
+[Tue Apr 30 15:27:48.664115 2013] [ssl:notice] [pid 23210:tid 140545686583040] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 15:27:48.690143 2013] [ssl:notice] [pid 23211:tid 140545686583040] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 15:27:48.773755 2013] [ssl:warn] [pid 23211:tid 140545686583040] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Tue Apr 30 15:27:48.775571 2013] [mpm_event:notice] [pid 23211:tid 140545686583040] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Tue Apr 30 15:27:48.775597 2013] [core:notice] [pid 23211:tid 140545686583040] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Tue Apr 30 15:28:07.196432 2013] [fcgid:warn] [pid 23217:tid 140545489893120] [client 172.23.3.177:58156] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:28:07.196477 2013] [core:error] [pid 23217:tid 140545489893120] [client 172.23.3.177:58156] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:28:13.547285 2013] [fcgid:warn] [pid 23215:tid 140545479403264] [client 172.23.3.177:58158] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:28:13.547345 2013] [core:error] [pid 23215:tid 140545479403264] [client 172.23.3.177:58158] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:28:19.287864 2013] [fcgid:warn] [pid 23213:tid 140545686583040] mod_fcgid: cleanup zombie process 23355
+[Tue Apr 30 15:28:41.962005 2013] [fcgid:warn] [pid 23217:tid 140545290585856] [client 172.23.3.177:58195] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:28:41.962066 2013] [core:error] [pid 23217:tid 140545290585856] [client 172.23.3.177:58195] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:28:47.710402 2013] [fcgid:warn] [pid 23213:tid 140545686583040] mod_fcgid: cleanup zombie process 23367
+[Tue Apr 30 15:38:29.604084 2013] [mpm_event:notice] [pid 23211:tid 140545686583040] AH00491: caught SIGTERM, shutting down
+[Tue Apr 30 15:38:30.996563 2013] [ssl:notice] [pid 23660:tid 140593034520320] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 15:38:31.043964 2013] [ssl:notice] [pid 23661:tid 140593034520320] AH01886: SSL FIPS mode disabled
+[Tue Apr 30 15:38:31.086813 2013] [ssl:warn] [pid 23661:tid 140593034520320] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Tue Apr 30 15:38:31.088608 2013] [mpm_event:notice] [pid 23661:tid 140593034520320] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Tue Apr 30 15:38:31.088632 2013] [core:notice] [pid 23661:tid 140593034520320] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Tue Apr 30 15:41:22.573327 2013] [fcgid:warn] [pid 23665:tid 140592837281536] [client 172.23.3.177:59363] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:41:22.573390 2013] [core:error] [pid 23665:tid 140592837281536] [client 172.23.3.177:59363] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:41:28.319363 2013] [fcgid:warn] [pid 23663:tid 140593034520320] mod_fcgid: cleanup zombie process 23798
+[Tue Apr 30 15:41:43.640523 2013] [fcgid:warn] [pid 23667:tid 140592669443840] [client 172.23.3.177:59430] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:41:43.640583 2013] [core:error] [pid 23667:tid 140592669443840] [client 172.23.3.177:59430] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:41:52.387860 2013] [fcgid:warn] [pid 23663:tid 140593034520320] mod_fcgid: cleanup zombie process 23811
+[Tue Apr 30 15:43:14.840643 2013] [fcgid:warn] [pid 23664:tid 140592700913408] [client 172.23.3.177:59563] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:43:14.840771 2013] [core:error] [pid 23664:tid 140592700913408] [client 172.23.3.177:59563] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:43:20.584902 2013] [fcgid:warn] [pid 23663:tid 140593034520320] mod_fcgid: cleanup zombie process 23862
+[Tue Apr 30 15:43:25.806541 2013] [fcgid:warn] [pid 23665:tid 140592774342400] [client 172.23.3.177:59579] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:43:25.806603 2013] [core:error] [pid 23665:tid 140592774342400] [client 172.23.3.177:59579] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:43:31.553510 2013] [fcgid:warn] [pid 23663:tid 140593034520320] mod_fcgid: cleanup zombie process 23872
+[Tue Apr 30 15:43:48.837172 2013] [fcgid:warn] [pid 23667:tid 140592711403264] [client 172.23.3.177:59611] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:43:48.837231 2013] [core:error] [pid 23667:tid 140592711403264] [client 172.23.3.177:59611] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 15:43:54.586444 2013] [fcgid:warn] [pid 23663:tid 140593034520320] mod_fcgid: cleanup zombie process 23891
+[Tue Apr 30 15:46:41.210838 2013] [fcgid:warn] [pid 23664:tid 140592952329984] [client 172.23.3.158:52126] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://172.23.3.177:8080/kVASySystemControl/
+[Tue Apr 30 15:46:41.210902 2013] [core:error] [pid 23664:tid 140592952329984] [client 172.23.3.158:52126] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/
+[Tue Apr 30 15:46:46.955657 2013] [fcgid:warn] [pid 23663:tid 140593034520320] mod_fcgid: cleanup zombie process 24039
+[Tue Apr 30 15:49:43.604643 2013] [fcgid:warn] [pid 23664:tid 140592826791680] [client 172.23.3.158:52252] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://172.23.3.177:8080/kVASySystemControl/
+[Tue Apr 30 15:49:43.604696 2013] [core:error] [pid 23664:tid 140592826791680] [client 172.23.3.158:52252] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/
+[Tue Apr 30 15:49:52.356784 2013] [fcgid:warn] [pid 23663:tid 140593034520320] mod_fcgid: cleanup zombie process 24116
+[Tue Apr 30 15:50:04.830109 2013] [fcgid:warn] [pid 23664:tid 140592784832256] [client 172.23.3.158:52276] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://172.23.3.177:8080/kVASySystemControl/
+[Tue Apr 30 15:50:04.830173 2013] [core:error] [pid 23664:tid 140592784832256] [client 172.23.3.158:52276] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/
+[Tue Apr 30 15:50:08.967880 2013] [fcgid:warn] [pid 23665:tid 140592816301824] [client 172.23.3.158:52278] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://172.23.3.177:8080/kVASySystemControl/
+[Tue Apr 30 15:50:08.967945 2013] [core:error] [pid 23665:tid 140592816301824] [client 172.23.3.158:52278] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/
+[Tue Apr 30 15:50:14.714747 2013] [fcgid:warn] [pid 23663:tid 140593034520320] mod_fcgid: cleanup zombie process 24133
+[Tue Apr 30 15:50:40.431393 2013] [fcgid:warn] [pid 24135:tid 140592858261248] [client 172.23.3.158:52309] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://172.23.3.177:8080/kVASySystemControl/
+[Tue Apr 30 15:50:40.431440 2013] [core:error] [pid 24135:tid 140592858261248] [client 172.23.3.158:52309] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/
+[Tue Apr 30 15:50:49.175404 2013] [fcgid:warn] [pid 23663:tid 140593034520320] mod_fcgid: cleanup zombie process 24184
+[Tue Apr 30 16:06:07.882415 2013] [fcgid:warn] [pid 24135:tid 140592847771392] [client 172.23.3.177:61514] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 16:06:07.882477 2013] [core:error] [pid 24135:tid 140592847771392] [client 172.23.3.177:61514] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 16:06:13.626719 2013] [fcgid:warn] [pid 23663:tid 140593034520320] mod_fcgid: cleanup zombie process 24926
+[Tue Apr 30 16:10:11.560985 2013] [fcgid:warn] [pid 24135:tid 140592826791680] [client 172.23.3.177:62058] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 16:10:11.561046 2013] [core:error] [pid 24135:tid 140592826791680] [client 172.23.3.177:62058] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 16:10:17.302854 2013] [fcgid:warn] [pid 23663:tid 140593034520320] mod_fcgid: cleanup zombie process 25076
+[Tue Apr 30 16:14:42.052192 2013] [fcgid:warn] [pid 23667:tid 140592774342400] [client 172.23.3.177:62470] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 16:14:42.052260 2013] [core:error] [pid 23667:tid 140592774342400] [client 172.23.3.177:62470] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 16:14:47.566169 2013] [fcgid:warn] [pid 24135:tid 140592774342400] [client 172.23.3.177:62472] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 16:14:47.566228 2013] [core:error] [pid 24135:tid 140592774342400] [client 172.23.3.177:62472] End of script output before headers: index.pl, referer: http://localhost:8080/kVASySystemControl/
+[Tue Apr 30 16:14:53.314082 2013] [fcgid:warn] [pid 23663:tid 140593034520320] mod_fcgid: cleanup zombie process 25316
+[Tue Apr 30 18:20:43.471134 2013] [fcgid:warn] [pid 24135:tid 140592658953984] [client 172.23.0.254:57237] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://172.23.3.177:8080/kVASySystemControl/
+[Tue Apr 30 18:20:43.471187 2013] [core:error] [pid 24135:tid 140592658953984] [client 172.23.0.254:57237] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/
+[Tue Apr 30 18:20:52.226942 2013] [fcgid:warn] [pid 23663:tid 140593034520320] mod_fcgid: cleanup zombie process 29176
+[Tue Apr 30 18:26:20.743822 2013] [fcgid:warn] [pid 24135:tid 140592837281536] [client 172.23.0.254:57683] mod_fcgid: stderr: DBD::Pg::st execute failed: FEHLER:  ung\xc3\xbcltige Byte-Sequenz f\xc3\xbcr Kodierung \xc2\xbbUTF8\xc2\xab: 0xb1 at /kSCproxy/MOD/postgre/kSCpostgre.pm line 91., referer: http://172.23.3.177:8080/kVASySystemControl/hosts.jsp
+[Tue Apr 30 18:26:56.514113 2013] [fcgid:warn] [pid 23667:tid 140592732382976] [client 172.23.0.254:57775] mod_fcgid: stderr: DBD::Pg::st execute failed: FEHLER:  ung\xc3\xbcltige Byte-Sequenz f\xc3\xbcr Kodierung \xc2\xbbUTF8\xc2\xab: 0xb1 at /kSCproxy/MOD/postgre/kSCpostgre.pm line 91., referer: http://172.23.3.177:8080/kVASySystemControl/hosts.jsp
+[Tue Apr 30 18:27:37.765683 2013] [fcgid:warn] [pid 24135:tid 140592669443840] [client 172.23.0.254:57841] mod_fcgid: stderr: DBD::Pg::st execute failed: FEHLER:  ung\xc3\xbcltige Byte-Sequenz f\xc3\xbcr Kodierung \xc2\xbbUTF8\xc2\xab: 0xb1 at /kSCproxy/MOD/postgre/kSCpostgre.pm line 91., referer: http://172.23.3.177:8080/kVASySystemControl/hosts.jsp
+[Tue Apr 30 18:27:41.953981 2013] [fcgid:warn] [pid 24135:tid 140592858261248] [client 172.23.0.254:57839] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://172.23.3.177:8080/kVASySystemControl/
+[Tue Apr 30 18:27:41.954031 2013] [core:error] [pid 24135:tid 140592858261248] [client 172.23.0.254:57839] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/
+[Tue Apr 30 18:27:50.273040 2013] [fcgid:warn] [pid 23665:tid 140592648464128] [client 172.23.0.254:57863] mod_fcgid: stderr: DBD::Pg::st execute failed: FEHLER:  ung\xc3\xbcltige Byte-Sequenz f\xc3\xbcr Kodierung \xc2\xbbUTF8\xc2\xab: 0xb1 at /kSCproxy/MOD/postgre/kSCpostgre.pm line 91., referer: http://172.23.3.177:8080/kVASySystemControl/hosts.jsp
+[Tue Apr 30 18:27:50.702616 2013] [fcgid:warn] [pid 23663:tid 140593034520320] mod_fcgid: cleanup zombie process 29469
+[Tue Apr 30 18:27:57.212365 2013] [fcgid:warn] [pid 23665:tid 140592627484416] [client 172.23.0.254:57871] mod_fcgid: stderr: DBD::Pg::st execute failed: FEHLER:  ung\xc3\xbcltige Byte-Sequenz f\xc3\xbcr Kodierung \xc2\xbbUTF8\xc2\xab: 0xb1 at /kSCproxy/MOD/postgre/kSCpostgre.pm line 91., referer: http://172.23.3.177:8080/kVASySystemControl/hosts.jsp
+[Tue Apr 30 18:28:01.477805 2013] [fcgid:warn] [pid 23665:tid 140592847771392] [client 172.23.0.254:57871] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://172.23.3.177:8080/kVASySystemControl/
+[Tue Apr 30 18:28:01.477856 2013] [core:error] [pid 23665:tid 140592847771392] [client 172.23.0.254:57871] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/
+[Tue Apr 30 18:28:05.692889 2013] [fcgid:warn] [pid 24135:tid 140592700913408] [client 172.23.0.254:57893] mod_fcgid: stderr: DBD::Pg::st execute failed: FEHLER:  ung\xc3\xbcltige Byte-Sequenz f\xc3\xbcr Kodierung \xc2\xbbUTF8\xc2\xab: 0xb1 at /kSCproxy/MOD/postgre/kSCpostgre.pm line 91., referer: http://172.23.3.177:8080/kVASySystemControl/hosts.jsp
+[Tue Apr 30 18:28:07.227607 2013] [fcgid:warn] [pid 23663:tid 140593034520320] mod_fcgid: cleanup zombie process 29494
+[Tue Apr 30 18:28:10.828665 2013] [fcgid:warn] [pid 23664:tid 140592784832256] [client 172.23.0.254:57899] mod_fcgid: stderr: DBD::Pg::st execute failed: FEHLER:  ung\xc3\xbcltige Byte-Sequenz f\xc3\xbcr Kodierung \xc2\xbbUTF8\xc2\xab: 0xb1 at /kSCproxy/MOD/postgre/kSCpostgre.pm line 91., referer: http://172.23.3.177:8080/kVASySystemControl/hosts.jsp
+[Tue Apr 30 18:30:31.323045 2013] [fcgid:warn] [pid 23664:tid 140592721893120] [client 172.23.0.254:58013] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://172.23.3.177:8080/kVASySystemControl/
+[Tue Apr 30 18:30:31.323101 2013] [core:error] [pid 23664:tid 140592721893120] [client 172.23.0.254:58013] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/
+[Tue Apr 30 18:30:37.073098 2013] [fcgid:warn] [pid 23663:tid 140593034520320] mod_fcgid: cleanup zombie process 29583
+[Tue Apr 30 18:30:47.194651 2013] [fcgid:warn] [pid 24135:tid 140592669443840] [client 172.23.0.254:58049] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://172.23.3.177:8080/kVASySystemControl/
+[Tue Apr 30 18:30:47.194701 2013] [core:error] [pid 24135:tid 140592669443840] [client 172.23.0.254:58049] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/
+[Tue Apr 30 18:30:55.946640 2013] [fcgid:warn] [pid 23663:tid 140593034520320] mod_fcgid: cleanup zombie process 29602
+[Tue Apr 30 18:31:15.733996 2013] [fcgid:warn] [pid 24135:tid 140592805811968] [client 172.23.0.254:58079] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://172.23.3.177:8080/kVASySystemControl/
+[Tue Apr 30 18:31:15.734041 2013] [core:error] [pid 24135:tid 140592805811968] [client 172.23.0.254:58079] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/
+[Tue Apr 30 18:31:24.483477 2013] [fcgid:warn] [pid 23663:tid 140593034520320] mod_fcgid: cleanup zombie process 29618
+[Tue Apr 30 18:31:35.424474 2013] [fcgid:warn] [pid 24135:tid 140592753362688] [client 172.23.0.254:58121] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://172.23.3.177:8080/kVASySystemControl/
+[Tue Apr 30 18:31:35.424525 2013] [core:error] [pid 24135:tid 140592753362688] [client 172.23.0.254:58121] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/
+[Tue Apr 30 18:31:41.176424 2013] [fcgid:warn] [pid 23663:tid 140593034520320] mod_fcgid: cleanup zombie process 29638

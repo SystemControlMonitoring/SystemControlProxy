@@ -18,7 +18,7 @@ package kSCbasic;
 #                  Read Configuration                   #
 #                                                       #
 #########################################################
-open my $CF, '<', '/kSCcore/CFG/core.properties' or die "[". (localtime) ."] Kann Konfiguration '/kSCcore/CFG/core.properties' nicht öffnen!";
+open my $CF, '<', '/kSCproxy/CFG/proxy.properties' or die "[". (localtime) ."] Kann Konfiguration '/kSCproxy/CFG/proxy.properties' nicht öffnen!";
 my $properties = Config::Properties->new();
 $properties->load($CF);
 #########################################################
@@ -382,6 +382,11 @@ sub BuildScriptString {
     my $ctime = $a->ctime;
     my $out = $InputFile .":". $ctime;
     return ($out);
+}
+#
+sub GetBasicConfig {
+    my $gibc = $properties->splitToTree(qr/\./, 'config-base');
+    return $gibc;
 }
 #
 close ($CF);

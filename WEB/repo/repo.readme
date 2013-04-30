@@ -1,7 +1,7 @@
-<!--REPO_VERSION:2.130429-->
+<!--REPO_VERSION:2.130430-->
 
 Modul: <i><b>Repository</b></i><br>
-Version: <i><b>2.130429</b></i><br>
+Version: <i><b>2.130430</b></i><br>
 Comments: -
 <br></br>
 Format: <i><b>JSON</b></i><br>
@@ -10,6 +10,9 @@ Format: <i><b>JSON</b></i><br>
     <li><b>InsertDashboardAll</b> - Insert Standard Dashboard Links URL: <a href="/repo/json/?e=1&m=SW5zZXJ0RGFzaGJvYXJkQWxsKd8Hfg&u=c2JhcmVzZWw=Adhfg3">/repo/json/?e=1&m=SW5zZXJ0RGFzaGJvYXJkQWxsKd8Hfg&u=c2JhcmVzZWw=Adhfg3</a></li>
     <li><b>SelectDashboardAll</b> - List all Dashboard Links URL: <a href="/repo/json/?e=1&m=U2VsZWN0RGFzaGJvYXJkQWxsUhdjK8&u=c2JhcmVzZWw=Adhfg3">/repo/json/?e=1&m=U2VsZWN0RGFzaGJvYXJkQWxsUhdjK8&u=c2JhcmVzZWw=Adhfg3</a></li>
     <li><b>DeleteDashboardAll</b> - Delete all Dashboard Links URL: <a href="/repo/json/?e=1&m=RGVsZXRlRGFzaGJvYXJkQWxsJkl8Hd&u=c2JhcmVzZWw=Adhfg3">/repo/json/?e=1&m=RGVsZXRlRGFzaGJvYXJkQWxsJkl8Hd&u=c2JhcmVzZWw=Adhfg3</a></li>
+    <li><b>SelectConfig</b> - Select Configuration URL: <a href="/repo/json/?e=1&m=U2VsZWN0Q29uZmlnJk8Uhg&u=c2JhcmVzZWw=KjHu8s&m2=Q29uZmlnJq0OpP">/repo/json/?e=1&m=U2VsZWN0Q29uZmlnJk8Uhg&u=c2JhcmVzZWw=KjHu8s&m2=Q29uZmlnJq0OpP</a></li>
+    <li><b>InsertUpdateConfig</b> - Insert/Update Configuration URL: <a href="/repo/json/?e=1&m=SW5zZXJ0VXBkYXRlQ29uZmlnJkdul8&u=c2JhcmVzZWw=KjHu8s&m2=...">/repo/json/?e=1&m=SW5zZXJ0VXBkYXRlQ29uZmlnJkdul8&u=c2JhcmVzZWw=KjHu8s&m2=...</a></li>
+    <li><b>DeleteRepoAll</b> - Delete all Repo Entries URL: <a href="/repo/json/?e=1&m=RGVsZXRlUmVwb0FsbA==Jhdu8d&u=c2JhcmVzZWw=Adhfg3">/repo/json/?e=1&m=RGVsZXRlUmVwb0FsbA==Jhdu8d&u=c2JhcmVzZWw=Adhfg3</a></li>
 </ul>
 </font>
 <br>
@@ -19,6 +22,9 @@ Format: <i><b>XML</b></i><br>
     <li><b>InsertDashboardAll</b> - Insert Standard Dashboard Links URL: <a href="/repo/xml/?e=1&m=SW5zZXJ0RGFzaGJvYXJkQWxsKd8Hfg&u=c2JhcmVzZWw=Adhfg3">/repo/xml/?e=1&m=SW5zZXJ0RGFzaGJvYXJkQWxsKd8Hfg&u=c2JhcmVzZWw=Adhfg3</a></li>
     <li><b>SelectDashboardAll</b> - List all Dashboard Links URL: <a href="/repo/xml/?e=1&m=U2VsZWN0RGFzaGJvYXJkQWxsUhdjK8&u=c2JhcmVzZWw=Adhfg3">/repo/xml/?e=1&m=U2VsZWN0RGFzaGJvYXJkQWxsUhdjK8&u=c2JhcmVzZWw=Adhfg3</a></li>
     <li><b>DeleteDashboardAll</b> - Delete all Dashboard Links URL: <a href="/repo/xml/?e=1&m=RGVsZXRlRGFzaGJvYXJkQWxsJkl8Hd&u=c2JhcmVzZWw=Adhfg3">/repo/xml/?e=1&m=RGVsZXRlRGFzaGJvYXJkQWxsJkl8Hd&u=c2JhcmVzZWw=Adhfg3</a></li>
+    <li><b>SelectConfig</b> - Select Configuration URL: <a href="/repo/xml/?e=1&m=U2VsZWN0Q29uZmlnJk8Uhg&u=c2JhcmVzZWw=KjHu8s&m2=Q29uZmlnJq0OpP">/repo/xml/?e=1&m=U2VsZWN0Q29uZmlnJk8Uhg&u=c2JhcmVzZWw=KjHu8s&m2=Q29uZmlnJq0OpP</a></li>
+    <li><b>InsertUpdateConfig</b> - Insert/Update Configuration URL: <a href="/repo/xml/?e=1&m=SW5zZXJ0VXBkYXRlQ29uZmlnJkdul8&u=c2JhcmVzZWw=KjHu8s&m2=...">/repo/xml/?e=1&m=SW5zZXJ0VXBkYXRlQ29uZmlnJkdul8&u=c2JhcmVzZWw=KjHu8s&m2=...</a></li>
+    <li><b>DeleteRepoAll</b> - Delete all Repo Entries URL: <a href="/repo/xml/?e=1&m=RGVsZXRlUmVwb0FsbA==Jhdu8d&u=c2JhcmVzZWw=Adhfg3">/repo/xml/?e=1&m=RGVsZXRlUmVwb0FsbA==Jhdu8d&u=c2JhcmVzZWw=Adhfg3</a></li>
 </ul>
 </font>
 <br></br>

@@ -68,6 +68,56 @@ sub GetConfig {
     }
 }
 #
+sub DeleteRepoAll {
+    my $uid = shift;
+    # USER,MODUL,KEY
+    kSCpostgre::DeleteAllRepository($uid);
+    # Execution
+    print kSChtml::ContentType("xml");
+    print "<delete>COMPLETE</delete>";
+}
+#
+sub InsertUpdateConfig {
+    my $uid = shift;
+    my $mdl = shift;
+    my $key = shift;
+    my $val1 = shift;
+    my $val2 = shift;
+    my $val3 = shift;
+    #
+    kSCpostgre::InsertUpdateConfig($uid,$mdl,$key,$val1,$val2,$val3);
+    # Execution
+    print kSChtml::ContentType("xml");
+    print "<delete>INSERT_UPDATE</delete>";
+}
+#
+sub SelectConfig {
+    my $uid = shift;
+    my $mdl = shift;
+    my $base = kSCbasic::GetBasicConfig();
+    my $sth = kSCpostgre::SelectFromRepository($uid,$mdl);
+    print kSChtml::ContentType("xml");
+    print "<config>\n";
+    if ($sth->rows > 0) {
+	while ( (my $key,my $tv1,my $tv2, my $tv3) = $sth->fetchrow_array()) {
+	    print "   <para>\n";
+	    print "      <key>". $key ."</key>\n";
+	    print "      <action>". $tv1 ."</action>\n";
+	    print "      <desc>". kSCbasic::EncodeXML($tv2) ."</desc>\n";
+	    print "   </para>\n";
+	}
+    } else {
+	foreach my $key (keys %{$base}) {
+	    print "   <para>\n";
+	    print "      <key>". $base->{$key}->{'name'} ."</key>\n";
+	    print "      <action>". $base->{$key}->{'stat'} ."</action>\n";
+	    print "      <desc>". kSCbasic::EncodeXML($base->{$key}->{'desc'}) ."</desc>\n";
+	    print "   </para>\n";
+	}
+    }
+    print "</config>\n";
+}
+#
 #
 #
 #
@@ -86,6 +136,12 @@ if (kSCbasic::CheckUrlKeyValue("e","1","n") == 0) {
 	InsertDashboardAll(kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("u")));
     } elsif (kSCbasic::CheckUrlKeyValue("m","DeleteDashboardAll","y") == 0) {
 	DeleteDashboardAll(kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("u")));
+    } elsif (kSCbasic::CheckUrlKeyValue("m","DeleteRepoAll","y") == 0) {
+	DeleteRepoAll(kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("u")));
+    } elsif (kSCbasic::CheckUrlKeyValue("m","InsertUpdateConfig","y") == 0) {
+	InsertUpdateConfig(kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("u")),kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("m2")),kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("k")),kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("v1")),kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("v2")),kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("v3")));
+    } elsif (kSCbasic::CheckUrlKeyValue("m","SelectConfig","y") == 0) {
+	SelectConfig(kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("u")),kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("m2")));
     } else {
 	my $out = kSChtml::ContentType("xml");
 	$out.= kSCbasic::ErrorMessage("xml","1");
@@ -98,8 +154,12 @@ if (kSCbasic::CheckUrlKeyValue("e","1","n") == 0) {
 	InsertDashboardAll(kSCbasic::GetUrlKeyValue("u"));
     } elsif (kSCbasic::CheckUrlKeyValue("m","DeleteDashboardAll","n") == 0) {
 	DeleteDashboardAll(kSCbasic::GetUrlKeyValue("u"));
-    } elsif (kSCbasic::CheckUrlKeyValue("m","GetConfig","n") == 0) {
-	GetConfig(kSCbasic::GetUrlKeyValue("u"));
+    } elsif (kSCbasic::CheckUrlKeyValue("m","DeleteRepoAll","n") == 0) {
+	DeleteRepoAll(kSCbasic::GetUrlKeyValue("u"));
+    } elsif (kSCbasic::CheckUrlKeyValue("m","InsertUpdateConfig","n") == 0) {
+	InsertUpdateConfig(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("m2"),kSCbasic::GetUrlKeyValue("k"),kSCbasic::GetUrlKeyValue("v1"),kSCbasic::GetUrlKeyValue("v2"),kSCbasic::GetUrlKeyValue("v3"));
+    } elsif (kSCbasic::CheckUrlKeyValue("m","SelectConfig","n") == 0) {
+	SelectConfig(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("m2"));
     } else {
 	my $out = kSChtml::ContentType("xml");
 	$out.= kSCbasic::ErrorMessage("xml","2");
