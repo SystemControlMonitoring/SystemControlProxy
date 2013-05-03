@@ -30,11 +30,15 @@ sub Proxy {
     my $ah = kSChttp::GetArray($coreml,"json",$module,$uid);
     my $out;
     foreach my $key (keys %{$ah}) {
-	$out.= $ah->{$key}->{'result'};
+	my $data = $ah->{$key}->{'result'};
+	if ( $type ne "1" ) {
+	    $data =~ s/{\"/{\"NODE\":\"$key\",\"/g;
+	}
+	$out .= $data;
 	$out = substr($out, 1);
 	$out = substr($out, 0, -1);
     }
-    print kSChtml::ContentType("json");
+    print kSChtml::ContentType("text");
     if ( $type eq "1" ) {
 	print "{". $out ."}";
     } else {

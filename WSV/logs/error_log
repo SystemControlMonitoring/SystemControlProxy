@@ -983,3 +983,334 @@ Execution of /kSCproxy/WEB/repo/json/index.pl aborted due to compilation errors.
 [Tue Apr 30 18:31:35.424474 2013] [fcgid:warn] [pid 24135:tid 140592753362688] [client 172.23.0.254:58121] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://172.23.3.177:8080/kVASySystemControl/
 [Tue Apr 30 18:31:35.424525 2013] [core:error] [pid 24135:tid 140592753362688] [client 172.23.0.254:58121] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/
 [Tue Apr 30 18:31:41.176424 2013] [fcgid:warn] [pid 23663:tid 140593034520320] mod_fcgid: cleanup zombie process 29638
+[Thu May 02 11:32:23.365203 2013] [fcgid:warn] [pid 24135:tid 140592721893120] [client 172.23.3.158:57168] mod_fcgid: stderr: Use of uninitialized value in concatenation (.) or string at /kSCproxy/WEB/proxy/json/index.pl line 33.
+[Thu May 02 11:32:23.365233 2013] [fcgid:warn] [pid 24135:tid 140592721893120] [client 172.23.3.158:57168] mod_fcgid: stderr: substr outside of string at /kSCproxy/WEB/proxy/json/index.pl line 34.
+[Thu May 02 11:32:23.365240 2013] [fcgid:warn] [pid 24135:tid 140592721893120] [client 172.23.3.158:57168] mod_fcgid: stderr: Use of uninitialized value $out in substr at /kSCproxy/WEB/proxy/json/index.pl line 35.
+[Thu May 02 11:34:30.824985 2013] [mpm_event:notice] [pid 23661:tid 140593034520320] AH00491: caught SIGTERM, shutting down
+[Thu May 02 11:34:38.537066 2013] [ssl:notice] [pid 9568:tid 139634861750016] AH01886: SSL FIPS mode disabled
+[Thu May 02 11:34:38.594576 2013] [ssl:notice] [pid 9569:tid 139634861750016] AH01886: SSL FIPS mode disabled
+[Thu May 02 11:34:38.621242 2013] [ssl:warn] [pid 9569:tid 139634861750016] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Thu May 02 11:34:38.623077 2013] [mpm_event:notice] [pid 9569:tid 139634861750016] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Thu May 02 11:34:38.623102 2013] [core:notice] [pid 9569:tid 139634861750016] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Thu May 02 11:34:50.890374 2013] [mpm_event:notice] [pid 9569:tid 139634861750016] AH00491: caught SIGTERM, shutting down
+[Thu May 02 11:35:25.945664 2013] [ssl:notice] [pid 9670:tid 140462219904768] AH01886: SSL FIPS mode disabled
+[Thu May 02 11:35:25.976399 2013] [ssl:notice] [pid 9671:tid 140462219904768] AH01886: SSL FIPS mode disabled
+[Thu May 02 11:35:26.090571 2013] [ssl:warn] [pid 9671:tid 140462219904768] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Thu May 02 11:35:26.092400 2013] [mpm_event:notice] [pid 9671:tid 140462219904768] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Thu May 02 11:35:26.092422 2013] [core:notice] [pid 9671:tid 140462219904768] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Thu May 02 11:40:27.823168 2013] [mpm_event:notice] [pid 9671:tid 140462219904768] AH00491: caught SIGTERM, shutting down
+[Thu May 02 11:40:28.607229 2013] [ssl:notice] [pid 9942:tid 139776778471168] AH01886: SSL FIPS mode disabled
+[Thu May 02 11:40:28.650903 2013] [ssl:notice] [pid 9943:tid 139776778471168] AH01886: SSL FIPS mode disabled
+[Thu May 02 11:40:28.723991 2013] [ssl:warn] [pid 9943:tid 139776778471168] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Thu May 02 11:40:28.725787 2013] [mpm_event:notice] [pid 9943:tid 139776778471168] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Thu May 02 11:40:28.725816 2013] [core:notice] [pid 9943:tid 139776778471168] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Thu May 02 11:41:44.893191 2013] [mpm_event:notice] [pid 9943:tid 139776778471168] AH00491: caught SIGTERM, shutting down
+[Thu May 02 11:41:46.286474 2013] [ssl:notice] [pid 10097:tid 140689056462592] AH01886: SSL FIPS mode disabled
+[Thu May 02 11:41:46.417474 2013] [ssl:notice] [pid 10098:tid 140689056462592] AH01886: SSL FIPS mode disabled
+[Thu May 02 11:41:46.460257 2013] [ssl:warn] [pid 10098:tid 140689056462592] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Thu May 02 11:41:46.462094 2013] [mpm_event:notice] [pid 10098:tid 140689056462592] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Thu May 02 11:41:46.462122 2013] [core:notice] [pid 10098:tid 140689056462592] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Thu May 02 11:42:46.586561 2013] [mpm_event:notice] [pid 10098:tid 140689056462592] AH00491: caught SIGTERM, shutting down
+[Thu May 02 11:42:47.289344 2013] [ssl:notice] [pid 10258:tid 140429688551168] AH01886: SSL FIPS mode disabled
+[Thu May 02 11:42:47.318049 2013] [ssl:notice] [pid 10259:tid 140429688551168] AH01886: SSL FIPS mode disabled
+[Thu May 02 11:42:47.338942 2013] [ssl:warn] [pid 10259:tid 140429688551168] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Thu May 02 11:42:47.340730 2013] [mpm_event:notice] [pid 10259:tid 140429688551168] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Thu May 02 11:42:47.340753 2013] [core:notice] [pid 10259:tid 140429688551168] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Thu May 02 11:42:49.251489 2013] [fcgid:warn] [pid 10262:tid 140429606360832] [client 172.23.3.158:57593] mod_fcgid: stderr: Use of uninitialized value $out in substr at /kSCproxy/WEB/proxy/json/index.pl line 37., referer: http://172.23.10.249:6560/
+[Thu May 02 11:42:49.251528 2013] [fcgid:warn] [pid 10262:tid 140429606360832] [client 172.23.3.158:57593] mod_fcgid: stderr: substr outside of string at /kSCproxy/WEB/proxy/json/index.pl line 37., referer: http://172.23.10.249:6560/
+[Thu May 02 11:42:49.251536 2013] [fcgid:warn] [pid 10262:tid 140429606360832] [client 172.23.3.158:57593] mod_fcgid: stderr: Use of uninitialized value $out in substr at /kSCproxy/WEB/proxy/json/index.pl line 38., referer: http://172.23.10.249:6560/
+[Thu May 02 11:43:23.145497 2013] [mpm_event:notice] [pid 10259:tid 140429688551168] AH00491: caught SIGTERM, shutting down
+[Thu May 02 11:43:24.057640 2013] [ssl:notice] [pid 10354:tid 140261923796736] AH01886: SSL FIPS mode disabled
+[Thu May 02 11:43:24.083628 2013] [ssl:notice] [pid 10355:tid 140261923796736] AH01886: SSL FIPS mode disabled
+[Thu May 02 11:43:24.125210 2013] [ssl:warn] [pid 10355:tid 140261923796736] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Thu May 02 11:43:24.127037 2013] [mpm_event:notice] [pid 10355:tid 140261923796736] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Thu May 02 11:43:24.127063 2013] [core:notice] [pid 10355:tid 140261923796736] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Thu May 02 11:43:25.775767 2013] [fcgid:warn] [pid 10362:tid 140261841606400] [client 172.23.3.158:57619] mod_fcgid: stderr: Use of uninitialized value $out in substr at /kSCproxy/WEB/proxy/json/index.pl line 37., referer: http://172.23.10.249:6560/
+[Thu May 02 11:43:25.775806 2013] [fcgid:warn] [pid 10362:tid 140261841606400] [client 172.23.3.158:57619] mod_fcgid: stderr: substr outside of string at /kSCproxy/WEB/proxy/json/index.pl line 37., referer: http://172.23.10.249:6560/
+[Thu May 02 11:43:25.775813 2013] [fcgid:warn] [pid 10362:tid 140261841606400] [client 172.23.3.158:57619] mod_fcgid: stderr: Use of uninitialized value $out in substr at /kSCproxy/WEB/proxy/json/index.pl line 38., referer: http://172.23.10.249:6560/
+[Thu May 02 11:43:40.491341 2013] [mpm_event:notice] [pid 10355:tid 140261923796736] AH00491: caught SIGTERM, shutting down
+[Thu May 02 11:43:41.177618 2013] [ssl:notice] [pid 10458:tid 140051804149504] AH01886: SSL FIPS mode disabled
+[Thu May 02 11:43:41.248694 2013] [ssl:notice] [pid 10459:tid 140051804149504] AH01886: SSL FIPS mode disabled
+[Thu May 02 11:43:41.267592 2013] [ssl:warn] [pid 10459:tid 140051804149504] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Thu May 02 11:43:41.269375 2013] [mpm_event:notice] [pid 10459:tid 140051804149504] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Thu May 02 11:43:41.269408 2013] [core:notice] [pid 10459:tid 140051804149504] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Thu May 02 11:43:53.865117 2013] [mpm_event:notice] [pid 10459:tid 140051804149504] AH00491: caught SIGTERM, shutting down
+[Thu May 02 11:43:54.554532 2013] [ssl:notice] [pid 10556:tid 139880989832960] AH01886: SSL FIPS mode disabled
+[Thu May 02 11:43:54.595986 2013] [ssl:notice] [pid 10557:tid 139880989832960] AH01886: SSL FIPS mode disabled
+[Thu May 02 11:43:54.633232 2013] [ssl:warn] [pid 10557:tid 139880989832960] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Thu May 02 11:43:54.635043 2013] [mpm_event:notice] [pid 10557:tid 139880989832960] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Thu May 02 11:43:54.635068 2013] [core:notice] [pid 10557:tid 139880989832960] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Thu May 02 11:44:09.722047 2013] [mpm_event:notice] [pid 10557:tid 139880989832960] AH00491: caught SIGTERM, shutting down
+[Thu May 02 11:44:10.457324 2013] [ssl:notice] [pid 10763:tid 140716374779648] AH01886: SSL FIPS mode disabled
+[Thu May 02 11:44:10.506456 2013] [ssl:notice] [pid 10764:tid 140716374779648] AH01886: SSL FIPS mode disabled
+[Thu May 02 11:44:10.548913 2013] [ssl:warn] [pid 10764:tid 140716374779648] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Thu May 02 11:44:10.550701 2013] [mpm_event:notice] [pid 10764:tid 140716374779648] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Thu May 02 11:44:10.550726 2013] [core:notice] [pid 10764:tid 140716374779648] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Thu May 02 11:44:39.592587 2013] [mpm_event:notice] [pid 10764:tid 140716374779648] AH00491: caught SIGTERM, shutting down
+[Thu May 02 11:44:40.327767 2013] [ssl:notice] [pid 10861:tid 140547994019584] AH01886: SSL FIPS mode disabled
+[Thu May 02 11:44:40.379496 2013] [ssl:notice] [pid 10862:tid 140547994019584] AH01886: SSL FIPS mode disabled
+[Thu May 02 11:44:40.429591 2013] [ssl:warn] [pid 10862:tid 140547994019584] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Thu May 02 11:44:40.431362 2013] [mpm_event:notice] [pid 10862:tid 140547994019584] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Thu May 02 11:44:40.431389 2013] [core:notice] [pid 10862:tid 140547994019584] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Thu May 02 12:27:57.472443 2013] [mpm_event:notice] [pid 10862:tid 140547994019584] AH00491: caught SIGTERM, shutting down
+[Thu May 02 12:27:58.544562 2013] [ssl:notice] [pid 11998:tid 139659171936000] AH01886: SSL FIPS mode disabled
+[Thu May 02 12:27:58.590256 2013] [ssl:notice] [pid 11999:tid 139659171936000] AH01886: SSL FIPS mode disabled
+[Thu May 02 12:27:58.652246 2013] [ssl:warn] [pid 11999:tid 139659171936000] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Thu May 02 12:27:58.654063 2013] [mpm_event:notice] [pid 11999:tid 139659171936000] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Thu May 02 12:27:58.654091 2013] [core:notice] [pid 11999:tid 139659171936000] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Thu May 02 12:41:22.682392 2013] [mpm_event:notice] [pid 11999:tid 139659171936000] AH00491: caught SIGTERM, shutting down
+[Thu May 02 12:41:23.674732 2013] [ssl:notice] [pid 12458:tid 140224214480640] AH01886: SSL FIPS mode disabled
+[Thu May 02 12:41:23.709351 2013] [ssl:notice] [pid 12459:tid 140224214480640] AH01886: SSL FIPS mode disabled
+[Thu May 02 12:41:23.758182 2013] [ssl:warn] [pid 12459:tid 140224214480640] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Thu May 02 12:41:23.759974 2013] [mpm_event:notice] [pid 12459:tid 140224214480640] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Thu May 02 12:41:23.760008 2013] [core:notice] [pid 12459:tid 140224214480640] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Thu May 02 12:41:40.134910 2013] [mpm_event:notice] [pid 12459:tid 140224214480640] AH00491: caught SIGTERM, shutting down
+[Thu May 02 12:41:40.888462 2013] [ssl:notice] [pid 12590:tid 139743780480768] AH01886: SSL FIPS mode disabled
+[Thu May 02 12:41:40.951568 2013] [ssl:notice] [pid 12591:tid 139743780480768] AH01886: SSL FIPS mode disabled
+[Thu May 02 12:41:40.965489 2013] [ssl:warn] [pid 12591:tid 139743780480768] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Thu May 02 12:41:40.967314 2013] [mpm_event:notice] [pid 12591:tid 139743780480768] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Thu May 02 12:41:40.967337 2013] [core:notice] [pid 12591:tid 139743780480768] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Thu May 02 12:42:15.125689 2013] [mpm_event:notice] [pid 12591:tid 139743780480768] AH00491: caught SIGTERM, shutting down
+[Thu May 02 12:42:15.927830 2013] [ssl:notice] [pid 12720:tid 139987241789184] AH01886: SSL FIPS mode disabled
+[Thu May 02 12:42:15.989973 2013] [ssl:notice] [pid 12721:tid 139987241789184] AH01886: SSL FIPS mode disabled
+[Thu May 02 12:42:16.017471 2013] [ssl:warn] [pid 12721:tid 139987241789184] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Thu May 02 12:42:16.019271 2013] [mpm_event:notice] [pid 12721:tid 139987241789184] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Thu May 02 12:42:16.019295 2013] [core:notice] [pid 12721:tid 139987241789184] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Thu May 02 12:49:06.377150 2013] [mpm_event:notice] [pid 12721:tid 139987241789184] AH00491: caught SIGTERM, shutting down
+[Thu May 02 12:49:07.387830 2013] [ssl:notice] [pid 13056:tid 140254619567872] AH01886: SSL FIPS mode disabled
+[Thu May 02 12:49:07.421375 2013] [ssl:notice] [pid 13057:tid 140254619567872] AH01886: SSL FIPS mode disabled
+[Thu May 02 12:49:07.451172 2013] [ssl:warn] [pid 13057:tid 140254619567872] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Thu May 02 12:49:07.452984 2013] [mpm_event:notice] [pid 13057:tid 140254619567872] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Thu May 02 12:49:07.453011 2013] [core:notice] [pid 13057:tid 140254619567872] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+Global symbol "$key" requires explicit package name at /kSCproxy/WEB/proxy/json/index.pl line 41.
+Execution of /kSCproxy/WEB/proxy/json/index.pl aborted due to compilation errors.
+[Thu May 02 12:49:10.124334 2013] [fcgid:warn] [pid 13062:tid 140254537377536] (104)Connection reset by peer: [client 172.23.3.158:60240] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.10.249:6560/
+[Thu May 02 12:49:10.124388 2013] [core:error] [pid 13062:tid 140254537377536] [client 172.23.3.158:60240] End of script output before headers: index.pl, referer: http://172.23.10.249:6560/
+[Thu May 02 12:49:23.392342 2013] [mpm_event:notice] [pid 13057:tid 140254619567872] AH00491: caught SIGTERM, shutting down
+[Thu May 02 12:49:24.010142 2013] [ssl:notice] [pid 13153:tid 139739731404544] AH01886: SSL FIPS mode disabled
+[Thu May 02 12:49:24.028981 2013] [ssl:notice] [pid 13154:tid 139739731404544] AH01886: SSL FIPS mode disabled
+[Thu May 02 12:49:24.071785 2013] [ssl:warn] [pid 13154:tid 139739731404544] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Thu May 02 12:49:24.073582 2013] [mpm_event:notice] [pid 13154:tid 139739731404544] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Thu May 02 12:49:24.073608 2013] [core:notice] [pid 13154:tid 139739731404544] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Thu May 02 12:59:14.910683 2013] [mpm_event:notice] [pid 13154:tid 139739731404544] AH00491: caught SIGTERM, shutting down
+[Thu May 02 12:59:15.770078 2013] [ssl:notice] [pid 13562:tid 140667107591936] AH01886: SSL FIPS mode disabled
+[Thu May 02 12:59:15.848475 2013] [ssl:notice] [pid 13563:tid 140667107591936] AH01886: SSL FIPS mode disabled
+[Thu May 02 12:59:15.907935 2013] [ssl:warn] [pid 13563:tid 140667107591936] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Thu May 02 12:59:15.909730 2013] [mpm_event:notice] [pid 13563:tid 140667107591936] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Thu May 02 12:59:15.909754 2013] [core:notice] [pid 13563:tid 140667107591936] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Thu May 02 15:23:00.034136 2013] [mpm_event:notice] [pid 13563:tid 140667107591936] AH00491: caught SIGTERM, shutting down
+[Thu May 02 15:23:01.328809 2013] [ssl:notice] [pid 19034:tid 140089723279104] AH01886: SSL FIPS mode disabled
+[Thu May 02 15:23:01.382792 2013] [ssl:notice] [pid 19035:tid 140089723279104] AH01886: SSL FIPS mode disabled
+[Thu May 02 15:23:01.462249 2013] [ssl:warn] [pid 19035:tid 140089723279104] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Thu May 02 15:23:01.464059 2013] [mpm_event:notice] [pid 19035:tid 140089723279104] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Thu May 02 15:23:01.464082 2013] [core:notice] [pid 19035:tid 140089723279104] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Thu May 02 15:37:49.634484 2013] [fcgid:warn] [pid 19041:tid 140089541781248] [client 172.23.3.158:51277] mod_fcgid: stderr: Use of uninitialized value in subroutine entry at /kSCproxy/WEB/clientdirect/json/index.pl line 46., referer: http://172.23.10.249:6560/
+[Thu May 02 15:38:04.909809 2013] [fcgid:warn] [pid 19039:tid 140089478842112] [client 172.23.3.158:51291] mod_fcgid: stderr: Use of uninitialized value in subroutine entry at /kSCproxy/WEB/clientdirect/json/index.pl line 46., referer: http://172.23.10.249:6560/
+[Thu May 02 15:38:10.232774 2013] [mpm_event:notice] [pid 19035:tid 140089723279104] AH00491: caught SIGTERM, shutting down
+[Thu May 02 15:38:11.705301 2013] [ssl:notice] [pid 19641:tid 140554360825600] AH01886: SSL FIPS mode disabled
+[Thu May 02 15:38:11.746930 2013] [ssl:notice] [pid 19642:tid 140554360825600] AH01886: SSL FIPS mode disabled
+[Thu May 02 15:38:11.841193 2013] [ssl:warn] [pid 19642:tid 140554360825600] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Thu May 02 15:38:11.843019 2013] [mpm_event:notice] [pid 19642:tid 140554360825600] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Thu May 02 15:38:11.843043 2013] [core:notice] [pid 19642:tid 140554360825600] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Thu May 02 15:38:24.277819 2013] [fcgid:warn] [pid 19648:tid 140554257655552] [client 172.23.3.158:51306] mod_fcgid: stderr: Use of uninitialized value in subroutine entry at /kSCproxy/WEB/clientdirect/json/index.pl line 46., referer: http://172.23.10.249:6560/
+[Thu May 02 15:40:01.795949 2013] [mpm_event:notice] [pid 19642:tid 140554360825600] AH00491: caught SIGTERM, shutting down
+[Thu May 02 15:40:03.219320 2013] [ssl:notice] [pid 19759:tid 140617537812224] AH01886: SSL FIPS mode disabled
+[Thu May 02 15:40:03.282069 2013] [ssl:notice] [pid 19760:tid 140617537812224] AH01886: SSL FIPS mode disabled
+[Thu May 02 15:40:03.318561 2013] [ssl:warn] [pid 19760:tid 140617537812224] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Thu May 02 15:40:03.320364 2013] [mpm_event:notice] [pid 19760:tid 140617537812224] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Thu May 02 15:40:03.320386 2013] [core:notice] [pid 19760:tid 140617537812224] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Thu May 02 15:40:06.707321 2013] [fcgid:warn] [pid 19764:tid 140617445132032] [client 172.23.3.158:51395] mod_fcgid: stderr: Use of uninitialized value $out in concatenation (.) or string at /kSCproxy/WEB/clientdirect/json/index.pl line 44., referer: http://172.23.10.249:6560/
+[Thu May 02 15:41:18.532241 2013] [mpm_event:notice] [pid 19760:tid 140617537812224] AH00491: caught SIGTERM, shutting down
+[Thu May 02 15:41:19.795709 2013] [ssl:notice] [pid 19878:tid 139691244435200] AH01886: SSL FIPS mode disabled
+[Thu May 02 15:41:19.854137 2013] [ssl:notice] [pid 19879:tid 139691244435200] AH01886: SSL FIPS mode disabled
+[Thu May 02 15:41:19.920542 2013] [ssl:warn] [pid 19879:tid 139691244435200] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Thu May 02 15:41:19.922342 2013] [mpm_event:notice] [pid 19879:tid 139691244435200] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Thu May 02 15:41:19.922365 2013] [core:notice] [pid 19879:tid 139691244435200] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+Global symbol "$info" requires explicit package name at /kSCproxy/MOD/http/kSChttp.pm line 57.
+Compilation failed in require at /kSCproxy/WEB/clientdirect/json/index.pl line 11.
+BEGIN failed--compilation aborted at /kSCproxy/WEB/clientdirect/json/index.pl line 11.
+[Thu May 02 15:41:23.585509 2013] [fcgid:warn] [pid 19885:tid 139691162244864] (104)Connection reset by peer: [client 172.23.3.158:51453] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.10.249:6560/
+[Thu May 02 15:41:23.585570 2013] [core:error] [pid 19885:tid 139691162244864] [client 172.23.3.158:51453] End of script output before headers: index.pl, referer: http://172.23.10.249:6560/
+[Thu May 02 15:41:46.420603 2013] [mpm_event:notice] [pid 19879:tid 139691244435200] AH00491: caught SIGTERM, shutting down
+[Thu May 02 15:41:47.715369 2013] [ssl:notice] [pid 19983:tid 140193498212096] AH01886: SSL FIPS mode disabled
+[Thu May 02 15:41:47.762298 2013] [ssl:notice] [pid 19984:tid 140193498212096] AH01886: SSL FIPS mode disabled
+[Thu May 02 15:41:47.790864 2013] [ssl:warn] [pid 19984:tid 140193498212096] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Thu May 02 15:41:47.792647 2013] [mpm_event:notice] [pid 19984:tid 140193498212096] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Thu May 02 15:41:47.792670 2013] [core:notice] [pid 19984:tid 140193498212096] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Thu May 02 15:41:51.697240 2013] [fcgid:warn] [pid 19990:tid 140193395042048] [client 172.23.3.158:51473] mod_fcgid: stderr: Use of uninitialized value $out in concatenation (.) or string at /kSCproxy/WEB/clientdirect/json/index.pl line 44., referer: http://172.23.10.249:6560/
+[Thu May 02 15:42:26.642300 2013] [mpm_event:notice] [pid 19984:tid 140193498212096] AH00491: caught SIGTERM, shutting down
+[Thu May 02 15:42:27.839599 2013] [ssl:notice] [pid 20113:tid 140628193429248] AH01886: SSL FIPS mode disabled
+[Thu May 02 15:42:27.924669 2013] [ssl:notice] [pid 20114:tid 140628193429248] AH01886: SSL FIPS mode disabled
+[Thu May 02 15:42:27.947013 2013] [ssl:warn] [pid 20114:tid 140628193429248] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Thu May 02 15:42:27.948791 2013] [mpm_event:notice] [pid 20114:tid 140628193429248] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Thu May 02 15:42:27.948819 2013] [core:notice] [pid 20114:tid 140628193429248] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Thu May 02 15:42:31.048407 2013] [fcgid:warn] [pid 20120:tid 140628023305984] [client 172.23.3.158:51500] mod_fcgid: stderr: Use of uninitialized value $out in concatenation (.) or string at /kSCproxy/WEB/clientdirect/json/index.pl line 44., referer: http://172.23.10.249:6560/
+[Thu May 02 15:42:37.533321 2013] [fcgid:warn] [pid 20120:tid 140628002326272] [client 172.23.3.158:51509] mod_fcgid: stderr: Use of uninitialized value $out in concatenation (.) or string at /kSCproxy/WEB/clientdirect/json/index.pl line 44., referer: http://172.23.10.249:6560/
+[Thu May 02 15:43:12.063771 2013] [mpm_event:notice] [pid 20114:tid 140628193429248] AH00491: caught SIGTERM, shutting down
+[Thu May 02 15:43:13.328005 2013] [ssl:notice] [pid 20219:tid 140088928999168] AH01886: SSL FIPS mode disabled
+[Thu May 02 15:43:13.363954 2013] [ssl:notice] [pid 20220:tid 140088928999168] AH01886: SSL FIPS mode disabled
+[Thu May 02 15:43:13.396143 2013] [ssl:warn] [pid 20220:tid 140088928999168] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Thu May 02 15:43:13.397922 2013] [mpm_event:notice] [pid 20220:tid 140088928999168] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Thu May 02 15:43:13.397949 2013] [core:notice] [pid 20220:tid 140088928999168] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Thu May 02 15:43:17.246410 2013] [fcgid:warn] [pid 20224:tid 140088836318976] [client 172.23.3.158:51539] mod_fcgid: stderr: Can't use string ("http://172.23.10.249:6565/cinfo/") as a HASH ref while "strict refs" in use at /kSCproxy/WEB/clientdirect/json/index.pl line 31., referer: http://172.23.10.249:6560/
+[Thu May 02 15:43:17.246482 2013] [core:error] [pid 20224:tid 140088836318976] [client 172.23.3.158:51539] End of script output before headers: index.pl, referer: http://172.23.10.249:6560/
+[Thu May 02 15:43:26.165413 2013] [fcgid:warn] [pid 20222:tid 140088928999168] mod_fcgid: cleanup zombie process 20311
+[Thu May 02 15:52:28.575520 2013] [fcgid:warn] [pid 20224:tid 140088746964736] [client 172.23.3.158:51968] mod_fcgid: stderr: Can't use string ("http://172.23.10.249:6565/cinfo/") as a HASH ref while "strict refs" in use at /kSCproxy/WEB/clientdirect/json/index.pl line 31., referer: http://172.23.10.249:6560/
+[Thu May 02 15:52:28.575589 2013] [core:error] [pid 20224:tid 140088746964736] [client 172.23.3.158:51968] End of script output before headers: index.pl, referer: http://172.23.10.249:6560/
+[Thu May 02 15:52:37.494176 2013] [fcgid:warn] [pid 20222:tid 140088928999168] mod_fcgid: cleanup zombie process 20583
+[Thu May 02 15:53:49.902265 2013] [mpm_event:notice] [pid 20220:tid 140088928999168] AH00491: caught SIGTERM, shutting down
+[Thu May 02 15:53:51.179477 2013] [ssl:notice] [pid 20606:tid 139780610623232] AH01886: SSL FIPS mode disabled
+[Thu May 02 15:53:51.274690 2013] [ssl:notice] [pid 20607:tid 139780610623232] AH01886: SSL FIPS mode disabled
+[Thu May 02 15:53:51.366101 2013] [ssl:warn] [pid 20607:tid 139780610623232] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Thu May 02 15:53:51.367896 2013] [mpm_event:notice] [pid 20607:tid 139780610623232] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Thu May 02 15:53:51.367920 2013] [core:notice] [pid 20607:tid 139780610623232] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Thu May 02 15:53:55.005360 2013] [fcgid:warn] [pid 20613:tid 139780528432896] [client 172.23.3.158:52043] mod_fcgid: stderr: Can't use string ("Y2FybG8teC5zaXYuZGU=Hjd876 : htt") as a HASH ref while "strict refs" in use at /kSCproxy/WEB/clientdirect/json/index.pl line 31., referer: http://172.23.10.249:6560/
+[Thu May 02 15:53:55.005433 2013] [core:error] [pid 20613:tid 139780528432896] [client 172.23.3.158:52043] End of script output before headers: index.pl, referer: http://172.23.10.249:6560/
+[Thu May 02 15:54:00.919873 2013] [fcgid:warn] [pid 20609:tid 139780610623232] mod_fcgid: cleanup zombie process 20696
+[Thu May 02 15:54:52.443572 2013] [mpm_event:notice] [pid 20607:tid 139780610623232] AH00491: caught SIGTERM, shutting down
+[Thu May 02 15:54:53.818331 2013] [ssl:notice] [pid 20816:tid 140606687311616] AH01886: SSL FIPS mode disabled
+[Thu May 02 15:54:53.857226 2013] [ssl:notice] [pid 20817:tid 140606687311616] AH01886: SSL FIPS mode disabled
+[Thu May 02 15:54:53.888169 2013] [ssl:warn] [pid 20817:tid 140606687311616] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Thu May 02 15:54:53.889972 2013] [mpm_event:notice] [pid 20817:tid 140606687311616] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Thu May 02 15:54:53.890002 2013] [core:notice] [pid 20817:tid 140606687311616] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Thu May 02 15:54:58.354346 2013] [fcgid:warn] [pid 20823:tid 140606594631424] [client 172.23.3.158:52097] mod_fcgid: stderr: Can't use string ("carlo-x.siv.de : http://172.23.1") as a HASH ref while "strict refs" in use at /kSCproxy/WEB/clientdirect/json/index.pl line 31., referer: http://172.23.10.249:6560/
+[Thu May 02 15:54:58.354416 2013] [core:error] [pid 20823:tid 140606594631424] [client 172.23.3.158:52097] End of script output before headers: index.pl, referer: http://172.23.10.249:6560/
+[Thu May 02 15:55:07.272292 2013] [fcgid:warn] [pid 20819:tid 140606687311616] mod_fcgid: cleanup zombie process 20906
+[Thu May 02 15:55:18.091988 2013] [mpm_event:notice] [pid 20817:tid 140606687311616] AH00491: caught SIGTERM, shutting down
+[Thu May 02 15:55:19.675697 2013] [ssl:notice] [pid 20916:tid 140163381917440] AH01886: SSL FIPS mode disabled
+[Thu May 02 15:55:19.711445 2013] [ssl:notice] [pid 20917:tid 140163381917440] AH01886: SSL FIPS mode disabled
+[Thu May 02 15:55:19.755861 2013] [ssl:warn] [pid 20917:tid 140163381917440] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Thu May 02 15:55:19.757641 2013] [mpm_event:notice] [pid 20917:tid 140163381917440] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Thu May 02 15:55:19.757664 2013] [core:notice] [pid 20917:tid 140163381917440] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Thu May 02 15:55:40.825579 2013] [fcgid:warn] [pid 20923:tid 140163299727104] [client 172.23.3.158:52127] mod_fcgid: stderr: Can't use string ("http://172.23.10.249:6565/cinfo/") as a HASH ref while "strict refs" in use at /kSCproxy/WEB/clientdirect/json/index.pl line 31., referer: http://172.23.10.249:6560/
+[Thu May 02 15:55:40.825661 2013] [core:error] [pid 20923:tid 140163299727104] [client 172.23.3.158:52127] End of script output before headers: index.pl, referer: http://172.23.10.249:6560/
+[Thu May 02 15:55:46.602379 2013] [fcgid:warn] [pid 20919:tid 140163381917440] mod_fcgid: cleanup zombie process 21010
+[Thu May 02 15:56:11.193183 2013] [mpm_event:notice] [pid 20917:tid 140163381917440] AH00491: caught SIGTERM, shutting down
+[Thu May 02 15:56:13.097230 2013] [ssl:notice] [pid 21051:tid 139777338541824] AH01886: SSL FIPS mode disabled
+[Thu May 02 15:56:13.180715 2013] [ssl:notice] [pid 21052:tid 139777338541824] AH01886: SSL FIPS mode disabled
+[Thu May 02 15:56:13.286641 2013] [ssl:warn] [pid 21052:tid 139777338541824] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Thu May 02 15:56:13.288481 2013] [mpm_event:notice] [pid 21052:tid 139777338541824] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Thu May 02 15:56:13.288508 2013] [core:notice] [pid 21052:tid 139777338541824] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Thu May 02 15:56:17.427119 2013] [fcgid:warn] [pid 21058:tid 139777160509184] [client 172.23.3.158:52188] mod_fcgid: stderr: Can't use string ("{"HOSTNAME":"SBARESEL-1261","VEN") as a HASH ref while "strict refs" in use at /kSCproxy/WEB/clientdirect/json/index.pl line 31., referer: http://172.23.10.249:6560/
+[Thu May 02 15:56:17.427177 2013] [core:error] [pid 21058:tid 139777160509184] [client 172.23.3.158:52188] End of script output before headers: index.pl, referer: http://172.23.10.249:6560/
+[Thu May 02 15:56:23.360006 2013] [fcgid:warn] [pid 21058:tid 139777118549760] [client 172.23.3.158:52196] mod_fcgid: stderr: Can't use string ("{"HOSTNAME":"SBARESEL-1261","VEN") as a HASH ref while "strict refs" in use at /kSCproxy/WEB/clientdirect/json/index.pl line 31., referer: http://172.23.10.249:6560/
+[Thu May 02 15:56:23.360068 2013] [core:error] [pid 21058:tid 139777118549760] [client 172.23.3.158:52196] End of script output before headers: index.pl, referer: http://172.23.10.249:6560/
+[Thu May 02 15:56:28.866982 2013] [fcgid:warn] [pid 21054:tid 139777338541824] mod_fcgid: cleanup zombie process 21172
+[Thu May 02 15:57:09.396507 2013] [fcgid:warn] [pid 21144:tid 139777160509184] [client 172.23.3.158:52233] mod_fcgid: stderr: Can't use string ("{"HOSTNAME":"SBARESEL-1261","VEN") as a HASH ref while "strict refs" in use at /kSCproxy/WEB/clientdirect/json/index.pl line 31., referer: http://172.23.10.249:6560/
+[Thu May 02 15:57:09.396568 2013] [core:error] [pid 21144:tid 139777160509184] [client 172.23.3.158:52233] End of script output before headers: index.pl, referer: http://172.23.10.249:6560/
+[Thu May 02 15:57:14.790526 2013] [fcgid:warn] [pid 21144:tid 139777150019328] [client 172.23.3.158:52244] mod_fcgid: stderr: Can't use string ("{"HOSTNAME":"SBARESEL-1261","VEN") as a HASH ref while "strict refs" in use at /kSCproxy/WEB/clientdirect/json/index.pl line 31., referer: http://172.23.10.249:6560/
+[Thu May 02 15:57:14.790587 2013] [core:error] [pid 21144:tid 139777150019328] [client 172.23.3.158:52244] End of script output before headers: index.pl, referer: http://172.23.10.249:6560/
+[Thu May 02 15:57:20.305936 2013] [fcgid:warn] [pid 21054:tid 139777338541824] mod_fcgid: cleanup zombie process 21215
+[Thu May 02 15:58:04.933970 2013] [mpm_event:notice] [pid 21052:tid 139777338541824] AH00491: caught SIGTERM, shutting down
+[Thu May 02 15:58:06.197756 2013] [ssl:notice] [pid 21229:tid 140298552141568] AH01886: SSL FIPS mode disabled
+[Thu May 02 15:58:06.232684 2013] [ssl:notice] [pid 21230:tid 140298552141568] AH01886: SSL FIPS mode disabled
+[Thu May 02 15:58:06.269641 2013] [ssl:warn] [pid 21230:tid 140298552141568] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Thu May 02 15:58:06.271439 2013] [mpm_event:notice] [pid 21230:tid 140298552141568] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Thu May 02 15:58:06.271463 2013] [core:notice] [pid 21230:tid 140298552141568] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+Global symbol "$ah" requires explicit package name at /kSCproxy/WEB/clientdirect/json/index.pl line 30.
+Execution of /kSCproxy/WEB/clientdirect/json/index.pl aborted due to compilation errors.
+[Thu May 02 15:58:08.899728 2013] [fcgid:warn] [pid 21236:tid 140298395055872] (104)Connection reset by peer: [client 172.23.3.158:52287] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.10.249:6560/
+[Thu May 02 15:58:08.899777 2013] [core:error] [pid 21236:tid 140298395055872] [client 172.23.3.158:52287] End of script output before headers: index.pl, referer: http://172.23.10.249:6560/
+Global symbol "$ah" requires explicit package name at /kSCproxy/WEB/clientdirect/json/index.pl line 30.
+Execution of /kSCproxy/WEB/clientdirect/json/index.pl aborted due to compilation errors.
+[Thu May 02 15:58:13.378938 2013] [fcgid:warn] [pid 21236:tid 140298363586304] (104)Connection reset by peer: [client 172.23.3.158:52296] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.10.249:6560/
+[Thu May 02 15:58:13.378985 2013] [core:error] [pid 21236:tid 140298363586304] [client 172.23.3.158:52296] End of script output before headers: index.pl, referer: http://172.23.10.249:6560/
+[Thu May 02 15:58:27.302239 2013] [mpm_event:notice] [pid 21230:tid 140298552141568] AH00491: caught SIGTERM, shutting down
+[Thu May 02 15:58:28.357184 2013] [ssl:notice] [pid 21359:tid 139699359344384] AH01886: SSL FIPS mode disabled
+[Thu May 02 15:58:28.394549 2013] [ssl:notice] [pid 21360:tid 139699359344384] AH01886: SSL FIPS mode disabled
+[Thu May 02 15:58:28.432147 2013] [ssl:warn] [pid 21360:tid 139699359344384] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Thu May 02 15:58:28.433958 2013] [mpm_event:notice] [pid 21360:tid 139699359344384] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Thu May 02 15:58:28.433982 2013] [core:notice] [pid 21360:tid 139699359344384] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Thu May 02 16:03:10.493352 2013] [mpm_event:notice] [pid 21360:tid 139699359344384] AH00491: caught SIGTERM, shutting down
+[Thu May 02 16:03:11.607166 2013] [ssl:notice] [pid 21602:tid 140244554618624] AH01886: SSL FIPS mode disabled
+[Thu May 02 16:03:11.698714 2013] [ssl:notice] [pid 21603:tid 140244554618624] AH01886: SSL FIPS mode disabled
+[Thu May 02 16:03:11.763630 2013] [ssl:warn] [pid 21603:tid 140244554618624] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Thu May 02 16:03:11.765425 2013] [mpm_event:notice] [pid 21603:tid 140244554618624] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Thu May 02 16:03:11.765451 2013] [core:notice] [pid 21603:tid 140244554618624] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Thu May 02 16:03:42.554993 2013] [mpm_event:notice] [pid 21603:tid 140244554618624] AH00491: caught SIGTERM, shutting down
+[Thu May 02 16:03:43.978879 2013] [ssl:notice] [pid 21705:tid 140577295243008] AH01886: SSL FIPS mode disabled
+[Thu May 02 16:03:44.023837 2013] [ssl:notice] [pid 21706:tid 140577295243008] AH01886: SSL FIPS mode disabled
+[Thu May 02 16:03:44.060999 2013] [ssl:warn] [pid 21706:tid 140577295243008] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Thu May 02 16:03:44.062806 2013] [mpm_event:notice] [pid 21706:tid 140577295243008] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Thu May 02 16:03:44.062840 2013] [core:notice] [pid 21706:tid 140577295243008] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Thu May 02 16:04:22.474524 2013] [mpm_event:notice] [pid 21706:tid 140577295243008] AH00491: caught SIGTERM, shutting down
+[Thu May 02 16:04:23.996031 2013] [ssl:notice] [pid 21942:tid 140708990846720] AH01886: SSL FIPS mode disabled
+[Thu May 02 16:04:24.024808 2013] [ssl:notice] [pid 21943:tid 140708990846720] AH01886: SSL FIPS mode disabled
+[Thu May 02 16:04:24.041688 2013] [ssl:warn] [pid 21943:tid 140708990846720] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Thu May 02 16:04:24.043508 2013] [mpm_event:notice] [pid 21943:tid 140708990846720] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Thu May 02 16:04:24.043531 2013] [core:notice] [pid 21943:tid 140708990846720] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Thu May 02 19:00:29.154568 2013] [fcgid:warn] [pid 21949:tid 140708769928960] [client 172.23.0.254:57005] mod_fcgid: stderr: Use of uninitialized value in subroutine entry at /kSCproxy/WEB/clientdirect/json/index.pl line 36., referer: http://172.23.3.177:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Thu May 02 19:20:14.199388 2013] [fcgid:warn] [pid 21947:tid 140708581111552] [client 172.23.0.254:58269] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://172.23.3.177:8080/kVASySystemControl/
+[Thu May 02 19:20:14.199445 2013] [core:error] [pid 21947:tid 140708581111552] [client 172.23.0.254:58269] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/
+[Thu May 02 19:20:19.864598 2013] [fcgid:warn] [pid 21945:tid 140708990846720] mod_fcgid: cleanup zombie process 28325
+[Fri May 03 09:36:03.161183 2013] [fcgid:warn] [pid 22032:tid 140708790908672] [client 172.23.3.177:64044] mod_fcgid: stderr: Use of uninitialized value $data in concatenation (.) or string at /kSCproxy/WEB/proxy/json/index.pl line 37., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:36:03.161219 2013] [fcgid:warn] [pid 22032:tid 140708790908672] [client 172.23.3.177:64044] mod_fcgid: stderr: substr outside of string at /kSCproxy/WEB/proxy/json/index.pl line 38., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:36:03.161237 2013] [fcgid:warn] [pid 22032:tid 140708790908672] [client 172.23.3.177:64044] mod_fcgid: stderr: Use of uninitialized value $out in substr at /kSCproxy/WEB/proxy/json/index.pl line 39., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:36:03.286739 2013] [fcgid:warn] [pid 22032:tid 140708769928960] [client 172.23.3.177:64044] mod_fcgid: stderr: Use of uninitialized value $data in substitution (s///) at /kSCproxy/WEB/proxy/json/index.pl line 35., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:36:03.286773 2013] [fcgid:warn] [pid 22032:tid 140708769928960] [client 172.23.3.177:64044] mod_fcgid: stderr: Use of uninitialized value $data in concatenation (.) or string at /kSCproxy/WEB/proxy/json/index.pl line 37., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:36:03.286781 2013] [fcgid:warn] [pid 22032:tid 140708769928960] [client 172.23.3.177:64044] mod_fcgid: stderr: substr outside of string at /kSCproxy/WEB/proxy/json/index.pl line 38., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:36:03.286787 2013] [fcgid:warn] [pid 22032:tid 140708769928960] [client 172.23.3.177:64044] mod_fcgid: stderr: Use of uninitialized value $out in substr at /kSCproxy/WEB/proxy/json/index.pl line 39., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:36:33.397524 2013] [fcgid:warn] [pid 22032:tid 140708811888384] [client 172.23.3.177:64082] mod_fcgid: stderr: Use of uninitialized value $data in concatenation (.) or string at /kSCproxy/WEB/proxy/json/index.pl line 37., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:36:33.397562 2013] [fcgid:warn] [pid 22032:tid 140708811888384] [client 172.23.3.177:64082] mod_fcgid: stderr: substr outside of string at /kSCproxy/WEB/proxy/json/index.pl line 38., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:36:33.397570 2013] [fcgid:warn] [pid 22032:tid 140708811888384] [client 172.23.3.177:64082] mod_fcgid: stderr: Use of uninitialized value $out in substr at /kSCproxy/WEB/proxy/json/index.pl line 39., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:36:33.492263 2013] [fcgid:warn] [pid 22032:tid 140708822378240] [client 172.23.3.177:64082] mod_fcgid: stderr: Use of uninitialized value $data in substitution (s///) at /kSCproxy/WEB/proxy/json/index.pl line 35., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:36:33.492295 2013] [fcgid:warn] [pid 22032:tid 140708822378240] [client 172.23.3.177:64082] mod_fcgid: stderr: Use of uninitialized value $data in concatenation (.) or string at /kSCproxy/WEB/proxy/json/index.pl line 37., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:36:33.492303 2013] [fcgid:warn] [pid 22032:tid 140708822378240] [client 172.23.3.177:64082] mod_fcgid: stderr: substr outside of string at /kSCproxy/WEB/proxy/json/index.pl line 38., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:36:33.492309 2013] [fcgid:warn] [pid 22032:tid 140708822378240] [client 172.23.3.177:64082] mod_fcgid: stderr: Use of uninitialized value $out in substr at /kSCproxy/WEB/proxy/json/index.pl line 39., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:37:03.585115 2013] [fcgid:warn] [pid 22032:tid 140708748949248] [client 172.23.3.177:64134] mod_fcgid: stderr: Use of uninitialized value $data in concatenation (.) or string at /kSCproxy/WEB/proxy/json/index.pl line 37., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:37:03.585152 2013] [fcgid:warn] [pid 22032:tid 140708748949248] [client 172.23.3.177:64134] mod_fcgid: stderr: substr outside of string at /kSCproxy/WEB/proxy/json/index.pl line 38., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:37:03.585161 2013] [fcgid:warn] [pid 22032:tid 140708748949248] [client 172.23.3.177:64134] mod_fcgid: stderr: Use of uninitialized value $out in substr at /kSCproxy/WEB/proxy/json/index.pl line 39., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:37:03.680842 2013] [fcgid:warn] [pid 22032:tid 140708780418816] [client 172.23.3.177:64134] mod_fcgid: stderr: Use of uninitialized value $data in substitution (s///) at /kSCproxy/WEB/proxy/json/index.pl line 35., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:37:03.680871 2013] [fcgid:warn] [pid 22032:tid 140708780418816] [client 172.23.3.177:64134] mod_fcgid: stderr: Use of uninitialized value $data in concatenation (.) or string at /kSCproxy/WEB/proxy/json/index.pl line 37., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:37:03.680879 2013] [fcgid:warn] [pid 22032:tid 140708780418816] [client 172.23.3.177:64134] mod_fcgid: stderr: substr outside of string at /kSCproxy/WEB/proxy/json/index.pl line 38., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:37:03.680886 2013] [fcgid:warn] [pid 22032:tid 140708780418816] [client 172.23.3.177:64134] mod_fcgid: stderr: Use of uninitialized value $out in substr at /kSCproxy/WEB/proxy/json/index.pl line 39., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:37:33.785936 2013] [fcgid:warn] [pid 21947:tid 140708738459392] [client 172.23.3.177:64173] mod_fcgid: stderr: Use of uninitialized value $data in concatenation (.) or string at /kSCproxy/WEB/proxy/json/index.pl line 37., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:37:33.785971 2013] [fcgid:warn] [pid 21947:tid 140708738459392] [client 172.23.3.177:64173] mod_fcgid: stderr: substr outside of string at /kSCproxy/WEB/proxy/json/index.pl line 38., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:37:33.785979 2013] [fcgid:warn] [pid 21947:tid 140708738459392] [client 172.23.3.177:64173] mod_fcgid: stderr: Use of uninitialized value $out in substr at /kSCproxy/WEB/proxy/json/index.pl line 39., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:37:33.881766 2013] [fcgid:warn] [pid 21947:tid 140708759439104] [client 172.23.3.177:64173] mod_fcgid: stderr: Use of uninitialized value $data in substitution (s///) at /kSCproxy/WEB/proxy/json/index.pl line 35., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:37:33.881794 2013] [fcgid:warn] [pid 21947:tid 140708759439104] [client 172.23.3.177:64173] mod_fcgid: stderr: Use of uninitialized value $data in concatenation (.) or string at /kSCproxy/WEB/proxy/json/index.pl line 37., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:37:33.881802 2013] [fcgid:warn] [pid 21947:tid 140708759439104] [client 172.23.3.177:64173] mod_fcgid: stderr: substr outside of string at /kSCproxy/WEB/proxy/json/index.pl line 38., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:37:33.881819 2013] [fcgid:warn] [pid 21947:tid 140708759439104] [client 172.23.3.177:64173] mod_fcgid: stderr: Use of uninitialized value $out in substr at /kSCproxy/WEB/proxy/json/index.pl line 39., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:38:03.986966 2013] [fcgid:warn] [pid 22032:tid 140708759439104] [client 172.23.3.177:64214] mod_fcgid: stderr: Use of uninitialized value $data in concatenation (.) or string at /kSCproxy/WEB/proxy/json/index.pl line 37., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:38:03.987004 2013] [fcgid:warn] [pid 22032:tid 140708759439104] [client 172.23.3.177:64214] mod_fcgid: stderr: substr outside of string at /kSCproxy/WEB/proxy/json/index.pl line 38., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:38:03.987012 2013] [fcgid:warn] [pid 22032:tid 140708759439104] [client 172.23.3.177:64214] mod_fcgid: stderr: Use of uninitialized value $out in substr at /kSCproxy/WEB/proxy/json/index.pl line 39., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:38:04.084459 2013] [fcgid:warn] [pid 22032:tid 140708706989824] [client 172.23.3.177:64214] mod_fcgid: stderr: Use of uninitialized value $data in substitution (s///) at /kSCproxy/WEB/proxy/json/index.pl line 35., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:38:04.084493 2013] [fcgid:warn] [pid 22032:tid 140708706989824] [client 172.23.3.177:64214] mod_fcgid: stderr: Use of uninitialized value $data in concatenation (.) or string at /kSCproxy/WEB/proxy/json/index.pl line 37., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:38:04.084501 2013] [fcgid:warn] [pid 22032:tid 140708706989824] [client 172.23.3.177:64214] mod_fcgid: stderr: substr outside of string at /kSCproxy/WEB/proxy/json/index.pl line 38., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:38:04.084507 2013] [fcgid:warn] [pid 22032:tid 140708706989824] [client 172.23.3.177:64214] mod_fcgid: stderr: Use of uninitialized value $out in substr at /kSCproxy/WEB/proxy/json/index.pl line 39., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:38:34.187366 2013] [fcgid:warn] [pid 21947:tid 140708727969536] [client 172.23.3.177:64258] mod_fcgid: stderr: Use of uninitialized value $data in concatenation (.) or string at /kSCproxy/WEB/proxy/json/index.pl line 37., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:38:34.187401 2013] [fcgid:warn] [pid 21947:tid 140708727969536] [client 172.23.3.177:64258] mod_fcgid: stderr: substr outside of string at /kSCproxy/WEB/proxy/json/index.pl line 38., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:38:34.187409 2013] [fcgid:warn] [pid 21947:tid 140708727969536] [client 172.23.3.177:64258] mod_fcgid: stderr: Use of uninitialized value $out in substr at /kSCproxy/WEB/proxy/json/index.pl line 39., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:38:34.281574 2013] [fcgid:warn] [pid 21947:tid 140708717479680] [client 172.23.3.177:64258] mod_fcgid: stderr: Use of uninitialized value $data in substitution (s///) at /kSCproxy/WEB/proxy/json/index.pl line 35., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:38:34.281617 2013] [fcgid:warn] [pid 21947:tid 140708717479680] [client 172.23.3.177:64258] mod_fcgid: stderr: Use of uninitialized value $data in concatenation (.) or string at /kSCproxy/WEB/proxy/json/index.pl line 37., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:38:34.281625 2013] [fcgid:warn] [pid 21947:tid 140708717479680] [client 172.23.3.177:64258] mod_fcgid: stderr: substr outside of string at /kSCproxy/WEB/proxy/json/index.pl line 38., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:38:34.281631 2013] [fcgid:warn] [pid 21947:tid 140708717479680] [client 172.23.3.177:64258] mod_fcgid: stderr: Use of uninitialized value $out in substr at /kSCproxy/WEB/proxy/json/index.pl line 39., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:39:04.385321 2013] [fcgid:warn] [pid 21949:tid 140708801398528] [client 172.23.3.177:64299] mod_fcgid: stderr: Use of uninitialized value $data in concatenation (.) or string at /kSCproxy/WEB/proxy/json/index.pl line 37., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:39:04.385358 2013] [fcgid:warn] [pid 21949:tid 140708801398528] [client 172.23.3.177:64299] mod_fcgid: stderr: substr outside of string at /kSCproxy/WEB/proxy/json/index.pl line 38., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:39:04.385367 2013] [fcgid:warn] [pid 21949:tid 140708801398528] [client 172.23.3.177:64299] mod_fcgid: stderr: Use of uninitialized value $out in substr at /kSCproxy/WEB/proxy/json/index.pl line 39., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:39:04.492986 2013] [fcgid:warn] [pid 21949:tid 140708780418816] [client 172.23.3.177:64299] mod_fcgid: stderr: Use of uninitialized value $data in substitution (s///) at /kSCproxy/WEB/proxy/json/index.pl line 35., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:39:04.493016 2013] [fcgid:warn] [pid 21949:tid 140708780418816] [client 172.23.3.177:64299] mod_fcgid: stderr: Use of uninitialized value $data in concatenation (.) or string at /kSCproxy/WEB/proxy/json/index.pl line 37., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:39:04.493025 2013] [fcgid:warn] [pid 21949:tid 140708780418816] [client 172.23.3.177:64299] mod_fcgid: stderr: substr outside of string at /kSCproxy/WEB/proxy/json/index.pl line 38., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:39:04.493032 2013] [fcgid:warn] [pid 21949:tid 140708780418816] [client 172.23.3.177:64299] mod_fcgid: stderr: Use of uninitialized value $out in substr at /kSCproxy/WEB/proxy/json/index.pl line 39., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:39:34.596604 2013] [fcgid:warn] [pid 22032:tid 140708612581120] [client 172.23.3.177:64350] mod_fcgid: stderr: Use of uninitialized value $data in concatenation (.) or string at /kSCproxy/WEB/proxy/json/index.pl line 37., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:39:34.596641 2013] [fcgid:warn] [pid 22032:tid 140708612581120] [client 172.23.3.177:64350] mod_fcgid: stderr: substr outside of string at /kSCproxy/WEB/proxy/json/index.pl line 38., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:39:34.596663 2013] [fcgid:warn] [pid 22032:tid 140708612581120] [client 172.23.3.177:64350] mod_fcgid: stderr: Use of uninitialized value $out in substr at /kSCproxy/WEB/proxy/json/index.pl line 39., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:39:34.694189 2013] [fcgid:warn] [pid 22032:tid 140708602091264] [client 172.23.3.177:64350] mod_fcgid: stderr: Use of uninitialized value $data in substitution (s///) at /kSCproxy/WEB/proxy/json/index.pl line 35., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:39:34.694221 2013] [fcgid:warn] [pid 22032:tid 140708602091264] [client 172.23.3.177:64350] mod_fcgid: stderr: Use of uninitialized value $data in concatenation (.) or string at /kSCproxy/WEB/proxy/json/index.pl line 37., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:39:34.694229 2013] [fcgid:warn] [pid 22032:tid 140708602091264] [client 172.23.3.177:64350] mod_fcgid: stderr: substr outside of string at /kSCproxy/WEB/proxy/json/index.pl line 38., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 09:39:34.694235 2013] [fcgid:warn] [pid 22032:tid 140708602091264] [client 172.23.3.177:64350] mod_fcgid: stderr: Use of uninitialized value $out in substr at /kSCproxy/WEB/proxy/json/index.pl line 39., referer: http://localhost:8080/kVASySystemControl/modules/database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=
+[Fri May 03 10:03:16.704351 2013] [mpm_event:notice] [pid 21943:tid 140708990846720] AH00491: caught SIGTERM, shutting down
+[Fri May 03 10:03:17.999477 2013] [ssl:notice] [pid 24826:tid 140442151704320] AH01886: SSL FIPS mode disabled
+[Fri May 03 10:03:18.027262 2013] [ssl:notice] [pid 24827:tid 140442151704320] AH01886: SSL FIPS mode disabled
+[Fri May 03 10:03:18.077044 2013] [ssl:warn] [pid 24827:tid 140442151704320] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Fri May 03 10:03:18.078866 2013] [mpm_event:notice] [pid 24827:tid 140442151704320] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Fri May 03 10:03:18.078890 2013] [core:notice] [pid 24827:tid 140442151704320] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Fri May 03 11:18:21.572724 2013] [mpm_event:notice] [pid 24827:tid 140442151704320] AH00491: caught SIGTERM, shutting down
+[Fri May 03 11:18:23.058991 2013] [ssl:notice] [pid 29843:tid 140563057272576] AH01886: SSL FIPS mode disabled
+[Fri May 03 11:18:23.119511 2013] [ssl:notice] [pid 29844:tid 140563057272576] AH01886: SSL FIPS mode disabled
+[Fri May 03 11:18:23.140186 2013] [ssl:warn] [pid 29844:tid 140563057272576] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Fri May 03 11:18:23.141985 2013] [mpm_event:notice] [pid 29844:tid 140563057272576] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Fri May 03 11:18:23.142008 2013] [core:notice] [pid 29844:tid 140563057272576] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Fri May 03 12:26:23.618120 2013] [fcgid:warn] [pid 29964:tid 140562829129472] [client 172.23.3.158:60958] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://172.23.3.177:8080/kVASySystemControl/index.jsp
+[Fri May 03 12:26:23.618177 2013] [core:error] [pid 29964:tid 140562829129472] [client 172.23.3.158:60958] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/index.jsp
+[Fri May 03 12:26:32.274001 2013] [fcgid:warn] [pid 29846:tid 140563057272576] mod_fcgid: cleanup zombie process 32233
