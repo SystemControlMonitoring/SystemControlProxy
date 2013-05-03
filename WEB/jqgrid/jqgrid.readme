@@ -1,0 +1,19 @@
+<!--JQGRID_VERSION:2.130502-->
+
+Modul: <i><b>JQGrid Client Proxy Access</b></i><br>
+Version: <i><b>2.130502</b></i><br>
+Comments: - <br>
+Format: <i><b>JSON</b></i><br>
+<font size=2>Query:<br>
+<ul>
+    <li><b>JQGRID</b> - Redirect JqGrid Information to Server URL: <a href="/jqgrid/json/?e=1&m=U3lzSnFHcmlkJkd873&cm=RlM=JhDQ83&h=Y2FybG8teC5zaXYuZGU=Hjd876&c=ZGJ3aW5kby5zaXYuZGU=Jjd723&u=c2JhcmVzZWw=LKHld3&_search=false&rows=10&page=1&sidx=&sord=asc">/jqgrid/json/?e=1&m=U3lzSnFHcmlkJkd873&cm=RlM=JhDQ83&h=Y2FybG8teC5zaXYuZGU=Hjd876&c=ZGJ3aW5kby5zaXYuZGU=Jjd723&u=c2JhcmVzZWw=LKHld3&_search=false&rows=10&page=1&sidx=&sord=asc</a></li>
+</ul>
+</font>
+Format: <i><b>XML</b></i><br>
+<font size=2>Query:<br>
+<ul>
+    <li><b>JQGRID</b> - Redirect JqGrid Information to Server URL: <a href="/jqgrid/xml/?e=1&m=U3lzSnFHcmlkJkd873&cm=RlM=JhDQ83&h=Y2FybG8teC5zaXYuZGU=Hjd876&c=ZGJ3aW5kby5zaXYuZGU=Jjd723&u=c2JhcmVzZWw=LKHld3&_search=false&rows=10&page=1&sidx=&sord=asc">/jqgrid/xml/?e=1&m=U3lzSnFHcmlkJkd873&cm=RlM=JhDQ83&h=Y2FybG8teC5zaXYuZGU=Hjd876&c=ZGJ3aW5kby5zaXYuZGU=Jjd723&u=c2JhcmVzZWw=LKHld3&_search=false&rows=10&page=1&sidx=&sord=asc</a></li>
+</ul>
+</font>
+<br></br>
+<hr><br></br>
