@@ -1414,3 +1414,169 @@ BEGIN failed--compilation aborted at /kSCproxy/WEB/clientdirect/json/index.pl li
 [Fri May 03 19:15:52.413587 2013] [ssl:warn] [pid 15008:tid 140368088082176] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
 [Fri May 03 19:15:52.415383 2013] [mpm_event:notice] [pid 15008:tid 140368088082176] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
 [Fri May 03 19:15:52.415411 2013] [core:notice] [pid 15008:tid 140368088082176] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Fri May 03 19:40:01.087351 2013] [fcgid:warn] [pid 15097:tid 140367856899840] [client 172.23.0.254:36956] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://172.23.3.177:8080/kVASySystemControl/
+[Fri May 03 19:40:01.087407 2013] [core:error] [pid 15097:tid 140367856899840] [client 172.23.0.254:36956] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/
+[Fri May 03 19:40:06.743490 2013] [fcgid:warn] [pid 15010:tid 140368088082176] mod_fcgid: cleanup zombie process 15963
+[Fri May 03 20:23:31.881749 2013] [fcgid:warn] [pid 15097:tid 140367793960704] [client 172.23.0.254:39754] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://172.23.3.177:8080/kVASySystemControl/index.jsp
+[Fri May 03 20:23:31.881817 2013] [core:error] [pid 15097:tid 140367793960704] [client 172.23.0.254:39754] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/index.jsp
+[Fri May 03 20:23:37.628913 2013] [fcgid:warn] [pid 15010:tid 140368088082176] mod_fcgid: cleanup zombie process 17260
+[Mon May 06 11:40:23.607285 2013] [fcgid:warn] [pid 15097:tid 140367699552000] [client 172.23.3.177:64875] mod_fcgid: stderr: Use of uninitialized value in subroutine entry at /kSCproxy/WEB/jqgrid/json/index.pl line 43.
+[Mon May 06 14:34:41.904945 2013] [fcgid:warn] [pid 15097:tid 140367678572288] [client 172.23.3.158:54196] mod_fcgid: stderr: Use of uninitialized value in subroutine entry at /kSCproxy/WEB/jqgrid/json/index.pl line 43., referer: http://172.23.3.177:8080/kVASySystemControl/modules/sysinfo.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&t=TElO
+[Mon May 06 14:37:34.163814 2013] [fcgid:warn] [pid 15097:tid 140367720531712] [client 172.23.3.158:54410] mod_fcgid: stderr: Use of uninitialized value in subroutine entry at /kSCproxy/WEB/jqgrid/json/index.pl line 43., referer: http://172.23.3.177:8080/kVASySystemControl/modules/sysinfo.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&t=TElO
+[Mon May 06 14:38:19.757703 2013] [fcgid:warn] [pid 15012:tid 140367877879552] [client 172.23.3.158:54469] mod_fcgid: stderr: Use of uninitialized value in subroutine entry at /kSCproxy/WEB/jqgrid/json/index.pl line 43., referer: http://172.23.3.177:8080/kVASySystemControl/modules/sysinfo.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&t=TElO
+[Mon May 06 15:56:34.026115 2013] [fcgid:warn] [pid 15097:tid 140367825430272] [client 172.23.3.158:58592] mod_fcgid: stderr: Use of uninitialized value $data in concatenation (.) or string at /kSCproxy/WEB/jqgrid/json/index.pl line 40., referer: http://172.23.3.177:8080/kVASySystemControl/modules/sysinfo.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=&t=V0lO
+[Mon May 06 15:57:01.594020 2013] [fcgid:warn] [pid 15097:tid 140367752001280] [client 172.23.3.158:58621] mod_fcgid: stderr: Use of uninitialized value $data in concatenation (.) or string at /kSCproxy/WEB/jqgrid/json/index.pl line 40., referer: http://172.23.3.177:8080/kVASySystemControl/modules/sysinfo.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=&t=V0lO
+[Mon May 06 15:57:02.643844 2013] [fcgid:warn] [pid 15097:tid 140367689062144] [client 172.23.3.158:58622] mod_fcgid: can't apply process slot for /kSCproxy/WEB/jqgrid/json/index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/sysinfo.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=&t=V0lO
+[Mon May 06 15:57:17.604521 2013] [fcgid:warn] [pid 15097:tid 140367909349120] [client 172.23.3.158:58652] mod_fcgid: can't apply process slot for /kSCproxy/WEB/jqgrid/json/index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/sysinfo.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=&t=V0lO
+[Mon May 06 15:57:17.604514 2013] [fcgid:warn] [pid 15097:tid 140367772980992] [client 172.23.3.158:58656] mod_fcgid: can't apply process slot for /kSCproxy/WEB/jqgrid/json/index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/sysinfo.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=&t=V0lO
+[Mon May 06 15:57:17.604936 2013] [fcgid:warn] [pid 15097:tid 140367856899840] [client 172.23.3.158:58648] mod_fcgid: can't apply process slot for /kSCproxy/WEB/jqgrid/json/index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/sysinfo.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=&t=V0lO
+[Mon May 06 15:57:27.129373 2013] [fcgid:warn] [pid 15097:tid 140367699552000] [client 172.23.3.158:58680] mod_fcgid: can't apply process slot for /kSCproxy/WEB/jqgrid/json/index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/sysinfo.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=&t=V0lO
+[Mon May 06 15:57:27.129381 2013] [fcgid:warn] [pid 15097:tid 140367783470848] [client 172.23.3.158:58681] mod_fcgid: can't apply process slot for /kSCproxy/WEB/jqgrid/json/index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/sysinfo.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=&t=V0lO
+[Mon May 06 15:57:45.121276 2013] [fcgid:warn] [pid 15014:tid 140367720531712] [client 172.23.3.158:58679] mod_fcgid: read data timeout in 60 seconds, referer: http://172.23.3.177:8080/kVASySystemControl/modules/sysinfo.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=&t=V0lO
+[Mon May 06 15:57:45.121309 2013] [core:error] [pid 15014:tid 140367720531712] [client 172.23.3.158:58679] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/sysinfo.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=&t=V0lO
+[Mon May 06 15:58:09.609390 2013] [fcgid:warn] [pid 15097:tid 140367678572288] [client 172.23.3.158:58655] mod_fcgid: read data timeout in 60 seconds, referer: http://172.23.3.177:8080/kVASySystemControl/modules/sysinfo.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=&t=V0lO
+[Mon May 06 15:58:09.609428 2013] [core:error] [pid 15097:tid 140367678572288] [client 172.23.3.158:58655] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/sysinfo.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=&t=V0lO
+[Mon May 06 15:58:15.068054 2013] [fcgid:warn] [pid 15097:tid 140367919838976] [client 172.23.3.158:58794] mod_fcgid: error reading data, FastCGI server closed connection, referer: http://172.23.3.177:8080/kVASySystemControl/modules/sysinfo.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=&t=V0lO
+[Mon May 06 15:58:15.068093 2013] [core:error] [pid 15097:tid 140367919838976] [client 172.23.3.158:58794] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/sysinfo.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=&t=V0lO
+[Mon May 06 15:58:15.070420 2013] [fcgid:warn] [pid 15014:tid 140367783470848] [client 172.23.3.158:58760] mod_fcgid: error reading data, FastCGI server closed connection, referer: http://172.23.3.177:8080/kVASySystemControl/modules/sysinfo.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=&t=V0lO
+[Mon May 06 15:58:15.070452 2013] [core:error] [pid 15014:tid 140367783470848] [client 172.23.3.158:58760] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/sysinfo.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=&t=V0lO
+[Mon May 06 15:58:18.123626 2013] [core:warn] [pid 15008:tid 140368088082176] AH00045: child process 15014 still did not exit, sending a SIGTERM
+[Mon May 06 15:58:18.123688 2013] [core:warn] [pid 15008:tid 140368088082176] AH00045: child process 15097 still did not exit, sending a SIGTERM
+[Mon May 06 15:58:20.125906 2013] [core:warn] [pid 15008:tid 140368088082176] AH00045: child process 15014 still did not exit, sending a SIGTERM
+[Mon May 06 15:58:20.125936 2013] [core:warn] [pid 15008:tid 140368088082176] AH00045: child process 15097 still did not exit, sending a SIGTERM
+[Mon May 06 15:58:22.128156 2013] [core:warn] [pid 15008:tid 140368088082176] AH00045: child process 15014 still did not exit, sending a SIGTERM
+[Mon May 06 15:58:22.128184 2013] [core:warn] [pid 15008:tid 140368088082176] AH00045: child process 15097 still did not exit, sending a SIGTERM
+[Mon May 06 15:58:24.130403 2013] [core:error] [pid 15008:tid 140368088082176] AH00046: child process 15014 still did not exit, sending a SIGKILL
+[Mon May 06 15:58:24.130438 2013] [core:error] [pid 15008:tid 140368088082176] AH00046: child process 15097 still did not exit, sending a SIGKILL
+[Mon May 06 15:58:25.131658 2013] [mpm_event:notice] [pid 15008:tid 140368088082176] AH00491: caught SIGTERM, shutting down
+[Mon May 06 15:58:25.736017 2013] [ssl:notice] [pid 27966:tid 140510443284224] AH01886: SSL FIPS mode disabled
+[Mon May 06 15:58:25.811287 2013] [ssl:notice] [pid 27967:tid 140510443284224] AH01886: SSL FIPS mode disabled
+[Mon May 06 15:58:25.837105 2013] [ssl:warn] [pid 27967:tid 140510443284224] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Mon May 06 15:58:25.838951 2013] [mpm_event:notice] [pid 27967:tid 140510443284224] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Mon May 06 15:58:25.838979 2013] [core:notice] [pid 27967:tid 140510443284224] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Mon May 06 15:59:37.001712 2013] [fcgid:warn] [pid 27970:tid 140510340114176] [client 172.23.3.158:58833] mod_fcgid: read data timeout in 60 seconds, referer: http://172.23.3.177:8080/kVASySystemControl/modules/sysinfo.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=&t=V0lO
+[Mon May 06 15:59:37.001746 2013] [core:error] [pid 27970:tid 140510340114176] [client 172.23.3.158:58833] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/sysinfo.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=&t=V0lO
+[Mon May 06 16:02:47.304419 2013] [fcgid:warn] [pid 27970:tid 140510121371392] [client 172.23.3.158:58998] mod_fcgid: stderr: Use of uninitialized value $data in concatenation (.) or string at /kSCproxy/WEB/jqgrid/json/index.pl line 40., referer: http://172.23.3.177:8080/kVASySystemControl/modules/sysinfo.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=&t=V0lO
+[Mon May 06 16:08:00.278437 2013] [fcgid:warn] [pid 27971:tid 140510350604032] [client 172.23.3.158:59294] mod_fcgid: read data timeout in 60 seconds, referer: http://172.23.3.177:8080/kVASySystemControl/modules/sysinfo.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=&t=V0lO
+[Mon May 06 16:08:00.278473 2013] [core:error] [pid 27971:tid 140510350604032] [client 172.23.3.158:59294] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/sysinfo.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=&t=V0lO
+[Tue May 07 10:58:10.867163 2013] [fcgid:warn] [pid 28061:tid 140510173820672] [client 172.23.3.158:58388] mod_fcgid: can't apply process slot for /kSCproxy/WEB/chkcmp/json/index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/
+[Wed May 08 09:56:42.322534 2013] [mpm_event:notice] [pid 27967:tid 140510443284224] AH00491: caught SIGTERM, shutting down
+[Wed May 08 09:56:43.678987 2013] [ssl:notice] [pid 3100:tid 140560353257216] AH01886: SSL FIPS mode disabled
+[Wed May 08 09:56:43.729189 2013] [ssl:notice] [pid 3101:tid 140560353257216] AH01886: SSL FIPS mode disabled
+[Wed May 08 09:56:43.752623 2013] [ssl:warn] [pid 3101:tid 140560353257216] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Wed May 08 09:56:43.754452 2013] [mpm_event:notice] [pid 3101:tid 140560353257216] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Wed May 08 09:56:43.754475 2013] [core:notice] [pid 3101:tid 140560353257216] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Wed May 08 10:01:47.575131 2013] [mpm_event:notice] [pid 3101:tid 140560353257216] AH00491: caught SIGTERM, shutting down
+[Wed May 08 10:01:48.793856 2013] [ssl:notice] [pid 3426:tid 140558235105024] AH01886: SSL FIPS mode disabled
+[Wed May 08 10:01:48.878130 2013] [ssl:notice] [pid 3427:tid 140558235105024] AH01886: SSL FIPS mode disabled
+[Wed May 08 10:01:48.897176 2013] [ssl:warn] [pid 3427:tid 140558235105024] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Wed May 08 10:01:48.899004 2013] [mpm_event:notice] [pid 3427:tid 140558235105024] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Wed May 08 10:01:48.899035 2013] [core:notice] [pid 3427:tid 140558235105024] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Wed May 08 10:02:28.663276 2013] [mpm_event:notice] [pid 3427:tid 140558235105024] AH00491: caught SIGTERM, shutting down
+[Wed May 08 10:02:29.415698 2013] [ssl:notice] [pid 3554:tid 140083267634944] AH01886: SSL FIPS mode disabled
+[Wed May 08 10:02:29.484437 2013] [ssl:notice] [pid 3555:tid 140083267634944] AH01886: SSL FIPS mode disabled
+[Wed May 08 10:02:29.502889 2013] [ssl:warn] [pid 3555:tid 140083267634944] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Wed May 08 10:02:29.504672 2013] [mpm_event:notice] [pid 3555:tid 140083267634944] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Wed May 08 10:02:29.504698 2013] [core:notice] [pid 3555:tid 140083267634944] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Wed May 08 10:02:55.953653 2013] [mpm_event:notice] [pid 3555:tid 140083267634944] AH00491: caught SIGTERM, shutting down
+[Wed May 08 10:02:56.695742 2013] [ssl:notice] [pid 3657:tid 140008687765248] AH01886: SSL FIPS mode disabled
+[Wed May 08 10:02:56.714703 2013] [ssl:notice] [pid 3658:tid 140008687765248] AH01886: SSL FIPS mode disabled
+[Wed May 08 10:02:56.751102 2013] [ssl:warn] [pid 3658:tid 140008687765248] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Wed May 08 10:02:56.752901 2013] [mpm_event:notice] [pid 3658:tid 140008687765248] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Wed May 08 10:02:56.752924 2013] [core:notice] [pid 3658:tid 140008687765248] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Wed May 08 10:08:16.173190 2013] [fcgid:warn] [pid 3661:tid 140008574105344] [client 172.23.3.158:54564] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://172.23.3.177:8080/kVASySystemControl/
+[Wed May 08 10:08:16.173245 2013] [core:error] [pid 3661:tid 140008574105344] [client 172.23.3.158:54564] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/
+[Wed May 08 10:08:21.834471 2013] [fcgid:warn] [pid 3660:tid 140008687765248] mod_fcgid: cleanup zombie process 3953
+[Wed May 08 10:14:30.834866 2013] [mpm_event:notice] [pid 3658:tid 140008687765248] AH00491: caught SIGTERM, shutting down
+[Wed May 08 10:14:33.205266 2013] [ssl:notice] [pid 4199:tid 140080825198336] AH01886: SSL FIPS mode disabled
+[Wed May 08 10:14:33.228681 2013] [ssl:notice] [pid 4200:tid 140080825198336] AH01886: SSL FIPS mode disabled
+[Wed May 08 10:14:33.269200 2013] [ssl:warn] [pid 4200:tid 140080825198336] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Wed May 08 10:14:33.271032 2013] [mpm_event:notice] [pid 4200:tid 140080825198336] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Wed May 08 10:14:33.271062 2013] [core:notice] [pid 4200:tid 140080825198336] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Wed May 08 10:16:50.721345 2013] [mpm_event:notice] [pid 4200:tid 140080825198336] AH00491: caught SIGTERM, shutting down
+[Wed May 08 10:16:51.407355 2013] [ssl:notice] [pid 4412:tid 139900167493376] AH01886: SSL FIPS mode disabled
+[Wed May 08 10:16:51.451042 2013] [ssl:notice] [pid 4413:tid 139900167493376] AH01886: SSL FIPS mode disabled
+[Wed May 08 10:16:51.495192 2013] [ssl:warn] [pid 4413:tid 139900167493376] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Wed May 08 10:16:51.496993 2013] [mpm_event:notice] [pid 4413:tid 139900167493376] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Wed May 08 10:16:51.497017 2013] [core:notice] [pid 4413:tid 139900167493376] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Wed May 08 10:17:55.267681 2013] [fcgid:warn] [pid 4419:tid 139900064323328] [client 172.23.3.158:54967] mod_fcgid: stderr: Undefined subroutine &main::SlimTaov called at /kSCproxy/WEB/proxy/json/index.pl line 63., referer: http://172.23.10.249:6560/
+[Wed May 08 10:17:55.267733 2013] [core:error] [pid 4419:tid 139900064323328] [client 172.23.3.158:54967] End of script output before headers: index.pl, referer: http://172.23.10.249:6560/
+[Wed May 08 10:18:04.186330 2013] [fcgid:warn] [pid 4415:tid 139900167493376] mod_fcgid: cleanup zombie process 4510
+[Wed May 08 10:18:54.823526 2013] [mpm_event:notice] [pid 4413:tid 139900167493376] AH00491: caught SIGTERM, shutting down
+[Wed May 08 10:18:55.565697 2013] [ssl:notice] [pid 4524:tid 139785516889856] AH01886: SSL FIPS mode disabled
+[Wed May 08 10:18:55.619000 2013] [ssl:notice] [pid 4525:tid 139785516889856] AH01886: SSL FIPS mode disabled
+[Wed May 08 10:18:55.648512 2013] [ssl:warn] [pid 4525:tid 139785516889856] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Wed May 08 10:18:55.650290 2013] [mpm_event:notice] [pid 4525:tid 139785516889856] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Wed May 08 10:18:55.650314 2013] [core:notice] [pid 4525:tid 139785516889856] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Wed May 08 10:31:17.673343 2013] [mpm_event:notice] [pid 4525:tid 139785516889856] AH00491: caught SIGTERM, shutting down
+[Wed May 08 10:31:18.387296 2013] [ssl:notice] [pid 4900:tid 139866651735808] AH01886: SSL FIPS mode disabled
+[Wed May 08 10:31:18.422642 2013] [ssl:notice] [pid 4901:tid 139866651735808] AH01886: SSL FIPS mode disabled
+[Wed May 08 10:31:18.487249 2013] [ssl:warn] [pid 4901:tid 139866651735808] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Wed May 08 10:31:18.489056 2013] [mpm_event:notice] [pid 4901:tid 139866651735808] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Wed May 08 10:31:18.489081 2013] [core:notice] [pid 4901:tid 139866651735808] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Wed May 08 10:32:11.562869 2013] [mpm_event:notice] [pid 4901:tid 139866651735808] AH00491: caught SIGTERM, shutting down
+[Wed May 08 10:32:12.389295 2013] [ssl:notice] [pid 5036:tid 139690879780608] AH01886: SSL FIPS mode disabled
+[Wed May 08 10:32:12.482427 2013] [ssl:notice] [pid 5037:tid 139690879780608] AH01886: SSL FIPS mode disabled
+[Wed May 08 10:32:12.512702 2013] [ssl:warn] [pid 5037:tid 139690879780608] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Wed May 08 10:32:12.514496 2013] [mpm_event:notice] [pid 5037:tid 139690879780608] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Wed May 08 10:32:12.514522 2013] [core:notice] [pid 5037:tid 139690879780608] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Wed May 08 10:34:36.163331 2013] [mpm_event:notice] [pid 5037:tid 139690879780608] AH00491: caught SIGTERM, shutting down
+[Wed May 08 10:34:36.738330 2013] [ssl:notice] [pid 5390:tid 139853406471936] AH01886: SSL FIPS mode disabled
+[Wed May 08 10:34:36.788001 2013] [ssl:notice] [pid 5391:tid 139853406471936] AH01886: SSL FIPS mode disabled
+[Wed May 08 10:34:36.816468 2013] [ssl:warn] [pid 5391:tid 139853406471936] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Wed May 08 10:34:36.818272 2013] [mpm_event:notice] [pid 5391:tid 139853406471936] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Wed May 08 10:34:36.818299 2013] [core:notice] [pid 5391:tid 139853406471936] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Wed May 08 10:35:04.653715 2013] [mpm_event:notice] [pid 5391:tid 139853406471936] AH00491: caught SIGTERM, shutting down
+[Wed May 08 10:35:05.204023 2013] [ssl:notice] [pid 5487:tid 140026204948224] AH01886: SSL FIPS mode disabled
+[Wed May 08 10:35:05.251720 2013] [ssl:notice] [pid 5488:tid 140026204948224] AH01886: SSL FIPS mode disabled
+[Wed May 08 10:35:05.299849 2013] [ssl:warn] [pid 5488:tid 140026204948224] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Wed May 08 10:35:05.301664 2013] [mpm_event:notice] [pid 5488:tid 140026204948224] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Wed May 08 10:35:05.301687 2013] [core:notice] [pid 5488:tid 140026204948224] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Wed May 08 10:37:14.032113 2013] [mpm_event:notice] [pid 5488:tid 140026204948224] AH00491: caught SIGTERM, shutting down
+[Wed May 08 10:37:14.638268 2013] [ssl:notice] [pid 5623:tid 139740642461440] AH01886: SSL FIPS mode disabled
+[Wed May 08 10:37:14.686585 2013] [ssl:notice] [pid 5624:tid 139740642461440] AH01886: SSL FIPS mode disabled
+[Wed May 08 10:37:14.699622 2013] [ssl:warn] [pid 5624:tid 139740642461440] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Wed May 08 10:37:14.701410 2013] [mpm_event:notice] [pid 5624:tid 139740642461440] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Wed May 08 10:37:14.701432 2013] [core:notice] [pid 5624:tid 139740642461440] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Wed May 08 10:38:14.271690 2013] [mpm_event:notice] [pid 5624:tid 139740642461440] AH00491: caught SIGTERM, shutting down
+[Wed May 08 10:38:15.068771 2013] [ssl:notice] [pid 5725:tid 139860408551168] AH01886: SSL FIPS mode disabled
+[Wed May 08 10:38:15.133136 2013] [ssl:notice] [pid 5726:tid 139860408551168] AH01886: SSL FIPS mode disabled
+[Wed May 08 10:38:15.156215 2013] [ssl:warn] [pid 5726:tid 139860408551168] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Wed May 08 10:38:15.157997 2013] [mpm_event:notice] [pid 5726:tid 139860408551168] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Wed May 08 10:38:15.158022 2013] [core:notice] [pid 5726:tid 139860408551168] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Wed May 08 10:52:49.271697 2013] [mpm_event:notice] [pid 5726:tid 139860408551168] AH00491: caught SIGTERM, shutting down
+[Wed May 08 10:52:53.717616 2013] [ssl:notice] [pid 6366:tid 140580812637952] AH01886: SSL FIPS mode disabled
+[Wed May 08 10:52:53.782968 2013] [ssl:notice] [pid 6367:tid 140580812637952] AH01886: SSL FIPS mode disabled
+[Wed May 08 10:52:53.810692 2013] [ssl:warn] [pid 6367:tid 140580812637952] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Wed May 08 10:52:53.812502 2013] [mpm_event:notice] [pid 6367:tid 140580812637952] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Wed May 08 10:52:53.812525 2013] [core:notice] [pid 6367:tid 140580812637952] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Wed May 08 11:05:24.820302 2013] [mpm_event:notice] [pid 6367:tid 140580812637952] AH00491: caught SIGTERM, shutting down
+[Wed May 08 11:05:27.426154 2013] [ssl:notice] [pid 7023:tid 139890141198080] AH01886: SSL FIPS mode disabled
+[Wed May 08 11:05:27.544066 2013] [ssl:notice] [pid 7024:tid 139890141198080] AH01886: SSL FIPS mode disabled
+[Wed May 08 11:05:27.556553 2013] [ssl:warn] [pid 7024:tid 139890141198080] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Wed May 08 11:05:27.558345 2013] [mpm_event:notice] [pid 7024:tid 139890141198080] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Wed May 08 11:05:27.558370 2013] [core:notice] [pid 7024:tid 139890141198080] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Wed May 08 11:11:16.281357 2013] [mpm_event:notice] [pid 7024:tid 139890141198080] AH00491: caught SIGTERM, shutting down
+[Wed May 08 11:11:18.073944 2013] [ssl:notice] [pid 7318:tid 140483861137152] AH01886: SSL FIPS mode disabled
+[Wed May 08 11:11:18.115935 2013] [ssl:notice] [pid 7321:tid 140483861137152] AH01886: SSL FIPS mode disabled
+[Wed May 08 11:11:18.149873 2013] [ssl:warn] [pid 7321:tid 140483861137152] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Wed May 08 11:11:18.151698 2013] [mpm_event:notice] [pid 7321:tid 140483861137152] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Wed May 08 11:11:18.151722 2013] [core:notice] [pid 7321:tid 140483861137152] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Wed May 08 14:01:04.512515 2013] [fcgid:warn] [pid 7327:tid 140483661649664] [client 172.23.3.158:49232] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://172.23.3.177:8080/kVASySystemControl/
+[Wed May 08 14:01:04.512586 2013] [core:error] [pid 7327:tid 140483661649664] [client 172.23.3.158:49232] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/
+[Wed May 08 14:01:13.173037 2013] [fcgid:warn] [pid 7323:tid 140483861137152] mod_fcgid: cleanup zombie process 13355
+[Wed May 08 15:48:17.319100 2013] [fcgid:warn] [pid 8355:tid 140483661649664] [client 172.23.3.158:55988] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://172.23.3.177:8080/kVASySystemControl/index.jsp
+[Wed May 08 15:48:17.319153 2013] [core:error] [pid 8355:tid 140483661649664] [client 172.23.3.158:55988] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/index.jsp
+[Wed May 08 15:48:26.063568 2013] [fcgid:warn] [pid 7323:tid 140483861137152] mod_fcgid: cleanup zombie process 17069
+[Wed May 08 16:03:08.074592 2013] [mpm_event:notice] [pid 7321:tid 140483861137152] AH00491: caught SIGTERM, shutting down
+[Wed May 08 16:03:09.546589 2013] [ssl:notice] [pid 17583:tid 140128289130240] AH01886: SSL FIPS mode disabled
+[Wed May 08 16:03:09.603403 2013] [ssl:notice] [pid 17584:tid 140128289130240] AH01886: SSL FIPS mode disabled
+[Wed May 08 16:03:09.675862 2013] [ssl:warn] [pid 17584:tid 140128289130240] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Wed May 08 16:03:09.677661 2013] [mpm_event:notice] [pid 17584:tid 140128289130240] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Wed May 08 16:03:09.677687 2013] [core:notice] [pid 17584:tid 140128289130240] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Wed May 08 16:04:47.930272 2013] [mpm_event:notice] [pid 17584:tid 140128289130240] AH00491: caught SIGTERM, shutting down
+[Wed May 08 16:04:48.737109 2013] [ssl:notice] [pid 17852:tid 140258314090240] AH01886: SSL FIPS mode disabled
+[Wed May 08 16:04:48.790903 2013] [ssl:notice] [pid 17853:tid 140258314090240] AH01886: SSL FIPS mode disabled
+[Wed May 08 16:04:48.832097 2013] [ssl:warn] [pid 17853:tid 140258314090240] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Wed May 08 16:04:48.833930 2013] [mpm_event:notice] [pid 17853:tid 140258314090240] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Wed May 08 16:04:48.833959 2013] [core:notice] [pid 17853:tid 140258314090240] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
