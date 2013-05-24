@@ -100,7 +100,7 @@ sub AllHosts {
     print "[". $out ."]";
 }
 #
-sub ShowCritical {
+sub ShowCritical2 {
     my $uid = shift;
     my $search = shift;
     my $rows = shift;
@@ -178,6 +178,48 @@ sub ShowCritical {
     $out.="]";
     print kSChtml::ContentType("text");
     print "{". $out ."}";
+}
+#
+sub ShowCritical {
+    my $uid = shift;
+    my @temp;
+    my $out;
+    #####
+    #
+    # Get data from client
+    #
+    #####
+    my $ah = kSCjson::GetServices("lda","json","U2hvd0NyaXRpY2FsHjdz6d",$uid);
+    #####
+    #
+    # Loop trough array
+    #
+    #####
+    foreach my $key (keys %{$ah}) {
+	my @array = @{$ah->{$key}->{'result'}};
+	my $count = scalar(@array);
+	for (my $x=0;$x<$count;$x++) {
+	    push @temp, [$ah->{$key}->{'result'}[$x]->{'SERVICE_STATUS_ICON'},$ah->{$key}->{'result'}[$x]->{'SERVICE_STATUS'},$ah->{$key}->{'result'}[$x]->{'TIMESTAMP'},$ah->{$key}->{'result'}[$x]->{'SERVICE_NAME'},$ah->{$key}->{'result'}[$x]->{'HOST_NAME'},$ah->{$key}->{'result'}[$x]->{'HOST_STATUS'},$ah->{$key}->{'result'}[$x]->{'OUTPUT'},$key];
+	}
+    }
+    #####
+    #
+    # Sorting
+    #
+    #####
+    my @tmp = reverse sort {$a->[2] cmp $b->[2]} @temp;
+    #####
+    #
+    # Output
+    #
+    #####
+    for(my $i=0;$i<scalar(@tmp);$i++) {
+	$out.="{\"SERVICE_STATUS_ICON\":\"". $tmp[$i][0] ."\",\"SERVICE_STATUS\":\"". $tmp[$i][1] ."\",\"TIMESTAMP\":\"". kSCbasic::ConvertUt2Ts($tmp[$i][2]) ."\",\"SERVICE_NAME\":\"". $tmp[$i][3] ."\",\"HOST_NAME\":\"". $tmp[$i][4] ."\",\"HOST_STATUS\":\"". $tmp[$i][5] ."\",\"OUTPUT\":\"". kSCbasic::EncodeHTML($tmp[$i][6]) ."\",\"NODE\":\"". $tmp[$i][7] ."\"},";
+    }
+    $out = substr($out, 0, -1);
+    #
+    print kSChtml::ContentType("json");
+    print "[". $out ."]";
 }
 #
 #
