@@ -100,6 +100,19 @@ sub AllHosts {
     print "[". $out ."]";
 }
 #
+sub HostFullInfo {
+    my $uid = shift;
+    #
+    my $ah = kSChttp::GetArray("lda","json","SG9zdEZ1bGxJbmZvHd78h3",$uid);
+    my $out;
+    foreach my $key (keys %{$ah}) {
+	$out .= "{\"NODE\":\"". $key ."\",\"HFI\":". $ah->{$key}->{'result'} ."},";
+    }
+    $out = substr($out, 0, -1);
+    print kSChtml::ContentType("json");
+    print "[". $out ."]";
+}
+#
 sub ShowCritical2 {
     my $uid = shift;
     my $search = shift;
@@ -244,6 +257,8 @@ while($request->Accept() >= 0) {
 	    SelectLiveticker(kSCbasic::GetUrlKeyValue("u"));
 	} elsif (kSCbasic::CheckUrlKeyValue("m","AllHosts","y") == 0) {
 	    AllHosts(kSCbasic::GetUrlKeyValue("u"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","HostFullInfo","y") == 0) {
+	    HostFullInfo(kSCbasic::GetUrlKeyValue("u"));
 	} elsif (kSCbasic::CheckUrlKeyValue("m","ShowCritical","y") == 0) {
 	    ShowCritical(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("_search"),kSCbasic::GetUrlKeyValue("rows"),kSCbasic::GetUrlKeyValue("page"),kSCbasic::GetUrlKeyValue("sidx"),kSCbasic::GetUrlKeyValue("sord"));
 	} else {
@@ -258,6 +273,8 @@ while($request->Accept() >= 0) {
 	    SelectLiveticker(kSCbasic::GetUrlKeyValue("u"));
 	} elsif (kSCbasic::CheckUrlKeyValue("m","AllHosts","y") == 0) {
 	    AllHosts(kSCbasic::GetUrlKeyValue("u"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","HostFullInfo","y") == 0) {
+	    HostFullInfo(kSCbasic::GetUrlKeyValue("u"));
 	} elsif (kSCbasic::CheckUrlKeyValue("m","ShowCritical","y") == 0) {
 	    ShowCritical(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("_search"),kSCbasic::GetUrlKeyValue("rows"),kSCbasic::GetUrlKeyValue("page"),kSCbasic::GetUrlKeyValue("sidx"),kSCbasic::GetUrlKeyValue("sord"));
 	} else {
