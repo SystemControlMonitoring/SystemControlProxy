@@ -17,6 +17,10 @@ Format: <i><b>JSON</b></i><br>
     <li><b>CheckProcess</b> - Check All KSC Monitoring Processes running and Ports open URL: <a href="/proxy/json/?e=1&cm=Y2hrY21wHj7Kl9&m=Q2hlY2tQcm9jZXNzLk76Zh">/proxy/json/?e=1&cm=Y2hrY21wHj7Kl9&m=Q2hlY2tQcm9jZXNzLk76Zh</a></li>
     <li><b>SelectLiveticker</b> - Get Current Critical Services and Hosts URL: <a href="/proxy/json/?e=1&m=U2VsZWN0TGl2ZXRpY2tlcg==RpKlFs&u=c2JhcmVzZWw=LKHld3">/proxy/json/?e=1&m=U2VsZWN0TGl2ZXRpY2tlcg==RpKlFs&u=c2JhcmVzZWw=LKHld3</a></li>
     <li><b>FillLiveticker</b> - Update Critical Services and Hosts in Datasource URL: <a href="/proxy/json/?e=1&m=RmlsbExpdmV0aWNrZXI=RpY2Fs&u=c2JhcmVzZWw=LKHld3">/proxy/json/?e=1&m=RmlsbExpdmV0aWNrZXI=RpY2Fs&u=c2JhcmVzZWw=LKHld3</a></li>
+    <li><b>ListHosts</b> - List Names of Hosts URL: <a href="/proxy/json/?e=1&m=TGlzdEhvc3RzHj86Hz&u=c2JhcmVzZWw=Adhfg3">/proxy/json/?e=1&m=TGlzdEhvc3RzHj86Hz&u=c2JhcmVzZWw=Adhfg3</a></li>
+    <li><b>ListServices</b> - List Names of Services URL: <a href="/proxy/json/?e=1&m=TGlzdFNlcnZpY2VzHj86Hz&u=c2JhcmVzZWw=Adhfg3">/proxy/json/?e=1&m=TGlzdFNlcnZpY2VzHj86Hz&u=c2JhcmVzZWw=Adhfg3</a></li>
+    <li><b>ListDatabases</b> - List Names of Databases URL: <a href="/proxy/json/?e=1&m=TGlzdERhdGFiYXNlcw==Hj86Hz&u=c2JhcmVzZWw=Adhfg3">/proxy/json/?e=1&m=TGlzdERhdGFiYXNlcw==Hj86Hz&u=c2JhcmVzZWw=Adhfg3</a></li>
+    <li><b>ListHostgroups</b> - List Names of Hostgroups URL: <a href="/proxy/json/?e=1&m=TGlzdEhvc3Rncm91cHM=Hj86Hz&u=c2JhcmVzZWw=Adhfg3">/proxy/json/?e=1&m=TGlzdEhvc3Rncm91cHM=Hj86Hz&u=c2JhcmVzZWw=Adhfg3</a></li>
 </ul>
 </font>
 Format: <i><b>XML</b></i><br>
@@ -30,6 +34,10 @@ Format: <i><b>XML</b></i><br>
     <li><b>CheckProcess</b> - Check All KSC Monitoring Processes running and Ports open URL: <a href="/proxy/xml/?e=1&cm=Y2hrY21wHj7Kl9&m=Q2hlY2tQcm9jZXNzLk76Zh">/proxy/xml/?e=1&cm=Y2hrY21wHj7Kl9&m=Q2hlY2tQcm9jZXNzLk76Zh</a></li>
     <li><b>SelectLiveticker</b> - Get Current Critical Services and Hosts URL: <a href="/proxy/xml/?e=1&m=U2VsZWN0TGl2ZXRpY2tlcg==RpKlFs&u=c2JhcmVzZWw=LKHld3">/proxy/xml/?e=1&m=U2VsZWN0TGl2ZXRpY2tlcg==RpKlFs&u=c2JhcmVzZWw=LKHld3</a></li>
     <li><b>FillLiveticker</b> - Update Critical Services and Hosts in Datasource URL: <a href="/proxy/xml/?e=1&m=RmlsbExpdmV0aWNrZXI=Hzd7UD&u=c2JhcmVzZWw=LKHjd3">/proxy/xml/?e=1&m=RmlsbExpdmV0aWNrZXI=Hzd7UD&u=c2JhcmVzZWw=LKHjd3</a></li>
+    <li><b>ListHosts</b> - List Names of Hosts URL: <a href="/proxy/xml/?e=1&m=TGlzdEhvc3RzHj86Hz&u=c2JhcmVzZWw=Adhfg3">/proxy/xml/?e=1&m=TGlzdEhvc3RzHj86Hz&u=c2JhcmVzZWw=Adhfg3</a></li>
+    <li><b>ListServices</b> - List Names of Services URL: <a href="/proxy/xml/?e=1&m=TGlzdFNlcnZpY2VzHj86Hz&u=c2JhcmVzZWw=Adhfg3">/proxy/xml/?e=1&m=TGlzdFNlcnZpY2VzHj86Hz&u=c2JhcmVzZWw=Adhfg3</a></li>
+    <li><b>ListDatabases</b> - List Names of Databases URL: <a href="/proxy/xml/?e=1&m=TGlzdERhdGFiYXNlcw==Hj86Hz&u=c2JhcmVzZWw=Adhfg3">/proxy/xml/?e=1&m=TGlzdERhdGFiYXNlcw==Hj86Hz&u=c2JhcmVzZWw=Adhfg3</a></li>
+    <li><b>ListHostgroups</b> - List Names of Hostgroups URL: <a href="/proxy/xml/?e=1&m=TGlzdEhvc3Rncm91cHM=Hj86Hz&u=c2JhcmVzZWw=Adhfg3">/proxy/xml/?e=1&m=TGlzdEhvc3Rncm91cHM=Hj86Hz&u=c2JhcmVzZWw=Adhfg3</a></li>
 </ul>
 </font>
 <br></br>

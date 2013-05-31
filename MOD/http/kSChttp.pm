@@ -40,6 +40,23 @@ sub GetArray {
     return (\%decoded_info);
 }
 #
+sub GetSearchArray {
+    my $coreml = shift;
+    my $format = shift;
+    my $module = shift;
+    my $uid = shift;
+    my $searchstring = shift;
+    #
+    my %decoded_info=();
+    my $gibc = $properties->splitToTree(qr/\./, 'core');
+    foreach my $key (keys %{$gibc}) {
+	my $info = LWP::Simple::get("http://". $gibc->{$key}->{'addr'} .":". $gibc->{$key}->{'port'} ."/". $coreml ."/". $format ."/?e=1&m=". $module ."&u=". $uid ."&searchstring=". $searchstring ."");
+	$decoded_info{ $gibc->{$key}->{'name'} }{'result'} = $info;
+    }
+    #
+    return (\%decoded_info);
+}
+#
 sub RedirectClientInfo {
     my $corenode = shift;
     my $client = shift;

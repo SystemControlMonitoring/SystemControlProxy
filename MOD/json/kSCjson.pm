@@ -52,11 +52,6 @@ sub GetServices {
     my $format = shift;
     my $module = shift;
     my $uid = shift;
-    my $search = shift;
-    my $rows = shift;
-    my $page = shift;
-    my $sidx = shift;
-    my $sord = shift;
     my %decoded_info=();
     #
     my $gibc = $properties->splitToTree(qr/\./, 'core');

@@ -76,13 +76,42 @@ sub FillLiveticker {
 #
 sub SelectLiveticker {
     my $uid = shift;
-    #
-    my $ah = kSChttp::GetArray("lda","json","U2VsZWN0TGl2ZXRpY2tlcg==RpKlFs",$uid);
+    my @temp;
     my $out;
+    #####
+    #
+    # Get data from client
+    #
+    #####
+    my $ah = kSCjson::GetServices("lda","json","U2VsZWN0TGl2ZXRpY2tlcg==RpKlFs",$uid);
+    #####
+    #
+    # Loop trough array
+    #
+    #####
     foreach my $key (keys %{$ah}) {
-	$out .= "{\"NODE\":\"". $key ."\",\"SERVICES\":". $ah->{$key}->{'result'} ."},";
+	my @array = @{$ah->{$key}->{'result'}};
+	my $count = scalar(@array);
+	for (my $x=0;$x<$count;$x++) {
+	    push @temp, [$ah->{$key}->{'result'}[$x]->{'TIMESTAMP'},$ah->{$key}->{'result'}[$x]->{'INCIDENT'},$ah->{$key}->{'result'}[$x]->{'DISPLAY_NAME'},$ah->{$key}->{'result'}[$x]->{'HOST_NAME'},$ah->{$key}->{'result'}[$x]->{'SERVICE_STATE'},$ah->{$key}->{'result'}[$x]->{'HOST_STATE'},$ah->{$key}->{'result'}[$x]->{'CUSTOM_VAR'},$ah->{$key}->{'result'}[$x]->{'ICON'},$ah->{$key}->{'result'}[$x]->{'OUTPUT'},$key];
+	}
+    }
+    #####
+    #
+    # Sorting
+    #
+    #####
+    my @tmp = reverse sort {$a->[0] cmp $b->[0]} @temp;
+    #####
+    #
+    # Output
+    #
+    #####
+    for(my $i=0;$i<scalar(@tmp);$i++) {
+	$out.="{\"TIMESTAMP\":\"". kSCbasic::ConvertUt2Ts($tmp[$i][0]) ."\",\"INCIDENT\":\"". $tmp[$i][1] ."\",\"SERVICE_NAME\":\"". $tmp[$i][2] ."\",\"HOST_NAME\":\"". $tmp[$i][3] ."\",\"SERVICE_STATUS\":\"". $tmp[$i][4] ."\",\"HOST_STATUS\":\"". $tmp[$i][5] ."\",\"CUST_VAR\":\"". $tmp[$i][6] ."\",\"HOST_ICON\":\"". $tmp[$i][7] ."\",\"OUTPUT\":\"". kSCbasic::EncodeHTML($tmp[$i][8]) ."\",\"NODE\":\"". $tmp[$i][9] ."\"},";
     }
     $out = substr($out, 0, -1);
+    #
     print kSChtml::ContentType("json");
     print "[". $out ."]";
 }
@@ -235,6 +264,70 @@ sub ShowCritical {
     print "[". $out ."]";
 }
 #
+sub ListHosts {
+    my $uid = shift;
+    my $searchstring = shift;
+    #
+    my $ah = kSChttp::GetSearchArray("search","json","TGlzdEhvc3RzHj86Hz",$uid,$searchstring);
+    my $out;
+    foreach my $key (keys %{$ah}) {
+	my $data = $ah->{$key}->{'result'};
+	$data =~ s/{\"/{\"NODE\":\"$key\",\"/g;
+	$out .= $data .",";
+    }
+    $out = substr($out, 0, -1);
+    print kSChtml::ContentType("json");
+    print "{\"hosts\":[". $out ."]}";
+}
+#
+sub ListServices {
+    my $uid = shift;
+    my $searchstring = shift;
+    #
+    my $ah = kSChttp::GetSearchArray("search","json","TGlzdFNlcnZpY2VzHj86Hz",$uid,$searchstring);
+    my $out;
+    foreach my $key (keys %{$ah}) {
+	my $data = $ah->{$key}->{'result'};
+	$data =~ s/{\"/{\"NODE\":\"$key\",\"/g;
+	$out .= $data .",";
+    }
+    $out = substr($out, 0, -1);
+    print kSChtml::ContentType("json");
+    print "{\"services\":[". $out ."]}";
+}
+#
+sub ListDatabases {
+    my $uid = shift;
+    my $searchstring = shift;
+    #
+    my $ah = kSChttp::GetSearchArray("search","json","TGlzdERhdGFiYXNlcw==Hj86Hz",$uid,$searchstring);
+    my $out;
+    foreach my $key (keys %{$ah}) {
+	my $data = $ah->{$key}->{'result'};
+	$data =~ s/{\"/{\"NODE\":\"$key\",\"/g;
+	$out .= $data .",";
+    }
+    $out = substr($out, 0, -1);
+    print kSChtml::ContentType("json");
+    print "{\"databases\":[". $out ."]}";
+}
+#
+sub ListHostgroups {
+    my $uid = shift;
+    my $searchstring = shift;
+    #
+    my $ah = kSChttp::GetSearchArray("search","json","TGlzdEhvc3Rncm91cHM=Hj86Hz",$uid,$searchstring);
+    my $out;
+    foreach my $key (keys %{$ah}) {
+	my $data = $ah->{$key}->{'result'};
+	$data =~ s/{\"/{\"NODE\":\"$key\",\"/g;
+	$out .= $data .",";
+    }
+    $out = substr($out, 0, -1);
+    print kSChtml::ContentType("json");
+    print "{\"hostgroups\":[". $out ."]}";
+}
+#
 #
 #
 #
@@ -259,6 +352,14 @@ while($request->Accept() >= 0) {
 	    AllHosts(kSCbasic::GetUrlKeyValue("u"));
 	} elsif (kSCbasic::CheckUrlKeyValue("m","HostFullInfo","y") == 0) {
 	    HostFullInfo(kSCbasic::GetUrlKeyValue("u"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","ListHosts","y") == 0) {
+	    ListHosts(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","ListServices","y") == 0) {
+	    ListServices(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","ListDatabases","y") == 0) {
+	    ListDatabases(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","ListHostgroups","y") == 0) {
+	    ListHostgroups(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
 	} elsif (kSCbasic::CheckUrlKeyValue("m","ShowCritical","y") == 0) {
 	    ShowCritical(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("_search"),kSCbasic::GetUrlKeyValue("rows"),kSCbasic::GetUrlKeyValue("page"),kSCbasic::GetUrlKeyValue("sidx"),kSCbasic::GetUrlKeyValue("sord"));
 	} else {
@@ -275,6 +376,14 @@ while($request->Accept() >= 0) {
 	    AllHosts(kSCbasic::GetUrlKeyValue("u"));
 	} elsif (kSCbasic::CheckUrlKeyValue("m","HostFullInfo","y") == 0) {
 	    HostFullInfo(kSCbasic::GetUrlKeyValue("u"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","ListHosts","y") == 0) {
+	    ListHosts(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","ListServices","y") == 0) {
+	    ListServices(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","ListDatabases","y") == 0) {
+	    ListDatabases(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","ListHostgroups","y") == 0) {
+	    ListHostgroups(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
 	} elsif (kSCbasic::CheckUrlKeyValue("m","ShowCritical","y") == 0) {
 	    ShowCritical(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("_search"),kSCbasic::GetUrlKeyValue("rows"),kSCbasic::GetUrlKeyValue("page"),kSCbasic::GetUrlKeyValue("sidx"),kSCbasic::GetUrlKeyValue("sord"));
 	} else {
