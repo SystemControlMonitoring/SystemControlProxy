@@ -389,6 +389,11 @@ sub GetBasicConfig {
     return $gibc;
 }
 #
+sub GetModViewConfig {
+    my $gibc = $properties->splitToTree(qr/\./, 'mod-view');
+    return $gibc;
+}
+#
 close ($CF);
 #
 1;

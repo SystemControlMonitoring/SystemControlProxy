@@ -118,6 +118,18 @@ sub InsertUpdateConfig {
     return 0;
 }
 #
+sub SelectModView {
+    my $uid = shift;
+    my $mdl = shift;
+    my $tky = shift;
+    my $dbh = REPOConnect();
+    my $sth = $dbh->prepare("SELECT decode(tv1,'base64') FROM repo_config WHERE tus = encode('". $uid ."','base64') AND tmd = encode('". $mdl ."','base64') AND tky = encode('". $tky ."','base64') ORDER BY tid ASC") or die "[". (localtime) ."] Repo Select Failed: $DBI::errstr\n";
+    $sth->execute();
+    return ($sth);
+    $sth->finish;
+    $dbh->disconnect;
+}
+#
 close ($CF);
 #
 1;
