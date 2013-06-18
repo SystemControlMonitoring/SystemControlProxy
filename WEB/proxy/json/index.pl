@@ -358,6 +358,50 @@ sub ServiceStatusSelect {
     print "[". $out ."]";
 }
 #
+sub ServiceSearchList {
+    my $uid = shift;
+    my $searchstring = shift;
+    #
+    my $ah = kSChttp::GetSrvSearchArray("lda","json","U2VydmljZVNlYXJjaExpc3Q=Ki88uU",$uid,$searchstring);
+    my $out;
+    foreach my $key (keys %{$ah}) {
+	my $data = $ah->{$key}->{'result'};
+	$data =~ s/\"SERVICELIST\":]}/\"SERVICELIST\":[]}/g;
+	$out .= "{\"NODE\":\"". $key ."\",\"SRVSEARCH\":". $data ."},";
+    }
+    $out = substr($out, 0, -1);
+    print kSChtml::ContentType("json");
+    print "[". $out ."]";
+}
+#
+sub HostStatusSelect {
+    my $uid = shift;
+    my $state = shift;
+    #
+    my $ah = kSChttp::GetSrvStatSelArray("lda","json","SG9zdFN0YXR1c1NlbGVjdA==Ki88uU",$uid,$state);
+    my $out;
+    foreach my $key (keys %{$ah}) {
+	$out .= "{\"NODE\":\"". $key ."\",\"HOSTS\":". $ah->{$key}->{'result'} ."},";
+    }
+    $out = substr($out, 0, -1);
+    print kSChtml::ContentType("json");
+    print "[". $out ."]";
+}
+#
+sub HostSearchList {
+    my $uid = shift;
+    my $searchstring = shift;
+    #
+    my $ah = kSChttp::GetSrvSearchArray("lda","json","SG9zdFNlYXJjaExpc3Q=Ki88uU",$uid,$searchstring);
+    my $out;
+    foreach my $key (keys %{$ah}) {
+	$out .= "{\"NODE\":\"". $key ."\",\"HOSTS\":". $ah->{$key}->{'result'} ."},";
+    }
+    $out = substr($out, 0, -1);
+    print kSChtml::ContentType("json");
+    print "[". $out ."]";
+}
+#
 #
 #
 #
@@ -394,6 +438,12 @@ while($request->Accept() >= 0) {
 	    ServiceHostList(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("c"));
 	} elsif (kSCbasic::CheckUrlKeyValue("m","ServiceStatusSelect","y") == 0) {
 	    ServiceStatusSelect(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("s"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","ServiceSearchList","y") == 0) {
+	    ServiceSearchList(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","HostStatusSelect","y") == 0) {
+	    HostStatusSelect(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("s"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","HostSearchList","y") == 0) {
+	    HostSearchList(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
 	} elsif (kSCbasic::CheckUrlKeyValue("m","ShowCritical","y") == 0) {
 	    ShowCritical(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("_search"),kSCbasic::GetUrlKeyValue("rows"),kSCbasic::GetUrlKeyValue("page"),kSCbasic::GetUrlKeyValue("sidx"),kSCbasic::GetUrlKeyValue("sord"));
 	} else {
@@ -422,6 +472,12 @@ while($request->Accept() >= 0) {
 	    ServiceHostList(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("c"));
 	} elsif (kSCbasic::CheckUrlKeyValue("m","ServiceStatusSelect","y") == 0) {
 	    ServiceStatusSelect(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("s"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","ServiceSearchList","y") == 0) {
+	    ServiceSearchList(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","HostStatusSelect","y") == 0) {
+	    HostStatusSelect(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("s"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","HostSearchList","y") == 0) {
+	    HostSearchList(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
 	} elsif (kSCbasic::CheckUrlKeyValue("m","ShowCritical","y") == 0) {
 	    ShowCritical(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("_search"),kSCbasic::GetUrlKeyValue("rows"),kSCbasic::GetUrlKeyValue("page"),kSCbasic::GetUrlKeyValue("sidx"),kSCbasic::GetUrlKeyValue("sord"));
 	} else {
