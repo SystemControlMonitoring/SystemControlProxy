@@ -77,7 +77,7 @@ sub FillLiveticker {
 sub SelectLiveticker {
     my $uid = shift;
     my @temp;
-    my $out;
+    my $out = "";
     #####
     #
     # Get data from client
@@ -402,6 +402,49 @@ sub HostSearchList {
     print "[". $out ."]";
 }
 #
+sub AllDatabases {
+    my $uid = shift;
+    #
+    my $ah = kSChttp::GetArray("lda","json","QWxsRGF0YWJhc2VzZhd873",$uid);
+    my $out;
+    foreach my $key (keys %{$ah}) {
+	$out .= "{\"NODE\":\"". $key ."\",\"DATABASES\":". $ah->{$key}->{'result'} ."},";
+    }
+    $out = substr($out, 0, -1);
+    print kSChtml::ContentType("json");
+    print "[". $out ."]";
+}
+#
+sub DatabaseStatusSelect {
+    my $uid = shift;
+    my $state = shift;
+    #
+    my $ah = kSChttp::GetSrvStatSelArray("lda","json","RGF0YWJhc2VTdGF0dXNTZWxlY3Q=Ki88uU",$uid,$state);
+    my $out;
+    foreach my $key (keys %{$ah}) {
+	my $data = $ah->{$key}->{'result'};
+	$out .= "{\"NODE\":\"". $key ."\",\"DBSTATSEL\":". $data ."},";
+    }
+    $out = substr($out, 0, -1);
+    print kSChtml::ContentType("json");
+    print "[". $out ."]";
+}
+#
+sub DatabaseSearchList {
+    my $uid = shift;
+    my $searchstring = shift;
+    #
+    my $ah = kSChttp::GetSrvSearchArray("lda","json","RGF0YWJhc2VTZWFyY2hMaXN0Ki88uU",$uid,$searchstring);
+    my $out;
+    foreach my $key (keys %{$ah}) {
+	my $data = $ah->{$key}->{'result'};
+	$out .= "{\"NODE\":\"". $key ."\",\"DBSEARCH\":". $data ."},";
+    }
+    $out = substr($out, 0, -1);
+    print kSChtml::ContentType("json");
+    print "[". $out ."]";
+}
+#
 #
 #
 #
@@ -424,6 +467,8 @@ while($request->Accept() >= 0) {
 	    SelectLiveticker(kSCbasic::GetUrlKeyValue("u"));
 	} elsif (kSCbasic::CheckUrlKeyValue("m","AllHosts","y") == 0) {
 	    AllHosts(kSCbasic::GetUrlKeyValue("u"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","AllDatabases","y") == 0) {
+	    AllDatabases(kSCbasic::GetUrlKeyValue("u"));
 	} elsif (kSCbasic::CheckUrlKeyValue("m","HostFullInfo","y") == 0) {
 	    HostFullInfo(kSCbasic::GetUrlKeyValue("u"));
 	} elsif (kSCbasic::CheckUrlKeyValue("m","ListHosts","y") == 0) {
@@ -440,6 +485,10 @@ while($request->Accept() >= 0) {
 	    ServiceStatusSelect(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("s"));
 	} elsif (kSCbasic::CheckUrlKeyValue("m","ServiceSearchList","y") == 0) {
 	    ServiceSearchList(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","DatabaseStatusSelect","y") == 0) {
+	    DatabaseStatusSelect(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("s"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","DatabaseSearchList","y") == 0) {
+	    DatabaseSearchList(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
 	} elsif (kSCbasic::CheckUrlKeyValue("m","HostStatusSelect","y") == 0) {
 	    HostStatusSelect(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("s"));
 	} elsif (kSCbasic::CheckUrlKeyValue("m","HostSearchList","y") == 0) {
@@ -458,6 +507,8 @@ while($request->Accept() >= 0) {
 	    SelectLiveticker(kSCbasic::GetUrlKeyValue("u"));
 	} elsif (kSCbasic::CheckUrlKeyValue("m","AllHosts","y") == 0) {
 	    AllHosts(kSCbasic::GetUrlKeyValue("u"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","AllDatabases","y") == 0) {
+	    AllDatabases(kSCbasic::GetUrlKeyValue("u"));
 	} elsif (kSCbasic::CheckUrlKeyValue("m","HostFullInfo","y") == 0) {
 	    HostFullInfo(kSCbasic::GetUrlKeyValue("u"));
 	} elsif (kSCbasic::CheckUrlKeyValue("m","ListHosts","y") == 0) {
@@ -474,6 +525,10 @@ while($request->Accept() >= 0) {
 	    ServiceStatusSelect(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("s"));
 	} elsif (kSCbasic::CheckUrlKeyValue("m","ServiceSearchList","y") == 0) {
 	    ServiceSearchList(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","DatabaseStatusSelect","y") == 0) {
+	    DatabaseStatusSelect(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("s"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","DatabaseSearchList","y") == 0) {
+	    DatabaseSearchList(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
 	} elsif (kSCbasic::CheckUrlKeyValue("m","HostStatusSelect","y") == 0) {
 	    HostStatusSelect(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("s"));
 	} elsif (kSCbasic::CheckUrlKeyValue("m","HostSearchList","y") == 0) {
