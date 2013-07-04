@@ -21,12 +21,12 @@ my $request = FCGI::Request();
 #
 # Functions
 #
-sub ClientDirect {
+sub ClientInfo {
     my $corenode = shift;
     my $client = shift;
-    my $module = shift;
     my $uid = shift;
-    my $ah = kSChttp::RedirectClientInfo($corenode,$client,"cinfo","json",$module,$uid);
+    my $module = shift;
+    my $ah = kSChttp::RedirectSysInfo($corenode,$client,"cinfo","json",$module,$uid);
     #
     my $out;
     foreach my $key (keys %{$ah}) {
@@ -35,9 +35,38 @@ sub ClientDirect {
     }
     print kSChtml::ContentType("json");
     print $out;
-#    print $ah;
 }
 #
+sub SysInfo {
+    my $corenode = shift;
+    my $client = shift;
+    my $uid = shift;
+    my $ah = kSChttp::RedirectSysInfo($corenode,$client,"cinfo","json","U1lTSU5GTw==KK86tT",$uid);
+    #
+    my $out;
+    foreach my $key (keys %{$ah}) {
+	my $data = $ah->{$key}->{'result'};
+	$out .= $data;
+    }
+    print kSChtml::ContentType("json");
+    print $out;
+}
+#
+sub DbInfo {
+    my $corenode = shift;
+    my $client = shift;
+    my $db = shift;
+    my $uid = shift;
+    my $ah = kSChttp::RedirectDbInfo($corenode,$client,$db,"cinfo","json","REJJTkZPKlUQz7",$uid);
+    #
+    my $out;
+    foreach my $key (keys %{$ah}) {
+	my $data = $ah->{$key}->{'result'};
+	$out .= $data;
+    }
+    print kSChtml::ContentType("json");
+    print $out;
+}
 #
 #
 #
@@ -51,9 +80,21 @@ sub ClientDirect {
 
 while($request->Accept() >= 0) {
     if (kSCbasic::CheckUrlKeyValue("e","1","n") == 0) {
-	ClientDirect(kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("h")),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("m"),kSCbasic::GetUrlKeyValue("u"));
+	if (kSCbasic::CheckUrlKeyValue("m","SYSINFO","y") == 0) {
+	    SysInfo(kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("h")),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("u"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","DBINFO","y") == 0) {
+	    DbInfo(kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("h")),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("db"),kSCbasic::GetUrlKeyValue("u"));
+	} else {
+	    ClientInfo(kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("h")),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("m"));
+	}
     } elsif (kSCbasic::CheckUrlKeyValue("e","0","n") == 0) {
-	ClientDirect(kSCbasic::GetUrlKeyValue("h"),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("m"),kSCbasic::GetUrlKeyValue("u"));
+	if (kSCbasic::CheckUrlKeyValue("m","SYSINFO","n") == 0) {
+	    SysInfo(kSCbasic::GetUrlKeyValue("h"),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("u"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","DBINFO","n") == 0) {
+	    DbInfo(kSCbasic::GetUrlKeyValue("h"),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("db"),kSCbasic::GetUrlKeyValue("u"));
+	} else {
+	    ClientInfo(kSCbasic::GetUrlKeyValue("h"),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("m"));
+	}
     } else {
 	my $out = kSChtml::ContentType("json");
 	$out.= kSCbasic::ErrorMessage("json","0");
