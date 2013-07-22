@@ -85,3 +85,217 @@
 [Thu Jul 04 14:00:16.568063 2013] [ssl:warn] [pid 5318:tid 140599650453248] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
 [Thu Jul 04 14:00:16.597951 2013] [mpm_event:notice] [pid 5318:tid 140599650453248] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
 [Thu Jul 04 14:00:16.598022 2013] [core:notice] [pid 5318:tid 140599650453248] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Thu Jul 18 13:17:00.639082 2013] [mpm_event:notice] [pid 5318:tid 140599650453248] AH00491: caught SIGTERM, shutting down
+[Thu Jul 18 13:17:02.494245 2013] [ssl:notice] [pid 22546:tid 140154352854784] AH01886: SSL FIPS mode disabled
+[Thu Jul 18 13:17:02.562727 2013] [ssl:notice] [pid 22547:tid 140154352854784] AH01886: SSL FIPS mode disabled
+[Thu Jul 18 13:17:02.585704 2013] [ssl:warn] [pid 22547:tid 140154352854784] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Thu Jul 18 13:17:02.616302 2013] [mpm_event:notice] [pid 22547:tid 140154352854784] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Thu Jul 18 13:17:02.616376 2013] [core:notice] [pid 22547:tid 140154352854784] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Thu Jul 18 19:39:15.779806 2013] [fcgid:warn] [pid 22550:tid 140153932670720] [client 172.23.0.254:59698] mod_fcgid: stderr: Could not get http://:/l4pg/json/?e=1&m=Q2hlY2tQb3N0Z3Jlc1Byb2Nlc3M=HnL9H7! at /kSCcore/MOD/json/kSCjson.pm line 47., referer: http://172.23.10.245/portal/
+[Thu Jul 18 19:39:15.779861 2013] [core:error] [pid 22550:tid 140153932670720] [client 172.23.0.254:59698] End of script output before headers: index.pl, referer: http://172.23.10.245/portal/
+[Thu Jul 18 19:39:21.445047 2013] [fcgid:warn] [pid 22549:tid 140154352854784] mod_fcgid: cleanup zombie process 12478
+[Mon Jul 22 14:21:37.931046 2013] [mpm_event:notice] [pid 22547:tid 140154352854784] AH00491: caught SIGTERM, shutting down
+[Mon Jul 22 14:21:45.718988 2013] [ssl:notice] [pid 13837:tid 140345072776960] AH01886: SSL FIPS mode disabled
+[Mon Jul 22 14:21:45.743189 2013] [ssl:notice] [pid 13838:tid 140345072776960] AH01886: SSL FIPS mode disabled
+[Mon Jul 22 14:21:45.780346 2013] [ssl:warn] [pid 13838:tid 140345072776960] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Mon Jul 22 14:21:45.809904 2013] [mpm_event:notice] [pid 13838:tid 140345072776960] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Mon Jul 22 14:21:45.809983 2013] [core:notice] [pid 13838:tid 140345072776960] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+Global symbol "$date_end" requires explicit package name at /kSCproxy/MOD/http/kSChttp.pm line 124.
+Compilation failed in require at /kSCproxy/WEB/clientdirect/json/index.pl line 11.
+BEGIN failed--compilation aborted at /kSCproxy/WEB/clientdirect/json/index.pl line 11.
+[Mon Jul 22 14:21:45.913122 2013] [fcgid:warn] [pid 14090:tid 140344939984640] (104)Connection reset by peer: [client 172.23.7.142:55115] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+[Mon Jul 22 14:21:45.913172 2013] [core:error] [pid 14090:tid 140344939984640] [client 172.23.7.142:55115] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+Global symbol "$date_end" requires explicit package name at /kSCproxy/MOD/http/kSChttp.pm line 124.
+Compilation failed in require at /kSCproxy/WEB/proxy/json/index.pl line 12.
+BEGIN failed--compilation aborted at /kSCproxy/WEB/proxy/json/index.pl line 12.
+[Mon Jul 22 14:21:46.346583 2013] [fcgid:warn] [pid 14090:tid 140344834389760] (104)Connection reset by peer: [client 172.23.7.142:55114] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+[Mon Jul 22 14:21:46.346612 2013] [core:error] [pid 14090:tid 140344834389760] [client 172.23.7.142:55114] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+Global symbol "$date_end" requires explicit package name at /kSCproxy/MOD/http/kSChttp.pm line 124.
+Compilation failed in require at /kSCproxy/WEB/proxy/json/index.pl line 12.
+BEGIN failed--compilation aborted at /kSCproxy/WEB/proxy/json/index.pl line 12.
+[Mon Jul 22 14:21:46.542511 2013] [fcgid:warn] [pid 13849:tid 140344919004928] (104)Connection reset by peer: [client 172.23.7.142:55116] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+[Mon Jul 22 14:21:46.542558 2013] [core:error] [pid 13849:tid 140344919004928] [client 172.23.7.142:55116] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+Global symbol "$date_end" requires explicit package name at /kSCproxy/MOD/http/kSChttp.pm line 124.
+Compilation failed in require at /kSCproxy/WEB/proxy/json/index.pl line 12.
+BEGIN failed--compilation aborted at /kSCproxy/WEB/proxy/json/index.pl line 12.
+[Mon Jul 22 14:21:50.558373 2013] [fcgid:warn] [pid 13844:tid 140344919004928] (104)Connection reset by peer: [client 172.23.7.142:55117] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+[Mon Jul 22 14:21:50.558422 2013] [core:error] [pid 13844:tid 140344919004928] [client 172.23.7.142:55117] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+Global symbol "$date_end" requires explicit package name at /kSCproxy/MOD/http/kSChttp.pm line 124.
+Compilation failed in require at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+BEGIN failed--compilation aborted at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+[Mon Jul 22 14:30:42.932642 2013] [fcgid:warn] [pid 13842:tid 140344666552064] (104)Connection reset by peer: [client 172.23.7.142:55528] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+[Mon Jul 22 14:30:42.932693 2013] [core:error] [pid 13842:tid 140344666552064] [client 172.23.7.142:55528] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+Global symbol "$date_end" requires explicit package name at /kSCproxy/MOD/http/kSChttp.pm line 124.
+Compilation failed in require at /kSCproxy/WEB/clientdirect/json/index.pl line 11.
+BEGIN failed--compilation aborted at /kSCproxy/WEB/clientdirect/json/index.pl line 11.
+Global symbol "$date_end" requires explicit package name at /kSCproxy/MOD/http/kSChttp.pm line 124.
+Compilation failed in require at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+BEGIN failed--compilation aborted at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+[Mon Jul 22 14:39:59.169208 2013] [fcgid:warn] [pid 13842:tid 140344645572352] (104)Connection reset by peer: [client 172.23.7.142:55979] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+[Mon Jul 22 14:39:59.169239 2013] [core:error] [pid 13842:tid 140344645572352] [client 172.23.7.142:55979] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+[Mon Jul 22 14:39:59.169411 2013] [fcgid:warn] [pid 13842:tid 140344446265088] (104)Connection reset by peer: [client 172.23.7.142:55980] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+[Mon Jul 22 14:39:59.169431 2013] [core:error] [pid 13842:tid 140344446265088] [client 172.23.7.142:55980] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+Global symbol "$date_end" requires explicit package name at /kSCproxy/MOD/http/kSChttp.pm line 124.
+Compilation failed in require at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+BEGIN failed--compilation aborted at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+[Mon Jul 22 14:39:59.172784 2013] [fcgid:warn] [pid 13842:tid 140344362346240] (104)Connection reset by peer: [client 172.23.7.142:55981] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+[Mon Jul 22 14:39:59.172817 2013] [core:error] [pid 13842:tid 140344362346240] [client 172.23.7.142:55981] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+Global symbol "$date_end" requires explicit package name at /kSCproxy/MOD/http/kSChttp.pm line 124.
+Compilation failed in require at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+BEGIN failed--compilation aborted at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+Global symbol "$date_end" requires explicit package name at /kSCproxy/MOD/http/kSChttp.pm line 124.
+Compilation failed in require at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+BEGIN failed--compilation aborted at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+[Mon Jul 22 14:40:02.177948 2013] [fcgid:warn] [pid 13842:tid 140344414795520] (104)Connection reset by peer: [client 172.23.7.142:55983] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+[Mon Jul 22 14:40:02.207339 2013] [core:error] [pid 13842:tid 140344414795520] [client 172.23.7.142:55983] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+[Mon Jul 22 14:40:02.209180 2013] [fcgid:warn] [pid 13842:tid 140344351856384] (104)Connection reset by peer: [client 172.23.7.142:55974] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+[Mon Jul 22 14:40:02.209210 2013] [core:error] [pid 13842:tid 140344351856384] [client 172.23.7.142:55974] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+Global symbol "$date_end" requires explicit package name at /kSCproxy/MOD/http/kSChttp.pm line 124.
+Compilation failed in require at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+BEGIN failed--compilation aborted at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+Global symbol "$date_end" requires explicit package name at /kSCproxy/MOD/http/kSChttp.pm line 124.
+Compilation failed in require at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+BEGIN failed--compilation aborted at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+[Mon Jul 22 14:40:06.274957 2013] [fcgid:warn] [pid 13842:tid 140344299407104] (104)Connection reset by peer: [client 172.23.7.142:55988] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+[Mon Jul 22 14:40:06.274993 2013] [core:error] [pid 13842:tid 140344299407104] [client 172.23.7.142:55988] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+[Mon Jul 22 14:40:06.275093 2013] [fcgid:warn] [pid 13842:tid 140344278427392] (104)Connection reset by peer: [client 172.23.7.142:55989] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+[Mon Jul 22 14:40:06.275124 2013] [core:error] [pid 13842:tid 140344278427392] [client 172.23.7.142:55989] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+Global symbol "$date_end" requires explicit package name at /kSCproxy/MOD/http/kSChttp.pm line 124.
+Compilation failed in require at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+BEGIN failed--compilation aborted at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+[Mon Jul 22 14:40:10.278996 2013] [fcgid:warn] [pid 13842:tid 140344246957824] (104)Connection reset by peer: [client 172.23.7.142:55990] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+[Mon Jul 22 14:40:10.279029 2013] [core:error] [pid 13842:tid 140344246957824] [client 172.23.7.142:55990] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+Global symbol "$date_end" requires explicit package name at /kSCproxy/MOD/http/kSChttp.pm line 124.
+Compilation failed in require at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+BEGIN failed--compilation aborted at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+[Mon Jul 22 14:40:10.310723 2013] [fcgid:warn] [pid 13842:tid 140344204998400] (104)Connection reset by peer: [client 172.23.7.142:55991] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+[Mon Jul 22 14:40:10.310766 2013] [core:error] [pid 13842:tid 140344204998400] [client 172.23.7.142:55991] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+Global symbol "$date_end" requires explicit package name at /kSCproxy/MOD/http/kSChttp.pm line 124.
+Compilation failed in require at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+BEGIN failed--compilation aborted at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+[Mon Jul 22 14:40:15.193962 2013] [fcgid:warn] [pid 13842:tid 140344341366528] (104)Connection reset by peer: [client 172.23.7.142:55982] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+[Mon Jul 22 14:40:15.194003 2013] [core:error] [pid 13842:tid 140344341366528] [client 172.23.7.142:55982] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+Global symbol "$date_end" requires explicit package name at /kSCproxy/MOD/http/kSChttp.pm line 124.
+Compilation failed in require at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+BEGIN failed--compilation aborted at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+[Mon Jul 22 14:40:16.287910 2013] [fcgid:warn] [pid 13842:tid 140344834389760] (104)Connection reset by peer: [client 172.23.7.142:56007] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+[Mon Jul 22 14:40:16.287946 2013] [core:error] [pid 13842:tid 140344834389760] [client 172.23.7.142:56007] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+Global symbol "$date_end" requires explicit package name at /kSCproxy/MOD/http/kSChttp.pm line 124.
+Compilation failed in require at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+BEGIN failed--compilation aborted at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+[Mon Jul 22 14:40:21.325686 2013] [fcgid:warn] [pid 13842:tid 140344739981056] (104)Connection reset by peer: [client 172.23.7.142:55992] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+[Mon Jul 22 14:40:21.325726 2013] [core:error] [pid 13842:tid 140344739981056] [client 172.23.7.142:55992] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+Global symbol "$date_end" requires explicit package name at /kSCproxy/MOD/http/kSChttp.pm line 124.
+Compilation failed in require at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+BEGIN failed--compilation aborted at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+[Mon Jul 22 14:40:22.387047 2013] [fcgid:warn] [pid 13842:tid 140344802920192] (104)Connection reset by peer: [client 172.23.7.142:56004] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+[Mon Jul 22 14:40:22.387087 2013] [core:error] [pid 13842:tid 140344802920192] [client 172.23.7.142:56004] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+Global symbol "$date_end" requires explicit package name at /kSCproxy/MOD/http/kSChttp.pm line 124.
+Compilation failed in require at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+BEGIN failed--compilation aborted at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+[Mon Jul 22 14:40:25.395644 2013] [fcgid:warn] [pid 13842:tid 140344919004928] (104)Connection reset by peer: [client 172.23.7.142:55994] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+[Mon Jul 22 14:40:25.395685 2013] [core:error] [pid 13842:tid 140344919004928] [client 172.23.7.142:55994] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+Global symbol "$date_end" requires explicit package name at /kSCproxy/MOD/http/kSChttp.pm line 124.
+Compilation failed in require at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+BEGIN failed--compilation aborted at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+[Mon Jul 22 14:40:30.403242 2013] [fcgid:warn] [pid 13842:tid 140344708511488] (104)Connection reset by peer: [client 172.23.7.142:56008] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+[Mon Jul 22 14:40:30.403286 2013] [core:error] [pid 13842:tid 140344708511488] [client 172.23.7.142:56008] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+Global symbol "$date_end" requires explicit package name at /kSCproxy/MOD/http/kSChttp.pm line 124.
+Compilation failed in require at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+BEGIN failed--compilation aborted at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+[Mon Jul 22 14:40:31.404238 2013] [fcgid:warn] [pid 13842:tid 140344929494784] (104)Connection reset by peer: [client 172.23.7.142:55993] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+[Mon Jul 22 14:40:31.404277 2013] [core:error] [pid 13842:tid 140344929494784] [client 172.23.7.142:55993] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+Global symbol "$date_end" requires explicit package name at /kSCproxy/MOD/http/kSChttp.pm line 124.
+Compilation failed in require at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+BEGIN failed--compilation aborted at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+[Mon Jul 22 14:40:36.435488 2013] [fcgid:warn] [pid 13842:tid 140344750470912] (104)Connection reset by peer: [client 172.23.7.142:56005] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+[Mon Jul 22 14:40:36.435525 2013] [core:error] [pid 13842:tid 140344750470912] [client 172.23.7.142:56005] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+Global symbol "$date_end" requires explicit package name at /kSCproxy/MOD/http/kSChttp.pm line 124.
+Compilation failed in require at /kSCproxy/WEB/proxy/json/index.pl line 12.
+BEGIN failed--compilation aborted at /kSCproxy/WEB/proxy/json/index.pl line 12.
+[Mon Jul 22 14:40:36.530846 2013] [fcgid:warn] [pid 13842:tid 140344435775232] (104)Connection reset by peer: [client 172.23.7.142:56027] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+[Mon Jul 22 14:40:36.530885 2013] [core:error] [pid 13842:tid 140344435775232] [client 172.23.7.142:56027] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+Global symbol "$date_end" requires explicit package name at /kSCproxy/MOD/http/kSChttp.pm line 124.
+Compilation failed in require at /kSCproxy/WEB/proxy/json/index.pl line 12.
+BEGIN failed--compilation aborted at /kSCproxy/WEB/proxy/json/index.pl line 12.
+[Mon Jul 22 14:40:36.638115 2013] [fcgid:warn] [pid 13842:tid 140344656062208] (104)Connection reset by peer: [client 172.23.7.142:56028] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+[Mon Jul 22 14:40:36.638152 2013] [core:error] [pid 13842:tid 140344656062208] [client 172.23.7.142:56028] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+Global symbol "$date_end" requires explicit package name at /kSCproxy/MOD/http/kSChttp.pm line 124.
+Compilation failed in require at /kSCproxy/WEB/clientdirect/json/index.pl line 11.
+BEGIN failed--compilation aborted at /kSCproxy/WEB/clientdirect/json/index.pl line 11.
+[Mon Jul 22 14:40:36.735744 2013] [fcgid:warn] [pid 13842:tid 140344372836096] (104)Connection reset by peer: [client 172.23.7.142:56029] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+[Mon Jul 22 14:40:36.735779 2013] [core:error] [pid 13842:tid 140344372836096] [client 172.23.7.142:56029] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+Global symbol "$date_end" requires explicit package name at /kSCproxy/MOD/http/kSChttp.pm line 124.
+Compilation failed in require at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+BEGIN failed--compilation aborted at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+[Mon Jul 22 14:40:37.437981 2013] [fcgid:warn] [pid 13842:tid 140344677041920] (104)Connection reset by peer: [client 172.23.7.142:56016] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+[Mon Jul 22 14:40:37.438021 2013] [core:error] [pid 13842:tid 140344677041920] [client 172.23.7.142:56016] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+Global symbol "$date_end" requires explicit package name at /kSCproxy/MOD/http/kSChttp.pm line 124.
+Compilation failed in require at /kSCproxy/WEB/proxy/json/index.pl line 12.
+BEGIN failed--compilation aborted at /kSCproxy/WEB/proxy/json/index.pl line 12.
+[Mon Jul 22 14:40:38.833844 2013] [fcgid:warn] [pid 13842:tid 140344393815808] (104)Connection reset by peer: [client 172.23.7.142:56030] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+[Mon Jul 22 14:40:38.833886 2013] [core:error] [pid 13842:tid 140344393815808] [client 172.23.7.142:56030] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+Global symbol "$date_end" requires explicit package name at /kSCproxy/MOD/http/kSChttp.pm line 124.
+Compilation failed in require at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+BEGIN failed--compilation aborted at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+[Mon Jul 22 14:40:42.507103 2013] [fcgid:warn] [pid 13842:tid 140344582633216] (104)Connection reset by peer: [client 172.23.7.142:56017] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+[Mon Jul 22 14:40:42.507156 2013] [core:error] [pid 13842:tid 140344582633216] [client 172.23.7.142:56017] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+Global symbol "$date_end" requires explicit package name at /kSCproxy/MOD/http/kSChttp.pm line 124.
+Compilation failed in require at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+BEGIN failed--compilation aborted at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+[Mon Jul 22 14:40:43.524074 2013] [fcgid:warn] [pid 13842:tid 140344509204224] (104)Connection reset by peer: [client 172.23.7.142:56018] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+[Mon Jul 22 14:40:43.524114 2013] [core:error] [pid 13842:tid 140344509204224] [client 172.23.7.142:56018] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+Global symbol "$date_end" requires explicit package name at /kSCproxy/MOD/http/kSChttp.pm line 124.
+Compilation failed in require at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+BEGIN failed--compilation aborted at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+[Mon Jul 22 14:40:48.528359 2013] [fcgid:warn] [pid 13842:tid 140344593123072] (104)Connection reset by peer: [client 172.23.7.142:56025] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+[Mon Jul 22 14:40:48.528447 2013] [core:error] [pid 13842:tid 140344593123072] [client 172.23.7.142:56025] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+Global symbol "$date_end" requires explicit package name at /kSCproxy/MOD/http/kSChttp.pm line 124.
+Compilation failed in require at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+BEGIN failed--compilation aborted at /kSCproxy/WEB/jqgridc/json/index.pl line 11.
+[Mon Jul 22 14:40:49.533088 2013] [fcgid:warn] [pid 13842:tid 140344519694080] (104)Connection reset by peer: [client 172.23.7.142:56026] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+[Mon Jul 22 14:40:49.533130 2013] [core:error] [pid 13842:tid 140344519694080] [client 172.23.7.142:56026] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJsaW51eC5zaXYuZGU=&db=T1JDTDI=
+Global symbol "$date_end" requires explicit package name at /kSCproxy/MOD/http/kSChttp.pm line 124.
+Compilation failed in require at /kSCproxy/WEB/proxy/json/index.pl line 12.
+BEGIN failed--compilation aborted at /kSCproxy/WEB/proxy/json/index.pl line 12.
+[Mon Jul 22 14:42:51.727969 2013] [fcgid:warn] [pid 13842:tid 140344267937536] (104)Connection reset by peer: [client 172.23.7.142:56143] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.3.177:8080/kVASySystemControl/hosts.jsp
+[Mon Jul 22 14:42:51.728008 2013] [core:error] [pid 13842:tid 140344267937536] [client 172.23.7.142:56143] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/hosts.jsp
+Global symbol "$date_end" requires explicit package name at /kSCproxy/MOD/http/kSChttp.pm line 124.
+Compilation failed in require at /kSCproxy/WEB/proxy/json/index.pl line 12.
+BEGIN failed--compilation aborted at /kSCproxy/WEB/proxy/json/index.pl line 12.
+[Mon Jul 22 14:42:51.829487 2013] [fcgid:warn] [pid 13842:tid 140344246957824] (104)Connection reset by peer: [client 172.23.7.142:56145] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.3.177:8080/kVASySystemControl/hosts.jsp
+[Mon Jul 22 14:42:51.829510 2013] [core:error] [pid 13842:tid 140344246957824] [client 172.23.7.142:56145] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/hosts.jsp
+Global symbol "$date_end" requires explicit package name at /kSCproxy/MOD/http/kSChttp.pm line 124.
+Compilation failed in require at /kSCproxy/WEB/proxy/json/index.pl line 12.
+BEGIN failed--compilation aborted at /kSCproxy/WEB/proxy/json/index.pl line 12.
+[Mon Jul 22 14:42:55.877791 2013] [fcgid:warn] [pid 13842:tid 140344204998400] (104)Connection reset by peer: [client 172.23.7.142:56144] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.3.177:8080/kVASySystemControl/hosts.jsp
+[Mon Jul 22 14:42:55.877828 2013] [core:error] [pid 13842:tid 140344204998400] [client 172.23.7.142:56144] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/hosts.jsp
+Global symbol "$date_end" requires explicit package name at /kSCproxy/MOD/http/kSChttp.pm line 124.
+Compilation failed in require at /kSCproxy/WEB/proxy/json/index.pl line 12.
+BEGIN failed--compilation aborted at /kSCproxy/WEB/proxy/json/index.pl line 12.
+[Mon Jul 22 14:42:56.834625 2013] [fcgid:warn] [pid 13842:tid 140344813410048] (104)Connection reset by peer: [client 172.23.7.142:56146] mod_fcgid: error reading data from FastCGI server, referer: http://172.23.3.177:8080/kVASySystemControl/hosts.jsp
+[Mon Jul 22 14:42:56.834665 2013] [core:error] [pid 13842:tid 140344813410048] [client 172.23.7.142:56146] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/hosts.jsp
+[Mon Jul 22 14:58:36.574426 2013] [mpm_event:notice] [pid 13838:tid 140345072776960] AH00491: caught SIGTERM, shutting down
+[Mon Jul 22 15:37:35.984700 2013] [ssl:notice] [pid 27652:tid 140565397657344] AH01886: SSL FIPS mode disabled
+[Mon Jul 22 15:37:36.034858 2013] [ssl:notice] [pid 27653:tid 140565397657344] AH01886: SSL FIPS mode disabled
+[Mon Jul 22 15:37:36.101819 2013] [ssl:warn] [pid 27653:tid 140565397657344] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Mon Jul 22 15:37:36.131291 2013] [mpm_event:notice] [pid 27653:tid 140565397657344] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Mon Jul 22 15:37:36.131359 2013] [core:notice] [pid 27653:tid 140565397657344] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Mon Jul 22 16:06:01.651998 2013] [fcgid:warn] [pid 27657:tid 140564827604736] [client 172.23.7.142:60675] mod_fcgid: stderr: Use of uninitialized value $data in concatenation (.) or string at /kSCproxy/WEB/clientdirect/json/index.pl line 84., referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=&db=VEVTVA==
+[Mon Jul 22 16:08:25.886349 2013] [fcgid:warn] [pid 27657:tid 140564586338048] [client 172.23.7.142:60955] mod_fcgid: stderr: Use of uninitialized value $data in concatenation (.) or string at /kSCproxy/WEB/jqgridc/json/index.pl line 40., referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=&db=VEVTVA==
+[Mon Jul 22 16:08:27.113553 2013] [fcgid:warn] [pid 27657:tid 140564712216320] [client 172.23.7.142:60955] mod_fcgid: stderr: Use of uninitialized value $data in concatenation (.) or string at /kSCproxy/WEB/clientdirect/json/index.pl line 65., referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=&db=VEVTVA==
+[Mon Jul 22 16:08:29.520740 2013] [mpm_event:notice] [pid 27653:tid 140565397657344] AH00491: caught SIGTERM, shutting down
+[Mon Jul 22 16:08:31.998299 2013] [ssl:notice] [pid 29898:tid 140597593171712] AH01886: SSL FIPS mode disabled
+[Mon Jul 22 16:08:32.048918 2013] [ssl:notice] [pid 29899:tid 140597593171712] AH01886: SSL FIPS mode disabled
+[Mon Jul 22 16:08:32.068451 2013] [ssl:warn] [pid 29899:tid 140597593171712] AH01873: Init: Session Cache is not configured [hint: SSLSessionCache]
+[Mon Jul 22 16:08:32.098298 2013] [mpm_event:notice] [pid 29899:tid 140597593171712] AH00489: Apache/2.4.3 (Unix) OpenSSL/1.0.0-fips mod_fcgid/2.3.8-dev configured -- resuming normal operations
+[Mon Jul 22 16:08:32.098376 2013] [core:notice] [pid 29899:tid 140597593171712] AH00094: Command line: '/kSCproxy/WSV/bin/httpd'
+[Mon Jul 22 16:08:32.220509 2013] [fcgid:warn] [pid 29903:tid 140597449889536] [client 172.23.7.142:60965] mod_fcgid: stderr: Use of uninitialized value in concatenation (.) or string at /kSCproxy/WEB/proxy/json/index.pl line 57., referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=&db=VEVTVA==
+[Mon Jul 22 16:08:32.220530 2013] [fcgid:warn] [pid 29903:tid 140597449889536] [client 172.23.7.142:60965] mod_fcgid: stderr: Use of uninitialized value in concatenation (.) or string at /kSCproxy/WEB/proxy/json/index.pl line 57., referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=&db=VEVTVA==
+[Mon Jul 22 16:08:32.220535 2013] [fcgid:warn] [pid 29903:tid 140597449889536] [client 172.23.7.142:60965] mod_fcgid: stderr: Use of uninitialized value in concatenation (.) or string at /kSCproxy/WEB/proxy/json/index.pl line 57., referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=&db=VEVTVA==
+[Mon Jul 22 16:08:32.223818 2013] [fcgid:warn] [pid 29903:tid 140597365044992] [client 172.23.7.142:60965] mod_fcgid: stderr: malformed JSON string, neither array, object, number, string or atom, at character offset 0 (before "(end of string)") at /kSCproxy/MOD/json/kSCjson.pm line 60., referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=&db=VEVTVA==
+[Mon Jul 22 16:08:32.223845 2013] [core:error] [pid 29903:tid 140597365044992] [client 172.23.7.142:60965] End of script output before headers: index.pl, referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=&db=VEVTVA==
+[Mon Jul 22 16:08:32.426318 2013] [fcgid:warn] [pid 29903:tid 140597312595712] [client 172.23.7.142:60966] mod_fcgid: stderr: Use of uninitialized value in concatenation (.) or string at /kSCproxy/WEB/proxy/json/index.pl line 70., referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=&db=VEVTVA==
+[Mon Jul 22 16:08:32.426353 2013] [fcgid:warn] [pid 29903:tid 140597312595712] [client 172.23.7.142:60966] mod_fcgid: stderr: Use of uninitialized value in concatenation (.) or string at /kSCproxy/WEB/proxy/json/index.pl line 70., referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=&db=VEVTVA==
+[Mon Jul 22 16:08:32.426360 2013] [fcgid:warn] [pid 29903:tid 140597312595712] [client 172.23.7.142:60966] mod_fcgid: stderr: Use of uninitialized value in concatenation (.) or string at /kSCproxy/WEB/proxy/json/index.pl line 70., referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=&db=VEVTVA==
+[Mon Jul 22 16:08:32.988107 2013] [fcgid:warn] [pid 29903:tid 140597302105856] [client 172.23.7.142:60966] mod_fcgid: stderr: Use of uninitialized value $data in concatenation (.) or string at /kSCproxy/WEB/jqgridc/json/index.pl line 40., referer: http://172.23.3.177:8080/kVASySystemControl/modules/oracle_database.jsp?h=Y2FybG8teC5zaXYuZGU=&c=ZGJ3aW5kby5zaXYuZGU=&db=VEVTVA==

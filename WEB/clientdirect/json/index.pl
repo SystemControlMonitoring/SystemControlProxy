@@ -68,6 +68,25 @@ sub DbInfo {
     print $out;
 }
 #
+sub OracleDBAdmin {
+    my $corenode = shift;
+    my $client = shift;
+    my $db = shift;
+    my $uid = shift;
+    my $cm = shift;
+    my $datestart = shift;
+    my $dateend = shift;
+    my $ah = kSChttp::RedirectODBAdmin($corenode,$client,$db,"cinfo","json","T3JhY2xlREJBZG1pbg==KlUQz7",$uid,$cm,$datestart,$dateend);
+    #
+    my $out;
+    foreach my $key (keys %{$ah}) {
+	my $data = $ah->{$key}->{'result'};
+	$out .= $data;
+    }
+    print kSChtml::ContentType("json");
+    print $out;
+}
+#
 #
 #
 #
@@ -84,6 +103,8 @@ while($request->Accept() >= 0) {
 	    SysInfo(kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("h")),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("u"));
 	} elsif (kSCbasic::CheckUrlKeyValue("m","DBINFO","y") == 0) {
 	    DbInfo(kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("h")),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("db"),kSCbasic::GetUrlKeyValue("u"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","OracleDBAdmin","y") == 0) {
+	    OracleDBAdmin(kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("h")),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("db"),kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("cm"),kSCbasic::GetUrlKeyValue("date_start"),kSCbasic::GetUrlKeyValue("date_end"));
 	} else {
 	    ClientInfo(kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("h")),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("m"));
 	}
@@ -92,6 +113,8 @@ while($request->Accept() >= 0) {
 	    SysInfo(kSCbasic::GetUrlKeyValue("h"),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("u"));
 	} elsif (kSCbasic::CheckUrlKeyValue("m","DBINFO","n") == 0) {
 	    DbInfo(kSCbasic::GetUrlKeyValue("h"),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("db"),kSCbasic::GetUrlKeyValue("u"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","OracleDBAdmin","n") == 0) {
+	    OracleDBAdmin(kSCbasic::GetUrlKeyValue("h"),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("db"),kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("cm"),kSCbasic::GetUrlKeyValue("date_start"),kSCbasic::GetUrlKeyValue("date_end"));
 	} else {
 	    ClientInfo(kSCbasic::GetUrlKeyValue("h"),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("m"));
 	}

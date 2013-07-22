@@ -104,6 +104,33 @@ sub RedirectDbInfo {
     #return ($url);
 }
 #
+sub RedirectODBAdmin {
+    my $corenode = shift;
+    my $client = shift;
+    my $db = shift;
+    my $core_module = shift;
+    my $format = shift;
+    my $module = shift;
+    my $uid = shift;
+    my $cm = shift;
+    my $datestart = shift;
+    my $dateend = shift;
+    my %decoded_info=();
+    #
+    my $url;
+    my $gibc = $properties->splitToTree(qr/\./, 'core');
+    foreach my $key (keys %{$gibc}) {
+	if ( $gibc->{$key}->{'name'} eq $corenode ) {
+	    my $info = LWP::Simple::get("http://". $gibc->{$key}->{'addr'} .":". $gibc->{$key}->{'port'} ."/". $core_module ."/". $format ."/?e=1&m=". $module ."&c=". $client ."&db=". $db ."&u=". $uid ."&cm=". $cm ."&date_start=". $datestart ."&date_end=". $dateend ."");
+	    $decoded_info{ $gibc->{$key}->{'name'} }{'result'} = $info;
+	    #$url = "http://". $gibc->{$key}->{'addr'} .":". $gibc->{$key}->{'port'} ."/". $core_module ."/". $format ."/?e=1&m=". $module ."&c=". $client ."&u=". $uid ."";
+	}
+    }
+    #
+    return (\%decoded_info);
+    #return ($url);
+}
+#
 sub RedirectJqGridInfo {
     my $corenode = shift;
     my $client = shift;
