@@ -87,6 +87,23 @@ sub OracleDBAdmin {
     print $out;
 }
 #
+sub LogAdmin {
+    my $corenode = shift;
+    my $client = shift;
+    my $log = shift;
+    my $uid = shift;
+    my $cm = shift;
+    my $ah = kSChttp::RedirectLogAdmin($corenode,$client,$log,"cinfo","json","TG9nQWRtaW4=KlUQz7",$uid,$cm);
+    #
+    my $out;
+    foreach my $key (keys %{$ah}) {
+	my $data = $ah->{$key}->{'result'};
+	$out .= $data;
+    }
+    print kSChtml::ContentType("json");
+    print $out;
+}
+#
 #
 #
 #
@@ -105,6 +122,8 @@ while($request->Accept() >= 0) {
 	    DbInfo(kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("h")),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("db"),kSCbasic::GetUrlKeyValue("u"));
 	} elsif (kSCbasic::CheckUrlKeyValue("m","OracleDBAdmin","y") == 0) {
 	    OracleDBAdmin(kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("h")),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("db"),kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("cm"),kSCbasic::GetUrlKeyValue("date_start"),kSCbasic::GetUrlKeyValue("date_end"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","LogAdmin","y") == 0) {
+	    LogAdmin(kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("h")),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("log"),kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("cm"));
 	} else {
 	    ClientInfo(kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("h")),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("m"));
 	}
@@ -115,6 +134,8 @@ while($request->Accept() >= 0) {
 	    DbInfo(kSCbasic::GetUrlKeyValue("h"),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("db"),kSCbasic::GetUrlKeyValue("u"));
 	} elsif (kSCbasic::CheckUrlKeyValue("m","OracleDBAdmin","n") == 0) {
 	    OracleDBAdmin(kSCbasic::GetUrlKeyValue("h"),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("db"),kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("cm"),kSCbasic::GetUrlKeyValue("date_start"),kSCbasic::GetUrlKeyValue("date_end"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","LogAdmin","n") == 0) {
+	    LogAdmin(kSCbasic::GetUrlKeyValue("h"),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("log"),kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("cm"));
 	} else {
 	    ClientInfo(kSCbasic::GetUrlKeyValue("h"),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("m"));
 	}

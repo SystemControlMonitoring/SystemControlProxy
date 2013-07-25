@@ -131,6 +131,31 @@ sub RedirectODBAdmin {
     #return ($url);
 }
 #
+sub RedirectLogAdmin {
+    my $corenode = shift;
+    my $client = shift;
+    my $log = shift;
+    my $core_module = shift;
+    my $format = shift;
+    my $module = shift;
+    my $uid = shift;
+    my $cm = shift;
+    my %decoded_info=();
+    #
+    my $url;
+    my $gibc = $properties->splitToTree(qr/\./, 'core');
+    foreach my $key (keys %{$gibc}) {
+	if ( $gibc->{$key}->{'name'} eq $corenode ) {
+	    my $info = LWP::Simple::get("http://". $gibc->{$key}->{'addr'} .":". $gibc->{$key}->{'port'} ."/". $core_module ."/". $format ."/?e=1&m=". $module ."&c=". $client ."&log=". $log ."&u=". $uid ."&cm=". $cm ."");
+	    $decoded_info{ $gibc->{$key}->{'name'} }{'result'} = $info;
+	    #$url = "http://". $gibc->{$key}->{'addr'} .":". $gibc->{$key}->{'port'} ."/". $core_module ."/". $format ."/?e=1&m=". $module ."&c=". $client ."&log=". $log ."&u=". $uid ."&cm=". $cm ."";
+	}
+    }
+    #
+    return (\%decoded_info);
+    #return ($url);
+}
+#
 sub RedirectJqGridInfo {
     my $corenode = shift;
     my $client = shift;
@@ -213,6 +238,78 @@ sub GetSrvSearchArray {
     foreach my $key (keys %{$gibc}) {
 	my $info = LWP::Simple::get("http://". $gibc->{$key}->{'addr'} .":". $gibc->{$key}->{'port'} ."/". $coreml ."/". $format ."/?e=1&m=". $module ."&u=". $uid ."&searchstring=". $searchstring ."");
 	$decoded_info{ $gibc->{$key}->{'name'} }{'result'} = $info;
+    }
+    #
+    return (\%decoded_info);
+}
+#
+sub ExcIcingaCmd {
+    my $node = shift;
+    my $client = shift;
+    my $core = shift;
+    my $format = shift;
+    my $module = shift;
+    my $uid = shift;
+    my $check = shift;
+    #
+    my %decoded_info=();
+    my $gibc = $properties->splitToTree(qr/\./, 'core');
+    my $out;
+    foreach my $key (keys %{$gibc}) {
+	if ( $gibc->{$key}->{'name'} eq $node ) {
+	    my $info = LWP::Simple::get("http://". $gibc->{$key}->{'addr'} .":". $gibc->{$key}->{'port'} ."/". $core ."/". $format ."/?e=1&m=". $module ."&u=". $uid ."&cl=". $client ."&ch=". $check ."");
+	    $decoded_info{ $gibc->{$key}->{'name'} }{'result'} = $info;
+	}
+    }
+    #
+    return (\%decoded_info);
+}
+#
+sub ExcIcingaCmdWiCm {
+    my $node = shift;
+    my $client = shift;
+    my $core = shift;
+    my $format = shift;
+    my $module = shift;
+    my $uid = shift;
+    my $check = shift;
+    my $author = shift;
+    my $comment = shift;
+    #
+    my %decoded_info=();
+    my $gibc = $properties->splitToTree(qr/\./, 'core');
+    my $out;
+    foreach my $key (keys %{$gibc}) {
+	if ( $gibc->{$key}->{'name'} eq $node ) {
+	    my $info = LWP::Simple::get("http://". $gibc->{$key}->{'addr'} .":". $gibc->{$key}->{'port'} ."/". $core ."/". $format ."/?e=1&m=". $module ."&u=". $uid ."&cl=". $client ."&ch=". $check ."&ar=". $author ."&cm=". $comment ."");
+	    $decoded_info{ $gibc->{$key}->{'name'} }{'result'} = $info;
+	}
+    }
+    #
+    return (\%decoded_info);
+}
+#
+sub ExcIcingaCmdWiCmUd {
+    my $node = shift;
+    my $client = shift;
+    my $core = shift;
+    my $format = shift;
+    my $module = shift;
+    my $uid = shift;
+    my $check = shift;
+    my $author = shift;
+    my $comment = shift;
+    my $datestart = shift;
+    my $dateend = shift;
+    #
+    my %decoded_info=();
+    my $gibc = $properties->splitToTree(qr/\./, 'core');
+    my $out;
+    foreach my $key (keys %{$gibc}) {
+	if ( $gibc->{$key}->{'name'} eq $node ) {
+	    my $info = LWP::Simple::get("http://". $gibc->{$key}->{'addr'} .":". $gibc->{$key}->{'port'} ."/". $core ."/". $format ."/?e=1&m=". $module ."&u=". $uid ."&cl=". $client ."&ch=". $check ."&ar=". $author ."&cm=". $comment ."&ds=". $datestart ."&de=". $dateend ."");
+	    $decoded_info{ $gibc->{$key}->{'name'} }{'result'} = $info;
+	}
     }
     #
     return (\%decoded_info);

@@ -10,6 +10,7 @@ Format: <i><b>JSON</b></i><br>
     <li><b>DBINFO</b> - Redirect Database Information to Server URL: <a href="/clientdirect/json/?e=1&m=REJJTkZPJkd873&h=Y2FybG8teC5zaXYuZGU=Hjd876&c=ZGJ3aW5kby5zaXYuZGU=Jjd723&u=c2JhcmVzZWw=LKHld3">/clientdirect/json/?e=1&m=REJJTkZPJkd873&h=Y2FybG8teC5zaXYuZGU=Hjd876&c=ZGJ3aW5kby5zaXYuZGU=Jjd723&u=c2JhcmVzZWw=LKHld3</a></li>
     <li><b>HostSummary</b> - Redirect Host Summary to Server URL: <a href="/clientdirect/json/?e=1&m=SG9zdFN1bW1hcnk=KhdU8Z&h=Y2FybG8teC5zaXYuZGU=Hjd876&c=ZGJ3aW5kby5zaXYuZGU=Jjd723&u=c2JhcmVzZWw=LKHld3">/clientdirect/json/?e=1&m=SG9zdFN1bW1hcnk=KhdU8Z&h=Y2FybG8teC5zaXYuZGU=Hjd876&c=ZGJ3aW5kby5zaXYuZGU=Jjd723&u=c2JhcmVzZWw=LKHld3</a></li>
     <li><b>OracleDBAdmin</b> - Redirect Oracle Database Admin Options URL: <a href="/clientdirect/json/?e=1&m=T3JhY2xlREJBZG1pbg==KhdU8Z&h=Y2FybG8teC5zaXYuZGU=Hjd876&c=ZGJ3aW5kby5zaXYuZGU=Jjd723&u=c2JhcmVzZWw=LKHld3&cm=&date_start=&date_end=">/clientdirect/json/?e=1&m=T3JhY2xlREJBZG1pbg==KhdU8Z&h=Y2FybG8teC5zaXYuZGU=Hjd876&c=ZGJ3aW5kby5zaXYuZGU=Jjd723&u=c2JhcmVzZWw=LKHld3&cm=&date_start=&date_end=</a></li>
+    <li><b>LogAdmin</b> - Redirect Log Admin Options URL: <a href="/clientdirect/json/?e=1&m=TG9nQWRtaW4=KhdU8Z&h=Y2FybG8teC5zaXYuZGU=Hjd876&c=ZGJ3aW5kby5zaXYuZGU=Jjd723&u=c2JhcmVzZWw=LKHld3&cm=&log=">/clientdirect/json/?e=1&m=TG9nQWRtaW4=KhdU8Z&h=Y2FybG8teC5zaXYuZGU=Hjd876&c=ZGJ3aW5kby5zaXYuZGU=Jjd723&u=c2JhcmVzZWw=LKHld3&cm=&log=</a></li>
 </ul>
 </font>
 Format: <i><b>XML</b></i><br>

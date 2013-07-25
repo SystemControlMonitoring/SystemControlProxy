@@ -2,9 +2,9 @@
 #
 # Include Library Path
 use FCGI;
-use lib '/kSCcore/MOD/html';
-use lib '/kSCcore/MOD/basic';
-use lib '/kSCcore/MOD/json';
+use lib '/kSCproxy/MOD/html';
+use lib '/kSCproxy/MOD/basic';
+use lib '/kSCproxy/MOD/json';
 # Include Library
 use kSChtml;
 use kSCbasic;

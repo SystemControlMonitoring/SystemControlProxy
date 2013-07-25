@@ -2,9 +2,9 @@
 #
 # Include Library Path
 use FCGI;
-use lib '/kSCcore/MOD/html';
-use lib '/kSCcore/MOD/basic';
-use lib '/kSCcore/MOD/postgre';
+use lib '/kSCproxy/MOD/html';
+use lib '/kSCproxy/MOD/basic';
+use lib '/kSCproxy/MOD/postgre';
 # Include Library
 use kSChtml;
 use kSCbasic;
