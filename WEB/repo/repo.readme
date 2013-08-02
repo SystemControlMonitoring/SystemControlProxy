@@ -18,7 +18,7 @@ Format: <i><b>JSON</b></i><br>
 </ul>
 </font>
 <br>
-Format: <i><b>XML</b></i><br>
+<!--Format: <i><b>XML</b></i><br>
 <font size=2>Query:<br>
 <ul>
     <li><b>InsertDashboardAll</b> - Insert Standard Dashboard Links URL: <a href="/repo/xml/?e=1&m=SW5zZXJ0RGFzaGJvYXJkQWxsKd8Hfg&u=c2JhcmVzZWw=Adhfg3">/repo/xml/?e=1&m=SW5zZXJ0RGFzaGJvYXJkQWxsKd8Hfg&u=c2JhcmVzZWw=Adhfg3</a></li>
@@ -30,6 +30,6 @@ Format: <i><b>XML</b></i><br>
     <li><b>UpdateModView</b> - Module Default View Update to Repo URL: <a href="/repo/xml/?e=1&m=VXBkYXRlTW9kVmlldw==Jhdu8d&u=c2JhcmVzZWw=Adhfg3&k=aG9zdHM=JkHu77&v1=R3JpZEFsbEhvc3RzHjKi88">/repo/xml/?e=1&m=VXBkYXRlTW9kVmlldw==Jhdu8d&u=c2JhcmVzZWw=Adhfg3&k=aG9zdHM=JkHu77&v1=R3JpZEFsbEhvc3RzHjKi88</a></li>
     <li><b>SelectModView</b> - Select Default View from Repo or Config URL: <a href="/repo/xml/?e=1&m=U2VsZWN0TW9kVmlldw==Jhdu8d&u=c2JhcmVzZWw=Adhfg3&k=aG9zdHM=JkHu77">/repo/xml/?e=1&m=U2VsZWN0TW9kVmlldw==Jhdu8d&u=c2JhcmVzZWw=Adhfg3&k=aG9zdHM=JkHu77</a></li>
 </ul>
-</font>
+</font-->
 <br></br>
 <hr><br></br>

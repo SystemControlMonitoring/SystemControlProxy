@@ -9,11 +9,11 @@ Format: <i><b>JSON</b></i><br>
     <li><b>OracleDB</b> - Redirect JqGrid Information to Server URL: <a href="/jqgridc/json/?e=1&m=T3JhY2xlREI=KjHu88&h=Y2FybG8teC5zaXYuZGU=KjUU89&c=ZGJsaW51eC5zaXYuZGU=WzzU76&cm=VFNJTkZPKLMUHp&db=T1JDTDI=K4KuuZ&u=c2JhcmVzZWw=LKHld3&_search=false&rows=10&page=1&sidx=tsname&sord=asc">/jqgridc/json/?e=1&m=T3JhY2xlREI=KjHu88&h=Y2FybG8teC5zaXYuZGU=KjUU89&c=ZGJsaW51eC5zaXYuZGU=WzzU76&cm=VFNJTkZPKLMUHp&db=T1JDTDI=K4KuuZ&u=c2JhcmVzZWw=LKHld3&_search=false&rows=10&page=1&sidx=tsname&sord=asc</a></li>
 </ul>
 </font>
-Format: <i><b>XML</b></i><br>
+<!--Format: <i><b>XML</b></i><br>
 <font size=2>Query:<br>
 <ul>
     <li><b>OracleDB</b> - Redirect JqGrid Information to Server URL: <a href="/jqgridc/xml/?e=1&m=T3JhY2xlREI=KjHu88&h=Y2FybG8teC5zaXYuZGU=KjUU89&c=ZGJsaW51eC5zaXYuZGU=WzzU76&cm=VFNJTkZPKLMUHp&db=T1JDTDI=K4KuuZ&u=c2JhcmVzZWw=LKHld3&_search=false&rows=10&page=1&sidx=tsname&sord=asc">/jqgridc/xml/?e=1&m=T3JhY2xlREI=KjHu88&h=Y2FybG8teC5zaXYuZGU=KjUU89&c=ZGJsaW51eC5zaXYuZGU=WzzU76&cm=VFNJTkZPKLMUHp&db=T1JDTDI=K4KuuZ&u=c2JhcmVzZWw=LKHld3&_search=false&rows=10&page=1&sidx=tsname&sord=asc</a></li>
 </ul>
-</font>
+</font-->
 <br></br>
 <hr><br></br>
