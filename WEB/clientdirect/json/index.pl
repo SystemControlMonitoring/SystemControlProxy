@@ -93,6 +93,8 @@ sub LogAdmin {
     my $log = shift;
     my $uid = shift;
     my $cm = shift;
+    #
+    #
     my $ah = kSChttp::RedirectLogAdmin($corenode,$client,$log,"cinfo","json","TG9nQWRtaW4=KlUQz7",$uid,$cm);
     #
     my $out;
@@ -102,6 +104,51 @@ sub LogAdmin {
     }
     print kSChtml::ContentType("json");
     print $out;
+}
+#
+sub SrvLogAdmin {
+    my $client = shift;
+    my $log = shift;
+    my $uid = shift;
+    my $cm = shift;
+    my $out;
+    #
+    # String Vorbereitungen
+    $client = substr($client, 0, -1);
+    $client =~ s/[\s\r\n]+//g;
+    $log = substr($log, 0, -1);
+    $log =~ s/[\s\r\n]+//g;
+    #
+    # Array Vorbereitungen
+    my @clnt = split(";", $client);
+    my @lgfl = split(";", $log);
+    #
+    # Auswertungen
+    for (my $c=0;$c<scalar(@lgfl);$c++) {
+	#
+	# Get Logfile
+	$lgfl[$c] =~ s/LOGWATCH_//g;
+	my $lg = substr($lgfl[$c], rindex($lgfl[$c], "/")+1);
+	#
+	# Get Client@Node
+	my @clnd = split("@", $clnt[$c]);
+	#
+	# Execution
+	#$out .= ">". $lg .":". $clnd[0] .":". $clnd[1] ."";
+        my $ah = kSChttp::RedirectLogAdmin($clnd[1],kSCbasic::EncodeBase64u6($clnd[0]),$lg,"cinfo","json","TG9nQWRtaW4=KlUQz7",$uid,$cm);
+	#
+	foreach my $key (keys %{$ah}) {
+	    my $data = $ah->{$key}->{'result'};
+	    $out .= $data .",";
+	}
+    }
+    $out = substr($out, 0, -1);
+    print kSChtml::ContentType("json");
+    if ($out eq "," || $out =~ /,,/i) {
+	print "{\"ResultValue\":\"0\"}";
+    } else {
+	print "[". $out ."]";
+    }
 }
 #
 #
@@ -124,6 +171,8 @@ while($request->Accept() >= 0) {
 	    OracleDBAdmin(kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("h")),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("db"),kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("cm"),kSCbasic::GetUrlKeyValue("date_start"),kSCbasic::GetUrlKeyValue("date_end"));
 	} elsif (kSCbasic::CheckUrlKeyValue("m","LogAdmin","y") == 0) {
 	    LogAdmin(kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("h")),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("log"),kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("cm"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","SrvLogAdmin","y") == 0) {
+	    SrvLogAdmin(kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("c")),kSCbasic::GetUrlKeyValue("log"),kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("cm"));
 	} else {
 	    ClientInfo(kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("h")),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("m"));
 	}
@@ -136,6 +185,8 @@ while($request->Accept() >= 0) {
 	    OracleDBAdmin(kSCbasic::GetUrlKeyValue("h"),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("db"),kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("cm"),kSCbasic::GetUrlKeyValue("date_start"),kSCbasic::GetUrlKeyValue("date_end"));
 	} elsif (kSCbasic::CheckUrlKeyValue("m","LogAdmin","n") == 0) {
 	    LogAdmin(kSCbasic::GetUrlKeyValue("h"),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("log"),kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("cm"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","SrvLogAdmin","n") == 0) {
+	    SrvLogAdmin(kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("log"),kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("cm"));
 	} else {
 	    ClientInfo(kSCbasic::GetUrlKeyValue("h"),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("m"));
 	}
