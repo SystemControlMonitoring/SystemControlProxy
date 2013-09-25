@@ -68,6 +68,23 @@ sub DbInfo {
     print $out;
 }
 #
+sub GetWls {
+    my $mode = shift;
+    my $corenode = shift;
+    my $client = shift;
+    my $port = shift;
+    my $uid = shift;
+    my $ah = kSChttp::RedirectWlsInfo($corenode,$client,$port,"cinfo","json",kSCbasic::EncodeBase64u6($mode),$uid);
+    #
+    my $out;
+    foreach my $key (keys %{$ah}) {
+	my $data = $ah->{$key}->{'result'};
+	$out .= $data;
+    }
+    print kSChtml::ContentType("json");
+    print $out;
+}
+#
 sub OracleDBAdmin {
     my $corenode = shift;
     my $client = shift;
@@ -167,6 +184,10 @@ while($request->Accept() >= 0) {
 	    SysInfo(kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("h")),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("u"));
 	} elsif (kSCbasic::CheckUrlKeyValue("m","DBINFO","y") == 0) {
 	    DbInfo(kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("h")),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("db"),kSCbasic::GetUrlKeyValue("u"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","GETWLS","y") == 0) {
+	    GetWls("GETWLS",kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("h")),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("port"),kSCbasic::GetUrlKeyValue("u"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","WLSINFO","y") == 0) {
+	    GetWls("WLSINFO",kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("h")),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("port"),kSCbasic::GetUrlKeyValue("u"));
 	} elsif (kSCbasic::CheckUrlKeyValue("m","OracleDBAdmin","y") == 0) {
 	    OracleDBAdmin(kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("h")),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("db"),kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("cm"),kSCbasic::GetUrlKeyValue("date_start"),kSCbasic::GetUrlKeyValue("date_end"));
 	} elsif (kSCbasic::CheckUrlKeyValue("m","LogAdmin","y") == 0) {
@@ -181,6 +202,10 @@ while($request->Accept() >= 0) {
 	    SysInfo(kSCbasic::GetUrlKeyValue("h"),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("u"));
 	} elsif (kSCbasic::CheckUrlKeyValue("m","DBINFO","n") == 0) {
 	    DbInfo(kSCbasic::GetUrlKeyValue("h"),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("db"),kSCbasic::GetUrlKeyValue("u"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","GETWLS","n") == 0) {
+	    GetWls("GETWLS",kSCbasic::GetUrlKeyValue("h"),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("port"),kSCbasic::GetUrlKeyValue("u"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","WLSINFO","n") == 0) {
+	    GetWls("WLSINFO",kSCbasic::GetUrlKeyValue("h"),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("port"),kSCbasic::GetUrlKeyValue("u"));
 	} elsif (kSCbasic::CheckUrlKeyValue("m","OracleDBAdmin","n") == 0) {
 	    OracleDBAdmin(kSCbasic::GetUrlKeyValue("h"),kSCbasic::GetUrlKeyValue("c"),kSCbasic::GetUrlKeyValue("db"),kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("cm"),kSCbasic::GetUrlKeyValue("date_start"),kSCbasic::GetUrlKeyValue("date_end"));
 	} elsif (kSCbasic::CheckUrlKeyValue("m","LogAdmin","n") == 0) {

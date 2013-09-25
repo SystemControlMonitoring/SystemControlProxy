@@ -1,7 +1,7 @@
-<!--PROXY_VERSION:2.130624-->
+<!--PROXY_VERSION:2.130903-->
 
 Modul: <i><b>Proxy - Control Core Access</b></i><br>
-Version: <i><b>2.130624</b></i><br>
+Version: <i><b>2.130903</b></i><br>
 Comments:
 <ul>
     <li>Distributed Nodes supported (seperate hosts Core Installations (ICINGA&DB) )</li>
@@ -27,6 +27,7 @@ Format: <i><b>JSON</b></i><br>
     <li><b>HostSearchList</b> - Search hosts URL: <a href="/proxy/json/?e=1&m=SG9zdFNlYXJjaExpc3Q=Ki88uU&u=c2JhcmVzZWw=LKHld3&searchstring=dm0=KlUu87">/proxy/json/?e=1&m=SG9zdFNlYXJjaExpc3Q=Ki88uU&u=c2JhcmVzZWw=LKHld3&searchstring=dm0=KlUu87</a></li>
     <li><b>DatabaseStatusSelect</b> - Select different stats of databases URL: <a href="/proxy/json/?e=1&m=RGF0YWJhc2VTdGF0dXNTZWxlY3Q=Ki88uU&u=c2JhcmVzZWw=LKHld3&s=YXBuYW9oKmUh88">/proxy/json/?e=1&m=RGF0YWJhc2VTdGF0dXNTZWxlY3Q=Ki88uU&u=c2JhcmVzZWw=LKHld3&s=YXBuYW9oKmUh88</a></li>
     <li><b>DatabaseSearchList</b> - Search databases URL: <a href="/proxy/json/?e=1&m=RGF0YWJhc2VTZWFyY2hMaXN0Ki88uU&u=c2JhcmVzZWw=LKHld3&searchstring=VEVTVA==KlUu87">/proxy/json/?e=1&m=RGF0YWJhc2VTZWFyY2hMaXN0Ki88uU&u=c2JhcmVzZWw=LKHld3&searchstring=VEVTVA==KlUu87</a></li>
+    <li><b>ShowAllComments</b> - Show all comments URL: <a href="/proxy/json/?e=1&m=U2hvd0FsbENvbW1lbnRzKi88uU&u=c2JhcmVzZWw=LKHld3">/proxy/json/?e=1&m=U2hvd0FsbENvbW1lbnRzKi88uU&u=c2JhcmVzZWw=LKHld3</a></li>
 </ul>
 </font>
 <!--Format: <i><b>XML</b></i><br>
@@ -50,6 +51,7 @@ Format: <i><b>JSON</b></i><br>
     <li><b>HostSearchList</b> - Search hosts URL: <a href="/proxy/xml/?e=1&m=SG9zdFNlYXJjaExpc3Q=Ki88uU&u=c2JhcmVzZWw=LKHld3&searchstring=dm0=KlUu87">/proxy/xml/?e=1&m=SG9zdFNlYXJjaExpc3Q=Ki88uU&u=c2JhcmVzZWw=LKHld3&searchstring=dm0=KlUu87</a></li>
     <li><b>DatabaseStatusSelect</b> - Select different stats of databases URL: <a href="/proxy/xml/?e=1&m=RGF0YWJhc2VTdGF0dXNTZWxlY3Q=Ki88uU&u=c2JhcmVzZWw=LKHld3&s=YXBuYW9oKmUh88">/proxy/xml/?e=1&m=RGF0YWJhc2VTdGF0dXNTZWxlY3Q=Ki88uU&u=c2JhcmVzZWw=LKHld3&s=YXBuYW9oKmUh88</a></li>
     <li><b>DatabaseSearchList</b> - Search databases URL: <a href="/proxy/xml/?e=1&m=RGF0YWJhc2VTZWFyY2hMaXN0Ki88uU&u=c2JhcmVzZWw=LKHld3&searchstring=VEVTVA==KlUu87">/proxy/xml/?e=1&m=RGF0YWJhc2VTZWFyY2hMaXN0Ki88uU&u=c2JhcmVzZWw=LKHld3&searchstring=VEVTVA==KlUu87</a></li>
+    <li><b>ShowAllComments</b> - Show all comments URL: <a href="/proxy/xml/?e=1&m=U2hvd0FsbENvbW1lbnRzKi88uU&u=c2JhcmVzZWw=LKHld3">/proxy/xml/?e=1&m=U2hvd0FsbENvbW1lbnRzKi88uU&u=c2JhcmVzZWw=LKHld3</a></li>
 </ul>
 </font-->
 <br></br>

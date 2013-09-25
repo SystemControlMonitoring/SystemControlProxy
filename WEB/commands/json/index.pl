@@ -64,7 +64,7 @@ sub AckSvc {
     foreach my $check (@CL) {
 	my @c = split('@', $check);
 	#
-	# Exec Command
+	# Exec Command: $c[2] = ServiceName, $c[1] = Client, $c[2] = Node
 	my $exec = kSChttp::ExcIcingaCmdWiCm($c[1],kSCbasic::EncodeBase64u6($c[0]),"command","json","QWNrU3ZjKlrU87",$uid,kSCbasic::EncodeBase64u6($c[2]),$author,$comment);
 	foreach my $key (keys %{$exec}) {
 	    my $data = $exec->{$key}->{'result'};

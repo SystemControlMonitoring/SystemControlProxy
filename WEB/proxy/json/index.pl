@@ -241,7 +241,7 @@ sub ShowCritical {
 	my @array = @{$ah->{$key}->{'result'}};
 	my $count = scalar(@array);
 	for (my $x=0;$x<$count;$x++) {
-	    push @temp, [$ah->{$key}->{'result'}[$x]->{'SERVICE_STATUS_ICON'},$ah->{$key}->{'result'}[$x]->{'SERVICE_STATUS'},$ah->{$key}->{'result'}[$x]->{'TIMESTAMP'},$ah->{$key}->{'result'}[$x]->{'SERVICE_NAME'},$ah->{$key}->{'result'}[$x]->{'HOST_NAME'},$ah->{$key}->{'result'}[$x]->{'HOST_STATUS'},$ah->{$key}->{'result'}[$x]->{'OUTPUT'},$key];
+	    push @temp, [$ah->{$key}->{'result'}[$x]->{'SERVICE_STATUS_ICON'},$ah->{$key}->{'result'}[$x]->{'SERVICE_STATUS'},$ah->{$key}->{'result'}[$x]->{'TIMESTAMP'},$ah->{$key}->{'result'}[$x]->{'SERVICE_NAME'},$ah->{$key}->{'result'}[$x]->{'HOST_NAME'},$ah->{$key}->{'result'}[$x]->{'HOST_STATUS'},$ah->{$key}->{'result'}[$x]->{'OUTPUT'},$key,$ah->{$key}->{'result'}[$x]->{'ACK'},$ah->{$key}->{'result'}[$x]->{'CMT'}];
 	}
     }
     #####
@@ -256,7 +256,7 @@ sub ShowCritical {
     #
     #####
     for(my $i=0;$i<scalar(@tmp);$i++) {
-	$out.="{\"SERVICE_STATUS_ICON\":\"". $tmp[$i][0] ."\",\"SERVICE_STATUS\":\"". $tmp[$i][1] ."\",\"TIMESTAMP\":\"". kSCbasic::ConvertUt2Ts($tmp[$i][2]) ."\",\"SERVICE_NAME\":\"". $tmp[$i][3] ."\",\"HOST_NAME\":\"". $tmp[$i][4] ."\",\"HOST_STATUS\":\"". $tmp[$i][5] ."\",\"OUTPUT\":\"". kSCbasic::EncodeHTML($tmp[$i][6]) ."\",\"NODE\":\"". $tmp[$i][7] ."\"},";
+	$out.="{\"SERVICE_STATUS_ICON\":\"". $tmp[$i][0] ."\",\"SERVICE_STATUS\":\"". $tmp[$i][1] ."\",\"TIMESTAMP\":\"". kSCbasic::ConvertUt2Ts($tmp[$i][2]) ."\",\"SERVICE_NAME\":\"". $tmp[$i][3] ."\",\"HOST_NAME\":\"". $tmp[$i][4] ."\",\"HOST_STATUS\":\"". $tmp[$i][5] ."\",\"OUTPUT\":\"". kSCbasic::EncodeHTML($tmp[$i][6]) ."\",\"NODE\":\"". $tmp[$i][7] ."\",\"ACK\":\"". $tmp[$i][8] ."\",\"CMT\":\"". $tmp[$i][9] ."\"},";
     }
     $out = substr($out, 0, -1);
     #
@@ -445,6 +445,37 @@ sub DatabaseSearchList {
     print "[". $out ."]";
 }
 #
+sub ShowAllComments {
+    my $uid = shift;
+    my @temp;
+    my $out;
+    #
+    # Get data from client
+    my $ah = kSCjson::GetServices("lda","json","U2hvd0FsbENvbW1lbnRzHjdz6d",$uid);
+    #
+    # Loop trough array
+    foreach my $key (keys %{$ah}) {
+	my @array = @{$ah->{$key}->{'result'}};
+	my $count = scalar(@array);
+	for (my $x=0;$x<$count;$x++) {
+	    push @temp, [$ah->{$key}->{'result'}[$x]->{'AUTHOR'},$ah->{$key}->{'result'}[$x]->{'COMMENT'},$ah->{$key}->{'result'}[$x]->{'TIMESTAMP'},$ah->{$key}->{'result'}[$x]->{'TIMESTAMP_ISO'},$key,$ah->{$key}->{'result'}[$x]->{'SERVICE_NAME'},$ah->{$key}->{'result'}[$x]->{'HOST_NAME'}];
+	}
+    }
+    #
+    # Sorting
+    my @tmp = reverse sort {$a->[2] cmp $b->[2]} @temp;
+    #
+    # Output
+    for(my $i=0;$i<scalar(@tmp);$i++) {
+	$out.="{\"AUTHOR\":\"". $tmp[$i][0] ."\",\"COMMENT\":\"". $tmp[$i][1] ."\",\"TIMESTAMP\":\"". $tmp[$i][2] ."\",\"TIMESTAMP_ISO\":\"". $tmp[$i][3] ."\",\"NODE\":\"". $tmp[$i][4] ."\",\"SERVICE_NAME\":\"". $tmp[$i][5] ."\",\"HOST_NAME\":\"". $tmp[$i][6] ."\"},";
+    }
+    $out = substr($out, 0, -1);
+    #
+    print kSChtml::ContentType("json");
+    print "[". $out ."]";
+}
+
+#
 #
 #
 #
@@ -495,6 +526,8 @@ while($request->Accept() >= 0) {
 	    HostSearchList(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
 	} elsif (kSCbasic::CheckUrlKeyValue("m","ShowCritical","y") == 0) {
 	    ShowCritical(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("_search"),kSCbasic::GetUrlKeyValue("rows"),kSCbasic::GetUrlKeyValue("page"),kSCbasic::GetUrlKeyValue("sidx"),kSCbasic::GetUrlKeyValue("sord"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","ShowAllComments","y") == 0) {
+	    ShowAllComments(kSCbasic::GetUrlKeyValue("u"));
 	} else {
 	    Proxy(kSCbasic::GetUrlKeyValue("t"),kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("cm")),kSCbasic::GetUrlKeyValue("m"),kSCbasic::GetUrlKeyValue("u"));
 	}
@@ -535,6 +568,8 @@ while($request->Accept() >= 0) {
 	    HostSearchList(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
 	} elsif (kSCbasic::CheckUrlKeyValue("m","ShowCritical","y") == 0) {
 	    ShowCritical(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("_search"),kSCbasic::GetUrlKeyValue("rows"),kSCbasic::GetUrlKeyValue("page"),kSCbasic::GetUrlKeyValue("sidx"),kSCbasic::GetUrlKeyValue("sord"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","ShowAllComments","y") == 0) {
+	    ShowAllComments(kSCbasic::GetUrlKeyValue("u"));
 	} else {
 	    Proxy(kSCbasic::GetUrlKeyValue("t"),kSCbasic::GetUrlKeyValue("cm"),kSCbasic::GetUrlKeyValue("m"),kSCbasic::GetUrlKeyValue("u"));
 	}

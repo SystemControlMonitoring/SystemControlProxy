@@ -1,13 +1,14 @@
-<!--CLIENTDIRECT_VERSION:2.130902-->
+<!--CLIENTDIRECT_VERSION:2.130924-->
 
 Modul: <i><b>Client Information Proxy Access</b></i><br>
-Version: <i><b>2.130902</b></i><br>
+Version: <i><b>2.130924</b></i><br>
 Comments: - <br>
 Format: <i><b>JSON</b></i><br>
 <font size=2>Query:<br>
 <ul>
     <li><b>SYSINFO</b> - Redirect System Information to Server URL: <a href="/clientdirect/json/?e=1&m=U1lTSU5GTw==Jkd873&h=Y2FybG8teC5zaXYuZGU=Hjd876&c=ZGJ3aW5kby5zaXYuZGU=Jjd723&u=c2JhcmVzZWw=LKHld3">/clientdirect/json/?e=1&m=U1lTSU5GTw==Jkd873&h=Y2FybG8teC5zaXYuZGU=Hjd876&c=ZGJ3aW5kby5zaXYuZGU=Jjd723&u=c2JhcmVzZWw=LKHld3</a></li>
     <li><b>DBINFO</b> - Redirect Database Information to Server URL: <a href="/clientdirect/json/?e=1&m=REJJTkZPJkd873&h=Y2FybG8teC5zaXYuZGU=Hjd876&c=ZGJ3aW5kby5zaXYuZGU=Jjd723&u=c2JhcmVzZWw=LKHld3">/clientdirect/json/?e=1&m=REJJTkZPJkd873&h=Y2FybG8teC5zaXYuZGU=Hjd876&c=ZGJ3aW5kby5zaXYuZGU=Jjd723&u=c2JhcmVzZWw=LKHld3</a></li>
+    <li><b>GETWLS</b> - Redirect WebLogic Information to Server URL: <a href="/clientdirect/json/?e=1&m=R0VUV0xTJkd873&h=&c=&port=&u=">/clientdirect/json/?e=1&m=R0VUV0xTJkd873&h=&c=&port=&u=</a></li>
     <li><b>HostSummary</b> - Redirect Host Summary to Server URL: <a href="/clientdirect/json/?e=1&m=SG9zdFN1bW1hcnk=KhdU8Z&h=Y2FybG8teC5zaXYuZGU=Hjd876&c=ZGJ3aW5kby5zaXYuZGU=Jjd723&u=c2JhcmVzZWw=LKHld3">/clientdirect/json/?e=1&m=SG9zdFN1bW1hcnk=KhdU8Z&h=Y2FybG8teC5zaXYuZGU=Hjd876&c=ZGJ3aW5kby5zaXYuZGU=Jjd723&u=c2JhcmVzZWw=LKHld3</a></li>
     <li><b>OracleDBAdmin</b> - Redirect Oracle Database Admin Options URL: <a href="/clientdirect/json/?e=1&m=T3JhY2xlREJBZG1pbg==KhdU8Z&h=Y2FybG8teC5zaXYuZGU=Hjd876&c=ZGJ3aW5kby5zaXYuZGU=Jjd723&u=c2JhcmVzZWw=LKHld3&cm=&date_start=&date_end=">/clientdirect/json/?e=1&m=T3JhY2xlREJBZG1pbg==KhdU8Z&h=Y2FybG8teC5zaXYuZGU=Hjd876&c=ZGJ3aW5kby5zaXYuZGU=Jjd723&u=c2JhcmVzZWw=LKHld3&cm=&date_start=&date_end=</a></li>
     <li><b>LogAdmin</b> - Redirect Log Admin Options URL: <a href="/clientdirect/json/?e=1&m=TG9nQWRtaW4=KhdU8Z&h=Y2FybG8teC5zaXYuZGU=Hjd876&c=ZGJ3aW5kby5zaXYuZGU=Jjd723&u=c2JhcmVzZWw=LKHld3&cm=&log=">/clientdirect/json/?e=1&m=TG9nQWRtaW4=KhdU8Z&h=Y2FybG8teC5zaXYuZGU=Hjd876&c=ZGJ3aW5kby5zaXYuZGU=Jjd723&u=c2JhcmVzZWw=LKHld3&cm=&log=</a></li>

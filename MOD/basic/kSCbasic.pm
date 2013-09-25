@@ -317,13 +317,13 @@ sub ErrorMessage {
     my $ec = shift;
     my $out;
     if ( ($ty eq "xml") || ($ty eq "XML") ) {
-        $out.="<error_". $ec .">\n<module>kSCbasic::CheckUrlKeyValue</module>";
+        $out.="<error_". $ec .">\n<module>kSCproxy::kSCbasic::CheckUrlKeyValue</module>";
         $out.= ErrorCode("xml",$ec);
         $out.="<urlpara>";
         $out.= PrintUrlKeyValue("xml");
 	$out.="\n</urlpara>\n</error_". $ec .">\n";
     } elsif ( ($ty eq "json") || ($ty eq "JSON") ) {
-	$out.="{\"ERROR_". $ec ."\":{\"MODULE\":\"kSCbasic::CheckUrlKeyValue,";
+	$out.="{\"ERROR_". $ec ."\":{\"MODULE\":\"kSCproxy::kSCbasic::CheckUrlKeyValue,";
 	$out.= ErrorCode("json",$ec);
 	$out.=",\"URLPARA\":{";
 	$out.= substr(PrintUrlKeyValue("json"), 0, -1);
