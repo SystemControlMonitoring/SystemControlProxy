@@ -17,6 +17,133 @@ use Data::Dumper;
 #
 my $request = FCGI::Request();
 #
+while($request->Accept() >= 0) {
+    if (kSCbasic::CheckUrlKeyValue("e","1","n") == 0) {
+	if (kSCbasic::CheckUrlKeyValue("m","SlimTaov","y") == 0) {
+	    SlimTaov(kSCbasic::GetUrlKeyValue("u"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","FillLiveticker","y") == 0) {
+	    FillLiveticker(kSCbasic::GetUrlKeyValue("u"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","SelectLiveticker","y") == 0) {
+	    SelectLiveticker(kSCbasic::GetUrlKeyValue("u"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","AllHosts","y") == 0) {
+	    AllHosts(kSCbasic::GetUrlKeyValue("u"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","AllDatabases","y") == 0) {
+	    AllDatabases(kSCbasic::GetUrlKeyValue("u"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","HostFullInfo","y") == 0) {
+	    HostFullInfo(kSCbasic::GetUrlKeyValue("u"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","DatabaseFullInfo","y") == 0) {
+	    DatabaseFullInfo(kSCbasic::GetUrlKeyValue("u"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","MiddlewareFullInfo","y") == 0) {
+	    MiddlewareFullInfo(kSCbasic::GetUrlKeyValue("u"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","ListHosts","y") == 0) {
+	    ListHosts(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","ListServices","y") == 0) {
+	    ListServices(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","ListDatabases","y") == 0) {
+	    ListDatabases(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","ListMiddleware","y") == 0) {
+	    ListMiddleware(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","ListHostgroups","y") == 0) {
+	    ListHostgroups(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","ServiceHostList","y") == 0) {
+	    ServiceHostList(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("c"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","ServiceStatusSelect","y") == 0) {
+	    ServiceStatusSelect(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("s"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","ServiceSearchList","y") == 0) {
+	    ServiceSearchList(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","DatabaseStatusSelect","y") == 0) {
+	    DatabaseStatusSelect(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("s"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","DatabaseSearchList","y") == 0) {
+	    DatabaseSearchList(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","HostStatusSelect","y") == 0) {
+	    HostStatusSelect(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("s"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","HostSearchList","y") == 0) {
+	    HostSearchList(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","HostFullInfoSearchHost","y") == 0) {
+	    HostFullInfoSearchHost(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","HostFullInfoStatusHost","y") == 0) {
+	    HostFullInfoStatusHost(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("s"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","DatabaseFullInfoSearchDatabase","y") == 0) {
+	    DatabaseFullInfoSearchDatabase(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","DatabaseFullInfoStatusDatabase","y") == 0) {
+	    DatabaseFullInfoStatusDatabase(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("s"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","MiddlewareFullInfoSearchMiddleware","y") == 0) {
+	    MiddlewareFullInfoSearchMiddleware(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","MiddlewareFullInfoStatusMiddleware","y") == 0) {
+	    MiddlewareFullInfoStatusMiddleware(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("s"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","ShowCritical","y") == 0) {
+	    ShowCritical(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("_search"),kSCbasic::GetUrlKeyValue("rows"),kSCbasic::GetUrlKeyValue("page"),kSCbasic::GetUrlKeyValue("sidx"),kSCbasic::GetUrlKeyValue("sord"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","ShowAllComments","y") == 0) {
+	    ShowAllComments(kSCbasic::GetUrlKeyValue("u"));
+	} else {
+	    Proxy(kSCbasic::GetUrlKeyValue("t"),kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("cm")),kSCbasic::GetUrlKeyValue("m"),kSCbasic::GetUrlKeyValue("u"));
+	}
+    } elsif (kSCbasic::CheckUrlKeyValue("e","0","n") == 0) {
+	if (kSCbasic::CheckUrlKeyValue("m","SlimTaov","y") == 0) {
+	    SlimTaov(kSCbasic::GetUrlKeyValue("u"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","FillLiveticker","y") == 0) {
+	    FillLiveticker(kSCbasic::GetUrlKeyValue("u"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","SelectLiveticker","y") == 0) {
+	    SelectLiveticker(kSCbasic::GetUrlKeyValue("u"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","AllHosts","y") == 0) {
+	    AllHosts(kSCbasic::GetUrlKeyValue("u"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","AllDatabases","y") == 0) {
+	    AllDatabases(kSCbasic::GetUrlKeyValue("u"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","HostFullInfo","y") == 0) {
+	    HostFullInfo(kSCbasic::GetUrlKeyValue("u"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","DatabaseFullInfo","y") == 0) {
+	    DatabaseFullInfo(kSCbasic::GetUrlKeyValue("u"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","MiddlewareFullInfo","y") == 0) {
+	    MiddlewareFullInfo(kSCbasic::GetUrlKeyValue("u"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","ListHosts","y") == 0) {
+	    ListHosts(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","ListServices","y") == 0) {
+	    ListServices(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","ListDatabases","y") == 0) {
+	    ListDatabases(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","ListMiddleware","y") == 0) {
+	    ListMiddleware(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","ListHostgroups","y") == 0) {
+	    ListHostgroups(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","ServiceHostList","y") == 0) {
+	    ServiceHostList(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("c"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","ServiceStatusSelect","y") == 0) {
+	    ServiceStatusSelect(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("s"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","ServiceSearchList","y") == 0) {
+	    ServiceSearchList(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","DatabaseStatusSelect","y") == 0) {
+	    DatabaseStatusSelect(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("s"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","DatabaseSearchList","y") == 0) {
+	    DatabaseSearchList(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","HostStatusSelect","y") == 0) {
+	    HostStatusSelect(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("s"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","HostSearchList","y") == 0) {
+	    HostSearchList(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","HostFullInfoSearchHost","y") == 0) {
+	    HostFullInfoSearchHost(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","HostFullInfoStatusHost","y") == 0) {
+	    HostFullInfoStatusHost(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("s"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","DatabaseFullInfoSearchDatabase","y") == 0) {
+	    DatabaseFullInfoSearchDatabase(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","DatabaseFullInfoStatusDatabase","y") == 0) {
+	    DatabaseFullInfoStatusDatabase(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("s"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","MiddlewareFullInfoSearchMiddleware","y") == 0) {
+	    MiddlewareFullInfoSearchMiddleware(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","MiddlewareFullInfoStatusMiddleware","y") == 0) {
+	    MiddlewareFullInfoStatusMiddleware(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("s"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","ShowCritical","y") == 0) {
+	    ShowCritical(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("_search"),kSCbasic::GetUrlKeyValue("rows"),kSCbasic::GetUrlKeyValue("page"),kSCbasic::GetUrlKeyValue("sidx"),kSCbasic::GetUrlKeyValue("sord"));
+	} elsif (kSCbasic::CheckUrlKeyValue("m","ShowAllComments","y") == 0) {
+	    ShowAllComments(kSCbasic::GetUrlKeyValue("u"));
+	} else {
+	    Proxy(kSCbasic::GetUrlKeyValue("t"),kSCbasic::GetUrlKeyValue("cm"),kSCbasic::GetUrlKeyValue("m"),kSCbasic::GetUrlKeyValue("u"));
+	}
+    } else {
+	my $out = kSChtml::ContentType("json");
+	$out.= kSCbasic::ErrorMessage("json","0");
+	print $out;
+    }
+}
 #
 #
 #
@@ -135,9 +262,131 @@ sub HostFullInfo {
     my $ah = kSChttp::GetArray("lda","json","SG9zdEZ1bGxJbmZvHd78h3",$uid);
     my $out;
     foreach my $key (keys %{$ah}) {
-	$out .= "{\"NODE\":\"". $key ."\",\"HFI\":". $ah->{$key}->{'result'} ."},";
+	$out .= "{\"NODE\":\"". $key ."\",\"MODUL\":\"HostFullInfo\",\"HFI\":". $ah->{$key}->{'result'} ."},";
     }
     $out = substr($out, 0, -1);
+    $out =~ s/\"HFI\":}/\"HFI\":""}/g;
+    print kSChtml::ContentType("json");
+    print "[". $out ."]";
+}
+#
+sub HostFullInfoSearchHost {
+    my $uid = shift;
+    my $searchstring = shift;
+    #
+    my $ah = kSChttp::GetSrvSearchArray("lda","json","SG9zdEZ1bGxJbmZvU2VhcmNoSG9zdA==Ki88uU",$uid,$searchstring);
+    my $out;
+    foreach my $key (keys %{$ah}) {
+	$out .= "{\"NODE\":\"". $key ."\",\"MODUL\":\"HostFullInfoSearchHost\",\"STRING_PROXY\":\"". $searchstring ."\",\"HFI\":". $ah->{$key}->{'result'} ."},";
+    }
+    $out = substr($out, 0, -1);
+    $out =~ s/\"HFI\":}/\"HFI\":""}/g;
+    print kSChtml::ContentType("json");
+    print "[". $out ."]";
+
+}
+#
+sub HostFullInfoStatusHost {
+    my $uid = shift;
+    my $state = shift;
+    #
+    my $ah = kSChttp::GetSrvStatSelArray("lda","json","SG9zdEZ1bGxJbmZvU3RhdHVzSG9zdA==Ki88uU",$uid,$state);
+    my $out;
+    foreach my $key (keys %{$ah}) {
+	$out .= "{\"NODE\":\"". $key ."\",\"MODUL\":\"HostFullInfoStatusHost\",\"STRING_PROXY\":\"". $state ."\",\"HFI\":". $ah->{$key}->{'result'} ."},";
+    }
+    $out = substr($out, 0, -1);
+    $out =~ s/\"HFI\":}/\"HFI\":""}/g;
+    print kSChtml::ContentType("json");
+    print "[". $out ."]";
+}
+#
+sub DatabaseFullInfo {
+    my $uid = shift;
+    #
+    my $ah = kSChttp::GetArray("lda","json","RGF0YWJhc2VGdWxsSW5mbw==Hd78h3",$uid);
+    my $out;
+    foreach my $key (keys %{$ah}) {
+	$out .= "{\"NODE\":\"". $key ."\",\"MODUL\":\"DatabaseFullInfo\",\"DBFI\":". $ah->{$key}->{'result'} ."},";
+    }
+    $out = substr($out, 0, -1);
+    $out =~ s/\"HFI\":}/\"HFI\":""}/g;
+    print kSChtml::ContentType("json");
+    print "[". $out ."]";
+}
+#
+sub DatabaseFullInfoSearchDatabase {
+    my $uid = shift;
+    my $searchstring = shift;
+    #
+    my $ah = kSChttp::GetSrvSearchArray("lda","json","RGF0YWJhc2VGdWxsSW5mb1NlYXJjaERhdGFiYXNlKi88uU",$uid,$searchstring);
+    my $out;
+    foreach my $key (keys %{$ah}) {
+	$out .= "{\"NODE\":\"". $key ."\",\"MODUL\":\"DatabaseFullInfoSearchDatabase\",\"STRING_PROXY\":\"". $searchstring ."\",\"DBFI\":". $ah->{$key}->{'result'} ."},";
+    }
+    $out = substr($out, 0, -1);
+    $out =~ s/\"HFI\":}/\"HFI\":""}/g;
+    print kSChtml::ContentType("json");
+    print "[". $out ."]";
+
+}
+#
+sub DatabaseFullInfoStatusDatabase {
+    my $uid = shift;
+    my $state = shift;
+    #
+    my $ah = kSChttp::GetSrvStatSelArray("lda","json","RGF0YWJhc2VGdWxsSW5mb1N0YXR1c0RhdGFiYXNlKi88uU",$uid,$state);
+    my $out;
+    foreach my $key (keys %{$ah}) {
+	$out .= "{\"NODE\":\"". $key ."\",\"MODUL\":\"DatabaseFullInfoStatusDatabase\",\"STRING_PROXY\":\"". $state ."\",\"DBFI\":". $ah->{$key}->{'result'} ."},";
+    }
+    $out = substr($out, 0, -1);
+    $out =~ s/\"HFI\":}/\"HFI\":""}/g;
+    print kSChtml::ContentType("json");
+    print "[". $out ."]";
+}
+#
+sub MiddlewareFullInfo {
+    my $uid = shift;
+    #
+    my $ah = kSChttp::GetArray("lda","json","TWlkZGxld2FyZUZ1bGxJbmZvHd78h3",$uid);
+    my $out;
+    foreach my $key (keys %{$ah}) {
+	$out .= "{\"NODE\":\"". $key ."\",\"MODUL\":\"MiddlewareFullInfo\",\"WLSFI\":". $ah->{$key}->{'result'} ."},";
+    }
+    $out = substr($out, 0, -1);
+    $out =~ s/\"HFI\":}/\"HFI\":""}/g;
+    print kSChtml::ContentType("json");
+    print "[". $out ."]";
+}
+#
+sub MiddlewareFullInfoSearchMiddleware {
+    my $uid = shift;
+    my $searchstring = shift;
+    #
+    my $ah = kSChttp::GetSrvSearchArray("lda","json","TWlkZGxld2FyZUZ1bGxJbmZvU2VhcmNoTWlkZGxld2FyZQ==Ki88uU",$uid,$searchstring);
+    my $out;
+    foreach my $key (keys %{$ah}) {
+	$out .= "{\"NODE\":\"". $key ."\",\"MODUL\":\"MiddlewareFullInfoSearchMiddleware\",\"STRING_PROXY\":\"". $searchstring ."\",\"WLSFI\":". $ah->{$key}->{'result'} ."},";
+    }
+    $out = substr($out, 0, -1);
+    $out =~ s/\"HFI\":}/\"HFI\":""}/g;
+    print kSChtml::ContentType("json");
+    print "[". $out ."]";
+
+}
+#
+sub MiddlewareFullInfoStatusMiddleware {
+    my $uid = shift;
+    my $state = shift;
+    #
+    my $ah = kSChttp::GetSrvStatSelArray("lda","json","TWlkZGxld2FyZUZ1bGxJbmZvU3RhdHVzTWlkZGxld2FyZQ==Ki88uU",$uid,$state);
+    my $out;
+    foreach my $key (keys %{$ah}) {
+	$out .= "{\"NODE\":\"". $key ."\",\"MODUL\":\"MiddlewareFullInfoStatusMiddleware\",\"STRING_PROXY\":\"". $state ."\",\"WLSFI\":". $ah->{$key}->{'result'} ."},";
+    }
+    $out = substr($out, 0, -1);
+    $out =~ s/\"HFI\":}/\"HFI\":""}/g;
     print kSChtml::ContentType("json");
     print "[". $out ."]";
 }
@@ -312,6 +561,22 @@ sub ListDatabases {
     print "{\"databases\":[". $out ."]}";
 }
 #
+sub ListMiddleware {
+    my $uid = shift;
+    my $searchstring = shift;
+    #
+    my $ah = kSChttp::GetSearchArray("search","json","TGlzdE1pZGRsZXdhcmU=Hj86Hz",$uid,$searchstring);
+    my $out;
+    foreach my $key (keys %{$ah}) {
+	my $data = $ah->{$key}->{'result'};
+	$data =~ s/{\"/{\"NODE\":\"$key\",\"/g;
+	$out .= $data .",";
+    }
+    $out = substr($out, 0, -1);
+    print kSChtml::ContentType("json");
+    print "{\"middleware\":[". $out ."]}";
+}
+#
 sub ListHostgroups {
     my $uid = shift;
     my $searchstring = shift;
@@ -474,112 +739,3 @@ sub ShowAllComments {
     print kSChtml::ContentType("json");
     print "[". $out ."]";
 }
-
-#
-#
-#
-#
-#
-#
-#
-#
-#
-# Output
-#
-# e = encoded, m = module, cm = coremodule
-
-while($request->Accept() >= 0) {
-    if (kSCbasic::CheckUrlKeyValue("e","1","n") == 0) {
-	if (kSCbasic::CheckUrlKeyValue("m","SlimTaov","y") == 0) {
-	    SlimTaov(kSCbasic::GetUrlKeyValue("u"));
-	} elsif (kSCbasic::CheckUrlKeyValue("m","FillLiveticker","y") == 0) {
-	    FillLiveticker(kSCbasic::GetUrlKeyValue("u"));
-	} elsif (kSCbasic::CheckUrlKeyValue("m","SelectLiveticker","y") == 0) {
-	    SelectLiveticker(kSCbasic::GetUrlKeyValue("u"));
-	} elsif (kSCbasic::CheckUrlKeyValue("m","AllHosts","y") == 0) {
-	    AllHosts(kSCbasic::GetUrlKeyValue("u"));
-	} elsif (kSCbasic::CheckUrlKeyValue("m","AllDatabases","y") == 0) {
-	    AllDatabases(kSCbasic::GetUrlKeyValue("u"));
-	} elsif (kSCbasic::CheckUrlKeyValue("m","HostFullInfo","y") == 0) {
-	    HostFullInfo(kSCbasic::GetUrlKeyValue("u"));
-	} elsif (kSCbasic::CheckUrlKeyValue("m","ListHosts","y") == 0) {
-	    ListHosts(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
-	} elsif (kSCbasic::CheckUrlKeyValue("m","ListServices","y") == 0) {
-	    ListServices(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
-	} elsif (kSCbasic::CheckUrlKeyValue("m","ListDatabases","y") == 0) {
-	    ListDatabases(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
-	} elsif (kSCbasic::CheckUrlKeyValue("m","ListHostgroups","y") == 0) {
-	    ListHostgroups(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
-	} elsif (kSCbasic::CheckUrlKeyValue("m","ServiceHostList","y") == 0) {
-	    ServiceHostList(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("c"));
-	} elsif (kSCbasic::CheckUrlKeyValue("m","ServiceStatusSelect","y") == 0) {
-	    ServiceStatusSelect(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("s"));
-	} elsif (kSCbasic::CheckUrlKeyValue("m","ServiceSearchList","y") == 0) {
-	    ServiceSearchList(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
-	} elsif (kSCbasic::CheckUrlKeyValue("m","DatabaseStatusSelect","y") == 0) {
-	    DatabaseStatusSelect(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("s"));
-	} elsif (kSCbasic::CheckUrlKeyValue("m","DatabaseSearchList","y") == 0) {
-	    DatabaseSearchList(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
-	} elsif (kSCbasic::CheckUrlKeyValue("m","HostStatusSelect","y") == 0) {
-	    HostStatusSelect(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("s"));
-	} elsif (kSCbasic::CheckUrlKeyValue("m","HostSearchList","y") == 0) {
-	    HostSearchList(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
-	} elsif (kSCbasic::CheckUrlKeyValue("m","ShowCritical","y") == 0) {
-	    ShowCritical(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("_search"),kSCbasic::GetUrlKeyValue("rows"),kSCbasic::GetUrlKeyValue("page"),kSCbasic::GetUrlKeyValue("sidx"),kSCbasic::GetUrlKeyValue("sord"));
-	} elsif (kSCbasic::CheckUrlKeyValue("m","ShowAllComments","y") == 0) {
-	    ShowAllComments(kSCbasic::GetUrlKeyValue("u"));
-	} else {
-	    Proxy(kSCbasic::GetUrlKeyValue("t"),kSCbasic::DecodeBase64u6(kSCbasic::GetUrlKeyValue("cm")),kSCbasic::GetUrlKeyValue("m"),kSCbasic::GetUrlKeyValue("u"));
-	}
-    } elsif (kSCbasic::CheckUrlKeyValue("e","0","n") == 0) {
-	if (kSCbasic::CheckUrlKeyValue("m","SlimTaov","y") == 0) {
-	    SlimTaov(kSCbasic::GetUrlKeyValue("u"));
-	} elsif (kSCbasic::CheckUrlKeyValue("m","FillLiveticker","y") == 0) {
-	    FillLiveticker(kSCbasic::GetUrlKeyValue("u"));
-	} elsif (kSCbasic::CheckUrlKeyValue("m","SelectLiveticker","y") == 0) {
-	    SelectLiveticker(kSCbasic::GetUrlKeyValue("u"));
-	} elsif (kSCbasic::CheckUrlKeyValue("m","AllHosts","y") == 0) {
-	    AllHosts(kSCbasic::GetUrlKeyValue("u"));
-	} elsif (kSCbasic::CheckUrlKeyValue("m","AllDatabases","y") == 0) {
-	    AllDatabases(kSCbasic::GetUrlKeyValue("u"));
-	} elsif (kSCbasic::CheckUrlKeyValue("m","HostFullInfo","y") == 0) {
-	    HostFullInfo(kSCbasic::GetUrlKeyValue("u"));
-	} elsif (kSCbasic::CheckUrlKeyValue("m","ListHosts","y") == 0) {
-	    ListHosts(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
-	} elsif (kSCbasic::CheckUrlKeyValue("m","ListServices","y") == 0) {
-	    ListServices(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
-	} elsif (kSCbasic::CheckUrlKeyValue("m","ListDatabases","y") == 0) {
-	    ListDatabases(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
-	} elsif (kSCbasic::CheckUrlKeyValue("m","ListHostgroups","y") == 0) {
-	    ListHostgroups(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
-	} elsif (kSCbasic::CheckUrlKeyValue("m","ServiceHostList","y") == 0) {
-	    ServiceHostList(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("c"));
-	} elsif (kSCbasic::CheckUrlKeyValue("m","ServiceStatusSelect","y") == 0) {
-	    ServiceStatusSelect(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("s"));
-	} elsif (kSCbasic::CheckUrlKeyValue("m","ServiceSearchList","y") == 0) {
-	    ServiceSearchList(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
-	} elsif (kSCbasic::CheckUrlKeyValue("m","DatabaseStatusSelect","y") == 0) {
-	    DatabaseStatusSelect(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("s"));
-	} elsif (kSCbasic::CheckUrlKeyValue("m","DatabaseSearchList","y") == 0) {
-	    DatabaseSearchList(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
-	} elsif (kSCbasic::CheckUrlKeyValue("m","HostStatusSelect","y") == 0) {
-	    HostStatusSelect(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("s"));
-	} elsif (kSCbasic::CheckUrlKeyValue("m","HostSearchList","y") == 0) {
-	    HostSearchList(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("searchstring"));
-	} elsif (kSCbasic::CheckUrlKeyValue("m","ShowCritical","y") == 0) {
-	    ShowCritical(kSCbasic::GetUrlKeyValue("u"),kSCbasic::GetUrlKeyValue("_search"),kSCbasic::GetUrlKeyValue("rows"),kSCbasic::GetUrlKeyValue("page"),kSCbasic::GetUrlKeyValue("sidx"),kSCbasic::GetUrlKeyValue("sord"));
-	} elsif (kSCbasic::CheckUrlKeyValue("m","ShowAllComments","y") == 0) {
-	    ShowAllComments(kSCbasic::GetUrlKeyValue("u"));
-	} else {
-	    Proxy(kSCbasic::GetUrlKeyValue("t"),kSCbasic::GetUrlKeyValue("cm"),kSCbasic::GetUrlKeyValue("m"),kSCbasic::GetUrlKeyValue("u"));
-	}
-    } else {
-	my $out = kSChtml::ContentType("json");
-	$out.= kSCbasic::ErrorMessage("json","0");
-	print $out;
-    }
-}
-
-#
-# End
-#

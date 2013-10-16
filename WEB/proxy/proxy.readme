@@ -1,7 +1,7 @@
-<!--PROXY_VERSION:2.130903-->
+<!--PROXY_VERSION:2.1.131015-->
 
 Modul: <i><b>Proxy - Control Core Access</b></i><br>
-Version: <i><b>2.130903</b></i><br>
+Version: <i><b>2.1.131015</b></i><br>
 Comments:
 <ul>
     <li>Distributed Nodes supported (seperate hosts Core Installations (ICINGA&DB) )</li>
@@ -9,25 +9,34 @@ Comments:
 Format: <i><b>JSON</b></i><br>
 <font size=2>Query:<br>
 <ul>
-    <li><b>HostFullInfo</b> - Overview of hosts with Services URL: <a href="/proxy/json/?e=1&m=SG9zdEZ1bGxJbmZvHd78h3&u=c2JhcmVzZWw=Adhfg3">/proxy/json/?e=1&m=SG9zdEZ1bGxJbmZvHd78h31&u=c2JhcmVzZWw=Adhfg3</a></li>
-    <li><b>AllHosts</b> - Overview of hosts, with ICON Path URL: <a href="/proxy/json/?e=1&m=QWxsSG9zdHM=Uhd739&u=c2JhcmVzZWw=LKHld3">/proxy/json/?e=1&m=QWxsSG9zdHM=Uhd739&u=c2JhcmVzZWw=LKHld3</a></li>
-    <li><b>AllDatabases</b> - Overview of oracle database URL: <a href="/proxy/json/?e=1&m=QWxsRGF0YWJhc2VzZhd873&u=c2JhcmVzZWw=Kjd743">/proxy/json/?e=1&m=QWsRGF0YWJhc2VzZhd873&u=c2JhcmVzZWw=Kjd743</a></li>
-    <li><b>SlimTaov</b> - Tactival Overview of Host and Service State URL: <a href="/proxy/json/?e=1&m=U2xpbVRhb3Y=Hkd83k&u=c2JhcmVzZWw=LKHld3">/proxy/json/?e=1&m=U2xpbVRhb3Y=Hkd83k&u=c2JhcmVzZWw=LKHld3</a></li>
-    <li><b>ShowCritical</b> - List all Critical Services and Hosts Option: -l (limit Query Elements) -r (limit Output size) URL: <a href="/proxy/json/?e=1&cm=bGRhHj7Kl9&m=U2hvd0NyaXRpY2FsHjdz6d&u=c2JhcmVzZWw=J9d83D">/proxy/json/?e=1&cm=bGRhHj7Kl9&m=U2hvd0NyaXRpY2FsHjdz6d&u=c2JhcmVzZWw=J9d83D</a></li>
-    <li><b>CheckProcess</b> - Check All KSC Monitoring Processes running and Ports open URL: <a href="/proxy/json/?e=1&cm=Y2hrY21wHj7Kl9&m=Q2hlY2tQcm9jZXNzLk76Zh">/proxy/json/?e=1&cm=Y2hrY21wHj7Kl9&m=Q2hlY2tQcm9jZXNzLk76Zh</a></li>
-    <li><b>SelectLiveticker</b> - Get Current Critical Services and Hosts URL: <a href="/proxy/json/?e=1&m=U2VsZWN0TGl2ZXRpY2tlcg==RpKlFs&u=c2JhcmVzZWw=LKHld3">/proxy/json/?e=1&m=U2VsZWN0TGl2ZXRpY2tlcg==RpKlFs&u=c2JhcmVzZWw=LKHld3</a></li>
-    <li><b>FillLiveticker</b> - Update Critical Services and Hosts in Datasource URL: <a href="/proxy/json/?e=1&m=RmlsbExpdmV0aWNrZXI=RpY2Fs&u=c2JhcmVzZWw=LKHld3">/proxy/json/?e=1&m=RmlsbExpdmV0aWNrZXI=RpY2Fs&u=c2JhcmVzZWw=LKHld3</a></li>
-    <li><b>ListHosts</b> - List Names of Hosts URL: <a href="/proxy/json/?e=1&m=TGlzdEhvc3RzHj86Hz&u=c2JhcmVzZWw=Adhfg3">/proxy/json/?e=1&m=TGlzdEhvc3RzHj86Hz&u=c2JhcmVzZWw=Adhfg3</a></li>
-    <li><b>ListServices</b> - List Names of Services URL: <a href="/proxy/json/?e=1&m=TGlzdFNlcnZpY2VzHj86Hz&u=c2JhcmVzZWw=Adhfg3">/proxy/json/?e=1&m=TGlzdFNlcnZpY2VzHj86Hz&u=c2JhcmVzZWw=Adhfg3</a></li>
-    <li><b>ListDatabases</b> - List Names of Databases URL: <a href="/proxy/json/?e=1&m=TGlzdERhdGFiYXNlcw==Hj86Hz&u=c2JhcmVzZWw=Adhfg3">/proxy/json/?e=1&m=TGlzdERhdGFiYXNlcw==Hj86Hz&u=c2JhcmVzZWw=Adhfg3</a></li>
-    <li><b>ListHostgroups</b> - List Names of Hostgroups URL: <a href="/proxy/json/?e=1&m=TGlzdEhvc3Rncm91cHM=Hj86Hz&u=c2JhcmVzZWw=Adhfg3">/proxy/json/?e=1&m=TGlzdEhvc3Rncm91cHM=Hj86Hz&u=c2JhcmVzZWw=Adhfg3</a></li>
-    <li><b>ServiceStatusSelect</b> - Select different stats of services URL: <a href="/proxy/json/?e=1&m=U2VydmljZVN0YXR1c1NlbGVjdA==Ki88uU&u=c2JhcmVzZWw=LKHld3&s=YXBuYW9oKmUh88">/proxy/json/?e=1&m=U2VydmljZVN0YXR1c1NlbGVjdA==Ki88uU&u=c2JhcmVzZWw=LKHld3&s=YXBuYW9oKmUh88</a></li>
-    <li><b>ServiceSearchList</b> - Search services URL: <a href="/proxy/json/?e=1&m=U2VydmljZVNlYXJjaExpc3Q=Ki88uU&u=c2JhcmVzZWw=LKHld3&searchstring=TE9HKlUu87">/proxy/json/?e=1&m=U2VydmljZVNlYXJjaExpc3Q=Ki88uU&u=c2JhcmVzZWw=LKHld3&searchstring=TE9HKlUu87</a></li>
-    <li><b>HostStatusSelect</b> - Select different stats of hosts URL: <a href="/proxy/json/?e=1&m=SG9zdFN0YXR1c1NlbGVjdA==Ki88uU&u=c2JhcmVzZWw=LKHld3&s=dXA=KmUh88">/proxy/json/?e=1&m=SG9zdFN0YXR1c1NlbGVjdA==Ki88uU&u=c2JhcmVzZWw=LKHld3&s=dXA=KmUh88</a></li>
-    <li><b>HostSearchList</b> - Search hosts URL: <a href="/proxy/json/?e=1&m=SG9zdFNlYXJjaExpc3Q=Ki88uU&u=c2JhcmVzZWw=LKHld3&searchstring=dm0=KlUu87">/proxy/json/?e=1&m=SG9zdFNlYXJjaExpc3Q=Ki88uU&u=c2JhcmVzZWw=LKHld3&searchstring=dm0=KlUu87</a></li>
-    <li><b>DatabaseStatusSelect</b> - Select different stats of databases URL: <a href="/proxy/json/?e=1&m=RGF0YWJhc2VTdGF0dXNTZWxlY3Q=Ki88uU&u=c2JhcmVzZWw=LKHld3&s=YXBuYW9oKmUh88">/proxy/json/?e=1&m=RGF0YWJhc2VTdGF0dXNTZWxlY3Q=Ki88uU&u=c2JhcmVzZWw=LKHld3&s=YXBuYW9oKmUh88</a></li>
-    <li><b>DatabaseSearchList</b> - Search databases URL: <a href="/proxy/json/?e=1&m=RGF0YWJhc2VTZWFyY2hMaXN0Ki88uU&u=c2JhcmVzZWw=LKHld3&searchstring=VEVTVA==KlUu87">/proxy/json/?e=1&m=RGF0YWJhc2VTZWFyY2hMaXN0Ki88uU&u=c2JhcmVzZWw=LKHld3&searchstring=VEVTVA==KlUu87</a></li>
-    <li><b>ShowAllComments</b> - Show all comments URL: <a href="/proxy/json/?e=1&m=U2hvd0FsbENvbW1lbnRzKi88uU&u=c2JhcmVzZWw=LKHld3">/proxy/json/?e=1&m=U2hvd0FsbENvbW1lbnRzKi88uU&u=c2JhcmVzZWw=LKHld3</a></li>
+    <li><b>HostFullInfo</b> - Overview of hosts with Services URL: <a href="/proxy/json/?e=1&m=&u=">/proxy/json/?e=1&m=&u=</a></li>
+    <li><b>AllHosts</b> - Overview of hosts, with ICON Path URL: <a href="/proxy/json/?e=1&m=&u=">/proxy/json/?e=1&m=&u=</a></li>
+    <li><b>AllDatabases</b> - Overview of oracle database URL: <a href="/proxy/json/?e=1&m=&u=">/proxy/json/?e=1&m=&u=</a></li>
+    <li><b>SlimTaov</b> - Tactival Overview of Host and Service State URL: <a href="/proxy/json/?e=1&m=&u=">/proxy/json/?e=1&m=&u=</a></li>
+    <li><b>ShowCritical</b> - List all Critical Services and Hosts Option: -l (limit Query Elements) -r (limit Output size) URL: <a href="/proxy/json/?e=1&cm=&m=&u=">/proxy/json/?e=1&cm=&m=&u=</a></li>
+    <li><b>CheckProcess</b> - Check All KSC Monitoring Processes running and Ports open URL: <a href="/proxy/json/?e=1&cm=&m=">/proxy/json/?e=1&cm=&m=</a></li>
+    <li><b>SelectLiveticker</b> - Get Current Critical Services and Hosts URL: <a href="/proxy/json/?e=1&m=&u=">/proxy/json/?e=1&m=&u=</a></li>
+    <li><b>FillLiveticker</b> - Update Critical Services and Hosts in Datasource URL: <a href="/proxy/json/?e=1&m=&u=">/proxy/json/?e=1&m=&u=</a></li>
+    <li><b>ListHosts</b> - List Names of Hosts URL: <a href="/proxy/json/?e=1&m=&u=">/proxy/json/?e=1&m=&u=</a></li>
+    <li><b>ListServices</b> - List Names of Services URL: <a href="/proxy/json/?e=1&m=&u=">/proxy/json/?e=1&m=&u=</a></li>
+    <li><b>ListDatabases</b> - List Names of Databases URL: <a href="/proxy/json/?e=1&m=&u=">/proxy/json/?e=1&m=&u=</a></li>
+    <li><b>ListMiddleware</b> - List Names of Middleware URL: <a href="/proxy/json/?e=1&m=&u=">/proxy/json/?e=1&m=&u=</a></li>
+    <li><b>ListHostgroups</b> - List Names of Hostgroups URL: <a href="/proxy/json/?e=1&m=&u=">/proxy/json/?e=1&m=&u=</a></li>
+    <li><b>ServiceStatusSelect</b> - Select different stats of services URL: <a href="/proxy/json/?e=1&m=&u=&s=">/proxy/json/?e=1&m=&u=&s=</a></li>
+    <li><b>ServiceSearchList</b> - Search services URL: <a href="/proxy/json/?e=1&m=&u=&searchstring=">/proxy/json/?e=1&m=&u=&searchstring=</a></li>
+    <li><b>HostStatusSelect</b> - Select different stats of hosts URL: <a href="/proxy/json/?e=1&m=&u=&s=">/proxy/json/?e=1&m=&u=&s=</a></li>
+    <li><b>HostSearchList</b> - Search hosts URL: <a href="/proxy/json/?e=1&m=&u=&searchstring=">/proxy/json/?e=1&m=&u=&searchstring=</a></li>
+    <li><b>HostFullInfoStatusHost</b> - Select different stats of hosts URL: <a href="/proxy/json/?e=1&m=&u=&s=">/proxy/json/?e=1&m=&u=&s=</a></li>
+    <li><b>HostFullInfoSearchHost</b> - Search hosts URL: <a href="/proxy/json/?e=1&m=&u=&searchstring=">/proxy/json/?e=1&m=&u=&searchstring=</a></li>
+    <li><b>DatabaseStatusSelect</b> - Select different stats of databases URL: <a href="/proxy/json/?e=1&m=&u=&s=">/proxy/json/?e=1&m=&u=&s=</a></li>
+    <li><b>DatabaseSearchList</b> - Search databases URL: <a href="/proxy/json/?e=1&m=&u=&searchstring=">/proxy/json/?e=1&m=&u=&searchstring=</a></li>
+    <li><b>ShowAllComments</b> - Show all comments URL: <a href="/proxy/json/?e=1&m=&u=">/proxy/json/?e=1&m=&u=</a></li>
+    <li><b>DatabaseFullInfo</b> - Overview of databases with Services URL: <a href="/proxy/json/?e=1&m=&u=">/proxy/json/?e=1&m=&u=</a></li>
+    <li><b>DatabaseFullInfoStatusDatabase</b> - Select different stats of databases URL: <a href="/proxy/json/?e=1&m=&u=&s=">/proxy/json/?e=1&m=&u=&s=</a></li>
+    <li><b>DatabaseFullInfoSearchDatabase</b> - Search databases URL: <a href="/proxy/json/?e=1&m=&u=&searchstring=">/proxy/json/?e=1&m=&u=&searchstring=</a></li>
+    <li><b>MiddlewareFullInfo</b> - Overview of Middleware with Services URL: <a href="/proxy/json/?e=1&m=&u=">/proxy/json/?e=1&m=&u=</a></li>
+    <li><b>MiddlewareFullInfoStatusMiddleware</b> - Select different stats of Middleware URL: <a href="/proxy/json/?e=1&m=&u=&s=">/proxy/json/?e=1&m=&u=&s=</a></li>
+    <li><b>MiddlewareFullInfoSearchMiddleware</b> - Search Middleware URL: <a href="/proxy/json/?e=1&m=&u=&searchstring=">/proxy/json/?e=1&m=&u=&searchstring=</a></li>
 </ul>
 </font>
 <!--Format: <i><b>XML</b></i><br>
